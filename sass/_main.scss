@@ -125,21 +125,27 @@
   }
   &:hover{
     .header__dropdown-menu{
-      display: block;
       transition: all 0.3s ease;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
     }
   }
 }
 
 .header__dropdown-menu{
-  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none; /* ホバー時以外はクリックできないように */
+
   position: absolute;
   background-color: $BgPrimaryDef;
   padding: 16px 16px 8px;
   border: 1px solid $BorderSubtle;
   top: 36px;
   width: 220px;
-  transition: all 0.3s ease;
+
   @include tab{
     display: block;
     position: initial;
