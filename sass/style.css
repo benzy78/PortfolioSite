@@ -405,6 +405,7 @@ select:focus {
 @media (max-width: 992px) {
   .header__dropdown-menu {
     display: block;
+    opacity: 1;
     position: initial;
     border: none;
     width: 100%;
