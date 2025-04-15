@@ -1,0 +1,575 @@
+// header
+.header{
+  padding:24px;
+  background-color: $BgPrimaryDef;
+  color: $TextInverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  @include tab{
+    padding: 24px 0 24px;
+  }
+  @include sp{
+    padding: 12px 0;
+  }
+}
+
+.header__nav{
+  // margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-toggle {
+  display: none;
+  @include tab{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 44px;
+    height: 48px;
+    padding: 0;
+    position: relative;
+    z-index: 100;
+  }
+}
+.menu-icon {
+  background-color: $TextInverse;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out 0s;
+  &:nth-child(1){
+    top: 8px;
+  }
+  &:nth-child(2){
+    top: 16px;
+  }
+  &:nth-child(3){
+    top: 24px;
+  }
+}
+.menu-label{
+  position: absolute;
+  top: 36px;
+}
+.menu-label{
+    font-size: 14px;
+    color: $TextInverse;
+    padding: 0 4px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+.header__nav-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 24px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+  @include tab{
+    display: none;
+  }
+}
+.header__links-item{
+  list-style: none;
+  @include tab{
+    width: 100%;
+  }
+  a{
+    color: $TextInverse;
+    font-size: 20px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      border-bottom: 1px solid $BorderSubtle;
+    }
+    @include tab{
+      font-size: 20px;
+      color: $TextSubtle;
+      font-weight: bold;
+      transform: rotate(0.05deg);
+    }
+  }
+}
+
+.dropdown-icon{
+  vertical-align: middle;
+  @include tab{
+    display: none;
+  }
+}
+
+
+.header__nav-dropdown{
+  .header__nav-works{
+    color: $TextInverse;
+    font-size: 20px;
+    padding-bottom: 8px;
+    transition: all 0.3s ease-in-out;
+    @include tab{
+      padding: 24px;
+      font-size: 20px;
+      color: $TextSubtle;
+      font-weight: bold;
+      border-bottom: 1px solid $BorderSubtle;
+      display: block;
+    }
+  }
+  &:hover{
+    .header__dropdown-menu{
+      display: block;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.header__dropdown-menu{
+  display: none;
+  position: absolute;
+  background-color: $BgPrimaryDef;
+  padding: 16px 16px 8px;
+  border: 1px solid $BorderSubtle;
+  top: 36px;
+  width: 220px;
+  transition: all 0.3s ease;
+  @include tab{
+    display: block;
+    position: initial;
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  li{
+    margin-bottom: 16px;
+    position: relative;
+    @include tab{
+      margin-bottom: 0;
+    }
+    a{
+      color: $TextInverse;
+      display: block;
+      padding: 8px 16px;
+      border-bottom: 1px solid $BorderSubtle;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+      @include tab{
+        padding: 24px 48px;
+      }
+      &:hover{
+        background-color: $BgPrimaryHover;
+      }
+    }
+  }
+}
+.arrow-right-icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  @include tab{
+    right: 24px;
+  }
+}
+
+.active{
+  .menu-toggle{
+    .menu-icon{
+      @include tab{
+        &:nth-child(1){
+          -webkit-transform: translateY(0) rotate(225deg);
+          -ms-transform: translateY(0) rotate(225deg);
+          transform: translateY(0) rotate(225deg);
+          position: absolute;
+          top: 16px;
+        }
+        &:nth-child(2){
+          -webkit-transform: translateY(0) rotate(-225deg);
+          -ms-transform: translateY(0) rotate(-225deg);
+          transform: translateY(0) rotate(-225deg);
+        }
+        &:nth-child(3){
+          display: none;
+        }
+      }
+    }
+  }
+  .header__nav-links{
+    @include tab{
+      display: block;
+      position: absolute;
+      height: 100vh;
+      overflow-y: auto;
+      background-color: $BgPrimaryDef;
+      top: 0;
+      width: 100%;
+      left: 0;
+      padding: 64px 48px 48px;
+      text-align: left;
+    }
+  }
+    .header__links-item{
+      a{
+        @include tab{
+          display: block;
+          padding: 24px;
+          border-bottom: 1px solid $TextInverse;
+        }
+      }
+    }
+  }
+
+/*
+  header end
+*/
+// mv
+.mv{
+  background-color: $BgPrimaryDef;
+  padding: 120px 0;
+  @include tab{
+    padding: 90px 0;
+  }
+  @include sp{
+    padding: 90px 0 64px;
+  }
+}
+.mv__ttl{
+  font-size: 48px;
+  line-height: 1.5;
+  color: $TextInverse;
+  text-align: center;
+  margin-bottom: 16px;
+  @include tab{
+    font-size: 36px;
+  }
+}
+.mv__body{
+  font-size: 24px;
+  color: $TextSubtle;
+  text-align: center;
+  @include tab{
+    font-size: 16px;
+  }
+}
+
+
+// introduction
+.introduction{
+  padding: 48px 24px;
+  background-color: $BgSubtle;
+  @include tab{
+    padding: 24px 0;
+  }
+  @include sp{
+    padding: 24px 0 48px;
+  }
+}
+.intro__cont{
+  display: flex;
+  gap:48px;
+  @include tab{
+    gap: 24px;
+  }
+  @include sp{
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+.intro__left{
+  width: 50%;
+  @include sp{
+    width: 100%;
+  }
+}
+.intro__ttl{
+  font-size: 48px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  @include tab{
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  @include sp{
+    font-size: 24px;
+  }
+}
+.intro__name{
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: $TextSubtler;
+  @include sp{
+    font-size: 16px;
+  }
+}
+.intro__skill{
+  padding:16px 24px;
+  background-color: $BgDef;
+  border-radius: 4px;
+  @include sp{
+    padding: 16px;
+  }
+}
+.intro__body{
+  margin-bottom: 16px;
+  @include sp{
+    font-size: 14px;
+  }
+}
+.intro__right{
+  width: 50%;
+  @include sp{
+    width: 100%;
+  }
+}
+.intro__user-icon{
+  margin: 0 auto 24px;
+  text-align: center;
+  @include sp{
+    display: none;
+  }
+}
+.icon--user{
+  width: 320px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.intro__skill-ttl{
+  font-size: 20px;
+  margin-bottom: 8px;
+  @include sp{
+    font-size: 16px;
+  }
+}
+.intro__skill-list{
+  li{
+    margin-bottom: 8px;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  img{
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+
+// works
+.works{
+  padding: 48px;
+  background-color: $BgDef;
+  @include tab{
+    padding: 24px;
+  }
+  @include sp{
+    padding: 24px 0;
+  }
+}
+.works__ttl{
+  font-size: 48px;
+  margin-bottom: 24px;
+  @include tab{
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  @include sp{
+    font-size: 24px;
+  }
+}
+.works__section{
+  margin-bottom: 48px;
+}
+.works__sec-outline{
+  display: flex;
+  margin-bottom: 32px;
+  gap: 48px;
+  @include tab{
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  @include sp{
+    flex-wrap: wrap;
+  }
+}
+.works__outline-left{
+  width: 50%;
+  @include sp{
+    width: 100%;
+  }
+}
+.works__outline-ttl{
+  font-size: 32px;
+  margin-bottom: 8px;
+  @include tab{
+    font-size: 28px;
+  }
+  @include sp{
+    font-size: 20px;
+  }
+  .works__outline-number{
+    font-size: 72px;
+    color: $TextAccent;
+    margin-right: 8px;
+    line-height: 1;
+    @include tab{
+      font-size: 48px;
+    }
+    @include sp{
+      font-size: 32px;
+    }
+  }
+}
+.works__outline-text{
+  margin-bottom: 24px;
+  @include sp{
+    font-size: 14px;
+  }
+}
+.works__outline-info{
+  padding: 16px 24px;
+  background-color: $BgSubtle;
+  margin-bottom: 24px;
+  .works__info-item{
+    @include sp{
+      font-size: 14px;
+    }
+  }
+}
+.works__btn{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  padding: 16px 24px;
+  margin: 0 auto;
+  color: $TextInverse;
+  background-color: $BgPrimaryDef;
+  transition: all 0.3s ease-in-out;
+  @include sp{
+    padding: 16px;
+  }
+  &:hover{
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+  }
+}
+.works__btn-anno{
+  text-align: center;
+  margin-top: 8px;
+  color: $TextSubtler;
+  font-size: 14px;
+}
+.works__outline-right{
+  width: 50%;
+  text-align: center;
+  @include sp{
+    width: 100%;
+  }
+}
+.works__outline-ui{
+  width: 280px;
+  height: auto;
+  @include sp{
+    width: 240px;
+  }
+}
+.works__sec-process{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  @include tab{
+    gap: 32px;
+  }
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
+.works__process-ttl{
+  font-size: 20px;
+  margin-bottom: 12px;
+  @include sp{
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+}
+.works__process-body{
+  @include sp{
+    font-size: 14px;
+  }
+}
+.works__process-body + .works__process-body{
+  margin-top: 16px;
+  @include sp{
+    margin-bottom: 14px;
+  }
+}
+
+// footer
+.footer{
+  background-color: $BgPrimaryDef;
+  padding: 48px;
+  @include sp{
+    padding: 24px;
+  }
+}
+.footer__nav{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 24px;
+
+}
+.footer__nav-list{
+  display: flex;
+  gap: 24px;
+  @include sp{
+    flex-direction: column;
+  }
+  a{
+    color: $TextInverse;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+    &:hover{
+      border-bottom: 1px solid $BorderSubtle;
+    }
+  }
+}
+.footer__copyright{
+  text-align: center;
+  color: $TextSubtle;
+  @include sp{
+    font-size: 14px;
+  }
+}
+
+// animation
+.fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}

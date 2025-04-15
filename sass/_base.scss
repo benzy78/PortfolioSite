@@ -16,15 +16,16 @@ body {
 }
 
 body {
-	font-family: $ff-gothic;
+	font-family: $ff-mincho;
 	font-size: $fz-base;
 	font-weight: $fw-base;
-	color: $MainColor;
+	color: $TextDef;
 	line-height: $lh-base;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: $BaseColor1;
 	overflow-x: hidden;
+	letter-spacing: 0.02em;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -54,6 +55,9 @@ a:link,a:visited,a:hover,a:active{
 
 
 
+li{
+	list-style: none;
+}
 
 table {
 	border-collapse: collapse;
