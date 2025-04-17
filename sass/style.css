@@ -800,10 +800,10 @@ select:focus {
 }
 
 .works__btn-anno {
-  text-align: center;
   margin-top: 8px;
   color: #808080;
   font-size: 14px;
+  text-align: left;
 }
 
 .works__outline-right {
