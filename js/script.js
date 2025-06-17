@@ -50,3 +50,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+$(function () {
+  $('.animate-text').each(function () {
+    const text = $(this).text();
+    $(this).empty();
+    $.each(text.split(''), function (i, char) {
+      const delay = i * 100;
+      const span = $('<span>')
+        .addClass('char')
+        .html(char === ' ' ? '&nbsp;' : char)
+        .css('animation-delay', delay + 'ms');
+      $(this).append(span);
+    }.bind(this));
+  });
+});
+
+// window.addEventListener('load', function () {
+//   const bg = document.querySelector('.mv');
+//   bg.classList.add('animate');
+// });

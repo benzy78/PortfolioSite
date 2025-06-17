@@ -1,5 +1,6 @@
 // header
 .header{
+  display: none;
   padding:24px;
   background-color: $BgPrimaryDef;
   color: $TextInverse;
@@ -8,6 +9,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
   @include tab{
     padding: 24px 0 24px;
   }
@@ -239,31 +241,62 @@
 */
 // mv
 .mv{
-  background-color: $BgPrimaryDef;
-  padding: 120px 0;
+  background-image: url(../images/mv_bgi.png);
+  background-size: cover;
+  font-family: 'Scope One';
+  // opacity: 0;
+  // transform: translateY(20px);
+  @include sp{
+    background-position: top;
+  }
+}
+
+// .mv.animate{
+//   animation: bgFadeIn 1.2s ease-out forwards;
+//   animation-delay: 0.5s;
+// }
+
+// @keyframes bgFadeIn {
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+
+.mv__inner{
+  background-color: rgba(26,26,26,0.5);
+  padding: 240px 0;
   @include tab{
-    padding: 90px 0;
+    padding: 160px 0;
   }
   @include sp{
-    padding: 90px 0 64px;
+    padding: 120px 0;
   }
 }
 .mv__ttl{
-  font-size: 48px;
+  font-size: 64px;
   line-height: 1.5;
-  color: $TextInverse;
-  text-align: center;
-  margin-bottom: 16px;
+  color: #f0f0f0;
+  margin-bottom: 48px;
+  font-weight: normal;
   @include tab{
     font-size: 36px;
   }
 }
 .mv__body{
-  font-size: 24px;
-  color: $TextSubtle;
-  text-align: center;
-  @include tab{
-    font-size: 16px;
+  color: #f0f0f0;
+}
+.mv__body-job{
+  font-size: 28px;
+  margin-bottom: 16px;
+  @include sp{
+    font-size: 20px;
+  }
+}
+.mv__body-name{
+  font-size: 28px;
+  @include sp{
+    font-size: 20px;
   }
 }
 
@@ -280,80 +313,58 @@
   }
 }
 .intro__cont{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap:48px;
   @include tab{
     gap: 24px;
   }
   @include sp{
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-}
-.intro__left{
-  width: 50%;
-  @include sp{
-    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
 }
 .intro__ttl{
   font-size: 48px;
   line-height: 1.5;
   margin-bottom: 24px;
+  font-family: 'Scope One';
+  font-weight: bold;
   @include tab{
     font-size: 36px;
     margin-bottom: 12px;
   }
   @include sp{
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 .intro__name{
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 16px;
-  color: $TextSubtler;
+  color: $TextSubtle;
+  font-weight: normal;
   @include sp{
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .intro__skill{
-  padding:16px 24px;
-  background-color: $BgDef;
-  border-radius: 4px;
-  @include sp{
-    padding: 16px;
-  }
+  font-size: 20px;
 }
 .intro__body{
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+  color: $TextSubtle;
+  font-size: 16px;
+  line-height: 2;
   @include sp{
     font-size: 14px;
   }
 }
-.intro__right{
-  width: 50%;
-  @include sp{
-    width: 100%;
-  }
-}
-.intro__user-icon{
-  margin: 0 auto 24px;
-  text-align: center;
-  @include sp{
-    display: none;
-  }
-}
-.icon--user{
-  width: 320px;
-  height: auto;
-  border-radius: 100%;
-  margin: 0 auto;
-}
 .intro__skill-ttl{
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 8px;
+  font-weight: normal;
   @include sp{
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .intro__skill-list{
@@ -371,155 +382,77 @@
 
 // works
 .works{
-  padding: 48px;
+  padding: 48px 0 64px;
   background-color: $BgDef;
   @include tab{
-    padding: 24px;
-  }
-  @include sp{
-    padding: 24px 0;
+    padding: 24px 0 48px;
   }
 }
 .works__ttl{
   font-size: 48px;
+  font-family: 'Scope One';
   margin-bottom: 24px;
   @include tab{
     font-size: 36px;
     margin-bottom: 12px;
   }
   @include sp{
-    font-size: 24px;
-  }
-}
-.works__section{
-  margin-bottom: 48px;
-}
-.works__sec-outline{
-  display: flex;
-  margin-bottom: 32px;
-  gap: 48px;
-  @include tab{
-    gap: 24px;
-    margin-bottom: 24px;
-  }
-  @include sp{
-    flex-wrap: wrap;
-  }
-}
-.works__outline-left{
-  width: 50%;
-  @include sp{
-    width: 100%;
-  }
-}
-.works__outline-ttl{
-  font-size: 32px;
-  margin-bottom: 8px;
-  @include tab{
     font-size: 28px;
   }
+}
+
+.works__card-cont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  @include tab{
+    gap: 48px;
+  }
   @include sp{
-    font-size: 20px;
-  }
-  .works__outline-number{
-    font-size: 72px;
-    color: $TextAccent;
-    margin-right: 8px;
-    line-height: 1;
-    @include tab{
-      font-size: 48px;
-    }
-    @include sp{
-      font-size: 32px;
-    }
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-.works__outline-text{
-  margin-bottom: 24px;
-  @include sp{
-    font-size: 14px;
-  }
-}
-.works__outline-info{
-  padding: 16px 24px;
-  background-color: $BgSubtle;
-  margin-bottom: 24px;
-  .works__info-item{
-    @include sp{
-      font-size: 14px;
-    }
-  }
-}
-.works__btn{
-  display: block;
-  text-align: center;
-  font-weight: 700;
-  width: 100%;
-  padding: 16px 24px;
-  margin: 0 auto;
-  color: $TextInverse;
-  background-color: $BgPrimaryDef;
+.works__card{
+  background: $BgDef;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
-  @include sp{
-    padding: 16px;
-  }
   &:hover{
-    opacity: 0.9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px); 
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
   }
 }
-.works__btn-anno{
-  margin-top: 8px;
-  color: $TextSubtler;
-  font-size: 14px;
-  text-align: left;
-}
-.works__outline-right{
-  width: 50%;
-  text-align: center;
-  @include sp{
+.card__img-cont{
+  img{
     width: 100%;
   }
 }
-.works__outline-ui{
-  width: 280px;
-  height: auto;
+.card__text{
+  padding: 16px 24px 24px;
   @include sp{
-    width: 240px;
+    padding: 8px 16px 16px;
   }
 }
-.works__sec-process{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
-  @include tab{
-    gap: 32px;
-  }
-  @include sp{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-  }
-}
-.works__process-ttl{
+.card__ttl{
   font-size: 20px;
-  margin-bottom: 12px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  color: $TextDef;
   @include sp{
     font-size: 16px;
-    margin-bottom: 4px;
   }
 }
-.works__process-body{
+.card__desc{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  color: $TextSubtle;
   @include sp{
     font-size: 14px;
   }
 }
-.works__process-body + .works__process-body{
-  margin-top: 16px;
-  @include sp{
-    margin-bottom: 14px;
-  }
-}
+
 
 // footer
 .footer{
@@ -544,6 +477,7 @@
   a{
     color: $TextInverse;
     padding-bottom: 8px;
+    padding: 16px;
     transition: all 0.3s ease;
     &:hover{
       border-bottom: 1px solid $BorderSubtle;
@@ -552,7 +486,7 @@
 }
 .footer__copyright{
   text-align: center;
-  color: $TextSubtle;
+  color: $TextInverse;
   @include sp{
     font-size: 14px;
   }
@@ -562,7 +496,7 @@
 .fadein {
   opacity: 0; 
   transform: translateY(50px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .fadein.show{
@@ -579,4 +513,18 @@
 .scroll-fadein.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+.char {
+  opacity: 0;
+  transform: translateY(10px);
+  display: inline-block;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

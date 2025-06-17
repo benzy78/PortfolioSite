@@ -1,10 +1,10 @@
 .container{
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 40px;
   @include sp{
-    padding: 0 24px;
+    padding: 0 20px;
   }
 }
 
@@ -15,4 +15,38 @@
 
 .anno{
   color: $TextSubtler;
+}
+
+.cate-item-01{
+  background: #eee;
+  color: #1a1a1a;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px;
+  line-height: 1;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-family: 'Inter';
+  @include sp{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+.cate-item-02{
+  background: #fff;
+  border: 1px solid #aaa;
+  color: #1a1a1a;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px;
+  line-height: 1;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-family: 'Inter';
+  @include sp{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
