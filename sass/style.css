@@ -258,6 +258,8 @@ select:focus {
   .cate-item-01 {
     font-size: 12px;
     padding: 8px 12px;
+    margin-right: 4px;
+    margin-bottom: 4px;
   }
 }
 
@@ -278,6 +280,8 @@ select:focus {
   .cate-item-02 {
     font-size: 12px;
     padding: 8px 12px;
+    margin-right: 4px;
+    margin-bottom: 4px;
   }
 }
 
@@ -637,11 +641,6 @@ select:focus {
     margin-bottom: 12px;
   }
 }
-@media (max-width: 768px) {
-  .intro__ttl {
-    font-size: 28px;
-  }
-}
 
 .intro__name {
   font-size: 24px;
@@ -714,11 +713,6 @@ select:focus {
   .works__ttl {
     font-size: 36px;
     margin-bottom: 12px;
-  }
-}
-@media (max-width: 768px) {
-  .works__ttl {
-    font-size: 28px;
   }
 }
 
