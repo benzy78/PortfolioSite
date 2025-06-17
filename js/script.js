@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".header__nav");
-  const navItems = document.querySelectorAll(".header__nav-links a"); 
+  // const menuToggle = document.querySelector(".menu-toggle");
+  // const navLinks = document.querySelector(".header__nav");
+  // const navItems = document.querySelectorAll(".header__nav-links a"); 
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+  // menuToggle.addEventListener("click", () => {
+  //   navLinks.classList.toggle("active");
+  // });
 
-  navItems.forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active"); // メニューを閉じる
-    });
-  });
+  // navItems.forEach((link) => {
+  //   link.addEventListener("click", () => {
+  //     navLinks.classList.remove("active"); // メニューを閉じる
+  //   });
+  // });
 
 
   // 最上部のアニメーション
