@@ -291,6 +291,9 @@
   padding: 80px 40px;
   margin: 0 auto;
   background-color: #fff;
+  @include sp{
+    padding: 40px 20px;
+  }
 }
 .art__hed1{
   font-size: 40px;
@@ -299,6 +302,9 @@
   font-weight: 600;
   margin-bottom: 16px;
   color: $TextDef;
+  @include sp{
+    font-size: 20px;
+  }
 }
 .art__p{
   font-size: 16px;
@@ -306,6 +312,9 @@
   line-height: 2;
   margin-bottom: 16px;
   color: $TextDef;
+  @include sp{
+    font-size: 14px;
+  }
 }
 .art__cate{
   margin-bottom: 16px;
@@ -357,6 +366,9 @@
   border-bottom: 1px solid #ddd;
   margin-bottom: 16px;
   color: $TextDef;
+  @include sp{
+    font-size: 20px;
+  }
 }
 .art__hed3{
   font-size: 20px;
@@ -364,6 +376,9 @@
   line-height: 1.5;
   margin-bottom: 16px;
   color: $TextDef;
+  @include sp{
+    font-size: 16px;
+  }
 }
 .art__list{
   margin-bottom: 24px;
@@ -372,6 +387,9 @@
     font-size: 16px;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    @include sp{
+    font-size: 14px;
+  }
     &::before{
       content: "•";
       margin-right: 8px;
@@ -383,6 +401,9 @@
   color:#0C66E4;
   transition: all 0.3s;
   border-bottom: 1px solid #0C66E4;
+  @include sp{
+    font-size: 14px;
+  }
   img{
     width: 20px;
     vertical-align: sub;
@@ -418,6 +439,9 @@
   width: 60%;
   padding: 24px;
   background-color: #fff;
+  @include sp{
+    padding: 16px;
+  }
 }
 .art__cv-ttl{
   font-size: 20px;
@@ -425,6 +449,9 @@
   letter-spacing: 0.02em;
   color: $TextDef;
   font-weight: bold;
+  @include sp{
+    font-size: 16px;
+  }
 }
 .mb32{
   margin-bottom: 32px;
