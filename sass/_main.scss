@@ -420,8 +420,9 @@
 }
 .art__cv{
   display: flex;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 32px;
   &:hover{
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
   }
@@ -449,9 +450,21 @@
   letter-spacing: 0.02em;
   color: $TextDef;
   font-weight: bold;
+  margin-bottom: 16px;
   @include sp{
     font-size: 16px;
   }
+}
+.art__cv-desc{
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: $TextSubtler;
+}
+.open-icon{
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 .mb32{
   margin-bottom: 32px;

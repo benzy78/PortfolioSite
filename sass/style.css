@@ -766,8 +766,9 @@ select:focus {
 
 .art__cv {
   display: flex;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 32px;
 }
 .art__cv:hover {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
@@ -800,11 +801,25 @@ select:focus {
   letter-spacing: 0.02em;
   color: #1a1a1a;
   font-weight: bold;
+  margin-bottom: 16px;
 }
 @media (max-width: 768px) {
   .art__cv-ttl {
     font-size: 16px;
   }
+}
+
+.art__cv-desc {
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  color: #808080;
+}
+
+.open-icon {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .mb32 {
