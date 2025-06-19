@@ -773,10 +773,20 @@ select:focus {
 .art__cv:hover {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 768px) {
+  .art__cv {
+    flex-direction: column;
+  }
+}
 
 .art__cv-img {
   width: 40%;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .art__cv-img {
+    width: 100%;
+  }
 }
 .art__cv-img img {
   width: 100%;
@@ -792,6 +802,7 @@ select:focus {
 @media (max-width: 768px) {
   .art__cv-text {
     padding: 16px;
+    width: 100%;
   }
 }
 
@@ -820,6 +831,11 @@ select:focus {
   width: 24px;
   margin-right: 8px;
   vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .open-icon {
+    width: 20px;
+  }
 }
 
 .mb32 {
