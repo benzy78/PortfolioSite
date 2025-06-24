@@ -420,6 +420,10 @@ select:focus {
   color: #808080;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .intro__skill-ttl {
   font-size: 24px;
   margin-bottom: 8px;
