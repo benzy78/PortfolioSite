@@ -285,6 +285,11 @@ select:focus {
   }
 }
 
+.marker {
+  font-weight: bold;
+  background: linear-gradient(transparent 60%, rgba(196, 166, 113, 0.4) 60%);
+}
+
 .mv {
   background-image: url(../images/mv_bgi.png);
   background-size: cover;
