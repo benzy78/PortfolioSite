@@ -403,6 +403,20 @@
     }
   }
 }
+.art__orderlist{
+  margin-bottom: 24px;
+  margin-left: 28px;
+  li{
+    list-style: decimal;
+    color: $TextDef;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    @include sp{
+    font-size: 14px;
+    }
+  }
+}
 .art__link{
   color:#0C66E4;
   transition: all 0.3s;
@@ -482,6 +496,55 @@
     width: 20px;
   }
 }
+
+.column2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 16px;
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.box{
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.box-hed{
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.box-list{
+  li{
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    &::before{
+      content: "•";
+      margin-right: 8px;
+      color: #1a1a1a;
+    }
+  }
+}
+.box-p{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
 .mb32{
   margin-bottom: 32px;
+}
+
+.figma-prototype{
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.anno{
+  color: $TextSubtler;
 }

@@ -238,10 +238,6 @@ select:focus {
   margin-right: 8px;
 }
 
-.anno {
-  color: #808080;
-}
-
 .cate-item-01 {
   background: #eee;
   color: #1a1a1a;
@@ -283,6 +279,10 @@ select:focus {
     margin-right: 4px;
     margin-bottom: 4px;
   }
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .marker {
@@ -752,6 +752,23 @@ select:focus {
   color: #1a1a1a;
 }
 
+.art__orderlist {
+  margin-bottom: 24px;
+  margin-left: 28px;
+}
+.art__orderlist li {
+  list-style: decimal;
+  color: #1a1a1a;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .art__orderlist li {
+    font-size: 14px;
+  }
+}
+
 .art__link {
   color: #0C66E4;
   transition: all 0.3s;
@@ -851,6 +868,58 @@ select:focus {
   }
 }
 
+.column2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .column2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.box {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.box-hed {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.box-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.box-list li::before {
+  content: "•";
+  margin-right: 8px;
+  color: #1a1a1a;
+}
+
+.box-p {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
 .mb32 {
   margin-bottom: 32px;
+}
+
+.figma-prototype {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.anno {
+  color: #808080;
 }/*# sourceMappingURL=style.css.map */
