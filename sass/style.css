@@ -498,7 +498,7 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 .works__card:hover {
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 12px 2px rgba(0, 0, 0, 0.3);
 }
 
 .card__img-cont img {
@@ -801,7 +801,8 @@ select:focus {
   margin-bottom: 32px;
 }
 .art__cv:hover {
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #999;
 }
 @media (max-width: 768px) {
   .art__cv {
