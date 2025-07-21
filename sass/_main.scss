@@ -1,3 +1,56 @@
+// header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:$BgDef ;
+  border-bottom: 1px solid $BorderSubtler;
+  padding: 8px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  @include tab{
+    padding-left: 20px;
+  }
+  @include sp{
+    padding-left: 8px;
+  }
+}
+
+.header__cont{
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.header__back {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: $TextSubtle;
+  font-weight: bold;
+  font-family: $ff-base;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  padding: 12px 8px;
+  transition: all 0.3s;
+  border-radius: 12px;
+  @include sp{
+    padding: 8px;
+  }
+  &:hover{
+    background-color: $BgSubtle;
+  }
+  .header__icon{
+    width: 20px;
+    height: auto;
+    display: block;
+    margin-right: 4px;
+  }
+}
+
+
+
 // mv
 .mv{
   background-image: url(../images/mv_bgi.png);
@@ -59,7 +112,7 @@
 
 // introduction
 .introduction{
-  padding: 48px 24px;
+  padding: 48px 0;
   background-color: $BgSubtle;
   @include tab{
     padding: 24px 0;
@@ -298,7 +351,7 @@
   margin: 0 auto;
   background-color: #fff;
   @include sp{
-    padding: 40px 20px;
+    padding: 64px 20px 40px;
   }
 }
 .art__hed1{

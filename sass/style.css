@@ -225,7 +225,12 @@ select:focus {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px;
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 40px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -290,6 +295,62 @@ select:focus {
   background: linear-gradient(transparent 60%, rgba(196, 166, 113, 0.4) 60%);
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 992px) {
+  .header {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding-left: 8px;
+  }
+}
+
+.header__cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.header__back {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4c4c4c;
+  font-weight: bold;
+  font-family: "Inter", "Meiryo UI", "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", roboto, sans-serif;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  padding: 12px 8px;
+  transition: all 0.3s;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .header__back {
+    padding: 8px;
+  }
+}
+.header__back:hover {
+  background-color: #f2f2f2;
+}
+.header__back .header__icon {
+  width: 20px;
+  height: auto;
+  display: block;
+  margin-right: 4px;
+}
+
 .mv {
   background-image: url(../images/mv_bgi.png);
   background-size: cover;
@@ -348,7 +409,7 @@ select:focus {
 }
 
 .introduction {
-  padding: 48px 24px;
+  padding: 48px 0;
   background-color: #f2f2f2;
 }
 @media (max-width: 992px) {
@@ -396,7 +457,7 @@ select:focus {
 .intro__name {
   font-size: 24px;
   margin-bottom: 16px;
-  color: #333;
+  color: #4c4c4c;
   font-weight: normal;
 }
 @media (max-width: 768px) {
@@ -411,7 +472,7 @@ select:focus {
 
 .intro__body {
   margin-bottom: 8px;
-  color: #333;
+  color: #4c4c4c;
   font-size: 16px;
   line-height: 2;
 }
@@ -532,7 +593,7 @@ select:focus {
   line-height: 1.7;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
-  color: #333;
+  color: #4c4c4c;
 }
 @media (max-width: 768px) {
   .card__desc {
@@ -634,7 +695,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .article__cont {
-    padding: 40px 20px;
+    padding: 64px 20px 40px;
   }
 }
 
