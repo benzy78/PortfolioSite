@@ -269,7 +269,7 @@
   background-color: $BgPrimaryDef;
   padding: 48px;
   @include sp{
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 .footer__nav{
@@ -277,23 +277,30 @@
   justify-content: end;
   margin-bottom: 24px;
   @include sp{
-    justify-content: center;
+    justify-content: start;
+    margin-bottom: 16px;
   }
 }
 .footer__nav-list{
   display: flex;
   gap: 24px;
   @include sp{
-    // flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
   }
   a{
     color: $TextInverse;
     padding-bottom: 8px;
-    padding: 16px;
+    padding: 12px;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap:8px;
     &:hover{
-      border-bottom: 1px solid $BorderSubtle;
+      opacity: 0.7;
+    }
+    img{
+      width: 24px;
     }
   }
 }

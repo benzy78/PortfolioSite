@@ -607,7 +607,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .footer {
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 
@@ -618,7 +618,8 @@ select:focus {
 }
 @media (max-width: 768px) {
   .footer__nav {
-    justify-content: center;
+    justify-content: start;
+    margin-bottom: 16px;
   }
 }
 
@@ -628,17 +629,24 @@ select:focus {
 }
 @media (max-width: 768px) {
   .footer__nav-list {
+    flex-direction: column;
     justify-content: space-between;
   }
 }
 .footer__nav-list a {
   color: #fff;
   padding-bottom: 8px;
-  padding: 16px;
+  padding: 12px;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .footer__nav-list a:hover {
-  border-bottom: 1px solid #808080;
+  opacity: 0.7;
+}
+.footer__nav-list a img {
+  width: 24px;
 }
 
 .footer__copyright {
