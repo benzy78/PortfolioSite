@@ -227,8 +227,10 @@
   background: $BgDef;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
+  border: 1px solid $BorderSubtler;
   &:hover{
     box-shadow: 0 8px 12px 2px rgba(0,0,0,0.3);
+    border: 1px solid $BorderSubtle;
   }
 }
 .card__img-cont{
@@ -352,7 +354,7 @@
 
 // 下層ページ
 .article__cont{
-  max-width: 880px;
+  max-width: 960px;
   width: 100%;
   padding: 80px 40px;
   margin: 0 auto;
@@ -608,4 +610,56 @@
 
 .anno{
   color: $TextSubtler;
+}
+
+.art__memo{
+  padding: 32px 40px;
+  border: 1px solid $BorderSubtler;
+  background-color: $BgSubtle;
+  margin-bottom: 24px;
+  @include sp{
+    padding: 20px;
+  }
+}
+.art__memo-head2{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.art__memo-head3{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  img{
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
+}
+.art__memo-container{
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.art__memo-item{
+}
+.art__memo-p{
+  font-size: 14px;
+}
+.art__memo-list{
+  li{
+    font-size: 14px;
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 8px;
+    &::before{
+      content: "・";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
 }
