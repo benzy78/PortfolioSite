@@ -119,7 +119,9 @@
 }
 .header__list{
   li{
-    // margin-bottom: 8px;
+    @include sp{
+      margin-bottom: 8px;
+    }
     a{
       color: $TextDef;
       padding: 12px;

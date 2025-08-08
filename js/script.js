@@ -45,20 +45,52 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 各セクションのアニメーション
-  $(document).ready(function() {
-    // スクロール時に処理を実行
-    $(".maincontents").on("scroll", function() {
-      $(".scroll-fadein").each(function() {
-        // 要素の位置を取得
-        const elementTop = $(this).offset().top;
-        const windowBottom = $(window).scrollTop() + $(window).height();
-        // 要素が画面内に入ったらクラスを追加
-        if (elementTop < windowBottom - 50) { // 50pxのマージンを持たせる
-          $(this).addClass("show");
-        }
-      });
-    });
-  });
-  
+  // $(document).ready(function() {
+  //   // スクロール時に処理を実行
+  //   $(".maincontents").on("scroll", function() {
+  //     $(".scroll-fadein").each(function() {
+  //       // 要素の位置を取得
+  //       const elementTop = $(this).offset().top;
+  //       const windowBottom = $(".maincontents").scrollTop() + $(".maincontents").height();
+  //       // 要素が画面内に入ったらクラスを追加
+  //       if (elementTop < windowBottom - 50) { // 50pxのマージンを持たせる
+  //         $(this).addClass("show");
+  //       }
+  //     });
+  //   });
+  // });
 
+});
+
+
+$(document).ready(function () {
+  function checkFadeIn() {
+    $(".scroll-fadein").each(function () {
+      const rect = this.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 80) {
+        $(this).addClass("show");
+      }
+    });
+  }
+
+  function bindScrollTarget() {
+    const isSP = window.innerWidth < 768;
+
+    // イベントを一旦全解除
+    $(window).off("scroll", checkFadeIn);
+    $(".maincontents").off("scroll", checkFadeIn);
+
+    if (isSP) {
+      // SP表示：windowがスクロール対象
+      $(window).on("scroll", checkFadeIn);
+    } else {
+      // PC表示：mainがスクロール対象
+      $(".maincontents").on("scroll", checkFadeIn);
+    }
+
+    checkFadeIn(); // 初期表示でも1回実行
+  }
+
+  bindScrollTarget();
+  $(window).on("resize", bindScrollTarget); // 画面幅変更にも対応
 });
