@@ -17,19 +17,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
         type="text/css" media="all">
     <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__cont">
-          <a href="../index.html" class="header__back"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
-        </div>
-      </header>
+      <div class="layout">
+        <header class="header">
+          <div class="header__cont">
+            <div class="header__logo">
+              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio"></a>
+            </div>
+            <div class="header__nav">
+              <button class="menu-toggle" aria-label="Toggle navigation">
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <!-- <span class="menu-label">Menu</span> -->
+              </button>
+
+              <div class="header__group">
+                <h3 class="header__head3">Works</h3>
+                <ul class="header__list">
+                  <li><a href="./soapp.html">SmartOrdee App</a></li>
+                  <li><a href="./hd.html">Hikora Design</a></li>
+                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
+                  <li><a href="./ba.html">Boulangerie Amande</a></li>
+                  <li><a href="./eh.html">EcoHybe</a></li>
+                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_b.svg">Design Notes</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">Others</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#about">About</a></li>
+                  <li><a href="https://note.com/aganir_seshisa"><img src="../images/icon_open_b.svg">note</a></li>
+                  <li><a href="https://github.com/benzy78"><img src="../images/icon_open_b.svg">Github</a></li>
+                </ul>
+              </div>
+              <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
+              </div>
+            </div>
+          </div>
+        </header>
          <main class="maincontents">
             <div class="article__cont">
               <article class="article">
@@ -45,7 +77,7 @@
                 </ul>
                 <div class="art__eyecatch">
                   <a href="https://benzy78.github.io/boulangerie-amande/index.html" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/BA_UI.jpg" alt="" class="art__eyecatch-img">
+                    <img src="../images/BA_UI.jpg" alt="Boulangerie Amande UI" class="art__eyecatch-img">
                     <p class="art__eyecatch-label"><img src="../images/icon_open_w.svg" alt=""> <span>店舗サイトへ</span></p>
                   </a>
                 </div>
@@ -58,37 +90,43 @@
                   <li>制作期間：3週間</li>
                   <li>リンク：<a href="https://benzy78.github.io/boulangerie-amande/index.html" class="art__link" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_bl.svg" alt=""> 店舗サイトはこちら</a></li>
                 </ul>
-                <h2 class="art__hed2">サイト制作の目的（架空の設定）</h2>
-                <ul class="art__list">
-                  <li>新規開業にあたって、店舗のブランドイメージを伝えるためのWebサイトが欲しい。</li>
-                  <li>集客の主軸はSNSで行うので、Webサイトでは店舗の顔として、信頼感/店舗の雰囲気/世界観/お店の基本的な情報を伝えることを重視したい。</li>
-                </ul>
-                <h2 class="art__hed2">ターゲット層の設定</h2>
-                <ul class="art__list">
-                  <li>30〜50代女性</li>
-                  <li>オシャレなパンやカフェが好き</li>
-                  <li>普段からグルメ情報を頻繁にチェックする層</li>
-                  <li>食材の質や無添加、オーガニックを好む</li>
-                </ul>
-                <h2 class="art__hed2">競合サイトの分析</h2>
-                <h3 class="art__hed3">競合サイトの強み</h3>
-                <ul class="art__list">
-                  <li>洗練された印象を与える店舗サイトのデザイン</li>
-                  <li>ブランドや訴求ポイントが明確</li>
-                  <li>ECサイトや予約システムが整備されている</li>
-                </ul>
-                <h3 class="art__hed3">競合サイトの弱み</h3>
-                <ul class="art__list">
-                  <li>過剰なアニメーションや演出で視認性が悪い、表示が遅い、操作が直感的でない</li>
-                  <li>ナビゲーション等に英語表記が多く、どこになんの情報があるのかよくわからない</li>
-                  <li>ビジュアルに力を入れすぎて、肝心の情報（アクセス、価格、商品一覧など）が埋もれてしまっている</li>
-                </ul>
-                <h3 class="art__hed3">差別化ポイント</h3>
-                <ul class="art__list">
-                  <li>アニメーションを必要最小限に</li>
-                  <li>ブランドイメージの確立と、情報構造整理の両立</li>
-                  <li>英語表記には日本語ラベルを付与してわかりやすく</li>
-                </ul>
+
+                <h2 class="art__hed2">設計方針</h2>
+                <div class="art__memo">
+                  <div class="art__memo-container">
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">店舗概要</h3>
+                      <p class="art__memo-p">
+                        「Boulangerie Amande（ブーランジェリー・アマンド）」は、東京都渋谷区に店舗を構える高級志向のフレンチベーカリーです。
+                        厳選された素材とフランスの伝統的な製法にこだわり、職人の手によって一つひとつ丁寧に焼き上げられたパンを提供しています。
+                        店舗はJR渋谷駅から徒歩5分の場所にあり、朝7時半から夜8時まで営業（火曜定休）しています。
+                      </p>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">サイト制作の目的</h3>
+                      <ul class="art__memo-list">
+                        <li>新規開業にあたって、店舗のブランドイメージを伝えるためのWebサイトが欲しい。</li>
+                        <li>集客の主軸はSNSで行うので、Webサイトでは店舗の顔として、信頼感/店舗の雰囲気/世界観/お店の基本的な情報を伝えることを重視したい。</li>
+                      </ul>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">ターゲット層</h3>
+                      <ul class="art__memo-list">
+                        <li>30〜50代女性</li>
+                        <li>オシャレなパンやカフェが好き</li>
+                        <li>普段からグルメ情報を頻繁にチェックする層</li>
+                        <li>食材の質や無添加、オーガニックを好む</li>
+                      </ul>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">デザインコンセプト</h3>
+                      <p class="art__memo-p">
+                        このサイトでは、「職人の技と素材のこだわりによって生まれる上質なベーカリー体験」を、静かに訴えるビジュアルと洗練されたUIで表現しました。温かみのある写真とニュートラルトーンの配色により高級感を演出し、余白や整ったタイポグラフィによって情報の読みやすさにも配慮しています。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
                 <h2 class="art__hed2">情報設計</h2>
                 <p class="art__p">
                   競合サイトの分析結果を参考にしながら、今回のサイト制作の目的を考慮して、ユーザーが店舗や商品の魅力を段階的に理解できるように、Topページの構成は以下のようにしました。
@@ -101,17 +139,9 @@
                   <li>お知らせ：新商品や臨時休業日を載せ、関心を持ってもらう</li>
                   <li>お問い合わせ</li>
                 </ul>
-                <div class="art__img"><img src="../images/BA_Sitemap.png" alt="サイトマップ画像"></div>
+                
 
-                <h2 class="art__hed2">ロゴデザイン</h2>
-                <div class="art__img"><img src="../images/BA_LogoDescription.svg" alt="ロゴデザイン"></div>
-                <p class="art__p mb32">
-                  本ロゴは「上質で伝統あるフレンチベーカリー」というブランドコンセプトを視覚化することを目的に設計しました。
-                  安定感のあるサンセリフ体を中心に、補助的な細身のフォントを組み合わせることで、視認性と上品さのバランスを意識しています。
-                  左右のローレルは職人技や伝統の象徴として配置し、構図はシンメトリーにすることで信頼感と洗練された印象を与えるようにしました。
-                </p>
-
-                <h2 class="art__hed2">UI設計</h2>
+                <h2 class="art__hed2">ビジュアル設計</h2>
                 <h3 class="art__hed3">配色</h3>
                 <p class="art__p">
                   全体の配色は、高級感と洗練された印象を与えることを意識し、メインカラーにブラック（#1a1a1a）を採用しています。
@@ -125,18 +155,6 @@
                   視認性を保ちつつ、ブランドイメージに合った落ち着いたトーンを表現しています。
                   フォントサイズは16pxを基準に、基本的には4の倍数単位で階層的に設計しています。
                   また、読みやすさを考慮し、行間（line-height）は1.5〜1.75の範囲で調整し、文字間隔（letter-spacing）は0.02emで細かく最適化しています。
-                </p>
-
-                <h3 class="art__h3">レイアウト</h3>
-                <p class="art__p mb32">
-                  本サイトは、Boulangerie Amande のブランドイメージを表現するため、余白を活かした1カラムのシンプルなレイアウトを採用しています。
-                  全体を縦スクロールで構成し、ユーザーが自然にページを読み進められるよう設計しました。
-
-                  ファーストビューでは、印象的なビジュアルとブランド名を大きく配置し、店舗の世界観を強く打ち出しています。
-                  その後、ブランドコンセプトやこだわり、商品紹介、店舗情報へと情報を段階的に配置することで、ユーザーがストーリーを追うようにブランド理解を深められる導線としています。
-
-                  <span class="marker">デザイン面では、商品の写真を引き立たせるために背景をシンプルに保ちつつ、タイポグラフィやカラーで高級感や温かみを演出。</span>
-                  また、要素間の余白を多く取り、視覚的な圧迫感を減らし、店舗の上質で落ち着いた雰囲気を感じさせるレイアウトに仕上げています。
                 </p>
 
                 <h2 class="art__hed2">実装・インタラクション等に関して</h2>
@@ -153,8 +171,20 @@
                   <span class="marker">視覚的なフィードバックを通じて操作性を高めるとともに、UIのアクセシビリティ向上にも寄与</span>しています。
                 </p>
 
+                <h2 class="art__hed2">アウトプット</h2>
+                <h3 class="art__hed3">ロゴ</h3>
+                <div class="art__img"><img src="../images/BA_LogoDescription.svg" alt="ロゴデザイン"></div>
+                <p class="art__p mb32">
+                  本ロゴは「上質で伝統あるフレンチベーカリー」というブランドコンセプトを視覚化することを目的に設計しました。
+                  安定感のあるサンセリフ体を中心に、補助的な細身のフォントを組み合わせることで、視認性と上品さのバランスを意識しています。
+                  左右のローレルは職人技や伝統の象徴として配置し、構図はシンメトリーにすることで信頼感と洗練された印象を与えるようにしました。
+                </p>
+
+                <h3 class="art__hed3">Webデザイン</h3>
+                <div class="art__img"><img src="../images/BA_Capture.jpg" alt="Boulangerie Amande UI"></div>
+
                 <a class="art__cv" href="https://benzy78.github.io/boulangerie-amande/index.html"  target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/BA_UI.jpg" alt=""></div>
+                  <div class="art__cv-img"><img src="../images/BA_UI.jpg" alt="Boulangerie Amande UI"></div>
                   <div class="art__cv-text">
                     <p class="art__cv-ttl"><img src="../images/icon_open_b.svg" alt="" class="open-icon">Boulangerie Amandeの店舗サイトはこちら</p>
                     <p class="art__cv-desc">フランスのパン作りの芸術を提供する本格ベーカリー「Boulangerie Amande」</p>
@@ -162,19 +192,34 @@
                 </a>
               </article>
             </div>
-            
+            <footer class="footer">
+              <div class="container">
+                  <nav class="footer__nav">
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Works</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
+                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
+                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
+                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
+                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Design Notes</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Others</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#about">About</a></li>
+                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
+                              <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
+                          </ul>
+                      </div>
+                  </nav>
+                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+              </div>
+          </footer>
          </main>
-         <footer class="footer">
-            <div class="container">
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
-                        <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
-                    </ul>
-                </nav>
-                <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-            </div>
-         </footer>
+      </div>
     </div>
     <!--wrapper end-->
 

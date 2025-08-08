@@ -1,9 +1,9 @@
 .container{
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 80px;
-  @include tab{
+  // max-width: 1280px;
+  // margin: 0 auto;
+  padding: 0 64px;
+  @include tab-lg{
     padding: 0 40px;
   }
   @include sp{
@@ -19,10 +19,12 @@
 
 
 .cate-item-01{
-  background: #eee;
-  color: #1a1a1a;
-  border-radius: 8px;
+  background-color: $BgSubtler;
+  color: $TextDef;
+  // border: 1px solid $BorderSubtler;
+  // border-radius: 8px;
   font-size: 14px;
+  letter-spacing: 0.04em;
   padding: 12px;
   line-height: 1;
   margin-right: 8px;
@@ -37,10 +39,10 @@
   }
 }
 .cate-item-02{
-  background: #fff;
-  border: 1px solid #aaa;
-  color: #1a1a1a;
-  border-radius: 8px;
+  background: $BgDef;
+  border: 1px solid $BorderSubtle;
+  color: $TextDef;
+  // border-radius: 8px;
   font-size: 14px;
   padding: 12px;
   line-height: 1;

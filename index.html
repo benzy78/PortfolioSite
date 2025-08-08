@@ -13,7 +13,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- OGP -->
     <meta property="og:title" content="Portfolio | UI/UX Designer - Yuki Nishimura" />
-    <meta property="og:description" content="UI/UXデザイナーとしてのポートフォリオサイト。設計意図や制作過程まで一貫して紹介しています。" />
+    <meta property="og:description" content="UI/UXデザイナー Yuki Nishimuraのポートフォリオサイト。制作作品および、設計意図、制作過程を紹介しています。" />
     <meta property="og:image" content="https://benzy78.github.io/PortfolioSite/images/OGP_Portfolio.png" />
     <meta property="og:url" content="https://benzy78.github.io/PortfolioSite/index.html" />
     <meta property="og:type" content="website" />
@@ -24,92 +24,73 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
         type="text/css" media="all">
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
 
 </head>
 
 <body>
     <div class="wrapper">
-         <main class="maincontents">
-            <!-- mv -->
-            <section class="mv fadein">
-                <div class="mv__inner">
-                    <div class="container">
-                        <h1 class="mv__ttl animate-text">This is my design portfolio</h1>
-                        <div class="mv__body">
-                            <p class="mv__body-job animate-text">UI/UX Designer</p>
-                            <p class="mv__body-name animate-text">Yuki Nishimura</p>
-                        </div>
+        <div class="layout">
+            <header class="header fadein">
+                <div class="header__cont">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="./images/Portfolio_Logo.svg" alt="Portfolio"></a>
                     </div>
+                    <div class="header__nav">
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <!-- <span class="menu-label">Menu</span> -->
+                    </button>
+
+                    <div class="header__group">
+                        <h3 class="header__head3">Works</h3>
+                        <ul class="header__list">
+                        <li><a href="./html/soapp.html">SmartOrdee App</a></li>
+                        <li><a href="./html/hd.html">Hikora Design</a></li>
+                        <li><a href="./html/solp.html">SmartOrdee 紹介LP</a></li>
+                        <li><a href="./html/ba.html">Boulangerie Amande</a></li>
+                        <li><a href="./html/eh.html">EcoHybe</a></li>
+                        <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_b.svg">Design Notes</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__group">
+                        <h3 class="header__head3">Others</h3>
+                        <ul class="header__list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="https://note.com/aganir_seshisa"><img src="./images/icon_open_b.svg">note</a></li>
+                        <li><a href="https://github.com/benzy78"><img src="./images/icon_open_b.svg">Github</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="header__back">
+                        <a href="./index.html"><img class="header__icon" src="./images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
+                    </div> -->
+                    </div>
+                </div>
+            </header>
+            <main class="maincontents">
+            <!-- mv -->
+              <section class="mv fadein">
+                <div class="mv__container">
+                    <div class="mv__body">
+                        <h1 class="mv__ttl">UI/UX Designer<br>Yuki Nishimura</h1>
+                        <p class="mv__caption">This is my design portfolio</p>
+                    </div>
+                    <div class="mv__img"><img src="./images/FV_Eyecatch.jpg" alt="ポートフォリオUI"></div>
                 </div>
             </section>
             <!-- mv end -->
-            <!-- Introduction -->
-            <section class="introduction fadein" id="introduction">
-                <div class="container">
-                    <h2 class="intro__ttl">Introduction</h2>
-                    <div class="intro__cont">
-                        <div class="intro__left scroll-fadein">
-                            <p class="intro__name">Yuki Nishimura</p>
-                            <p class="intro__body">
-                                「本質的な課題を捉え、論理的に解決策を導くこと」を軸にデザインに取り組んできました。
-                                表層的な使いにくさの改善だけでなく、ユーザーの背景にある潜在的な課題や欲求を探り、マーケットやビジネス視点も交えた設計を得意としています。
-                            </p>
-                            <p class="intro__body">
-                                また、システムの仕組みや実装の現実性を理解したうえで、エンジニアとスムーズに連携し、無理なく実現可能なUIを提案できるのも強みです。
-                                さらに、変化の早いこの業界で常に最新の知識や技術を学び、実務に活かしてきた自走力があります。
-                                これらの力を活かし、課題解決とともに、ビジネス成果に貢献できるデザインを目指しています。
-                            </p>
-                            
-                            
-                        </div>
-                        <div class="intro__right scroll-fadein">
-                            <div class="intro__skill">
-                                <h3 class="intro__skill-ttl">Skill</h3>
-                                <ul class="intro__skill-list">
-                                    <li class="cate-item-02">Figma</li>
-                                    <li class="cate-item-02">XD</li>
-                                    <li class="cate-item-02">Photoshop</li>
-                                    <li class="cate-item-02">Webデザイン</li>
-                                    <li class="cate-item-02">UIデザイン</li>
-                                    <li class="cate-item-02">情報設計</li>
-                                    <li class="cate-item-02">プロトタイピング</li>
-                                    <li class="cate-item-02">UXデザイン</li>
-                                    <li class="cate-item-02">定性調査</li>
-                                    <li class="cate-item-02">定量調査</li>
-                                    <li class="cate-item-02">仮説設定</li>
-                                    <li class="cate-item-02">リサーチ</li>
-                                    <li class="cate-item-02">ペルソナ設計</li>
-                                    <li class="cate-item-02">CJ作成</li>
-                                    <li class="cate-item-02">アクセシビリティ</li>
-                                    <li class="cate-item-02">ユーザービリティ</li>
-                                    <li class="cate-item-02">コンポーネント設計</li>
-                                    <li class="cate-item-02">人間中心設計</li>
-                                    <li class="cate-item-02">OOUI</li>
-                                    <li class="cate-item-02">デザインシステム</li>
-                                    <li class="cate-item-02">HTML/CSS</li>
-                                    <li class="cate-item-02">Sass</li>
-                                    <li class="cate-item-02">JavaScript</li>
-                                    <li class="cate-item-02">git</li>
-                                </ul>
-                                <p class="intro__body anno">
-                                ＊本ポートフォリオではNDAの都合上、自主制作のプロダクトのみを掲載しています。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Introduction end -->
              <!-- Works -->
               <section class="works" id="works">
                 <div class="container">
-                    <h2 class="works__ttl">Works</h2>
+                    <h2 class="works__ttl fadein">Works <span>作品一覧</span></h2>
+                    
 
                     <div class="works__card-cont">
-                        <a href="./html/soapp.html" class="works__card scroll-fadein">
+                        <a href="./html/soapp.html" class="works__card fadein">
                             <div class="card__img-cont"><img src="./images/SmartOrdee_UI.png" alt=""></div>
                             <div class="card__text">
                                 <h3 class="card__ttl">SmartOrdee</h3>
@@ -120,13 +101,12 @@
                                     <li class="cate-item-01">Webアプリケーション</li>
                                     <li class="cate-item-01">UXデザイン</li>
                                     <li class="cate-item-01">UIデザイン</li>
-                                    <li class="cate-item-01">OOUI</li>
                                     <li class="cate-item-01">デザインシステム</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="./html/hd.html" class="works__card scroll-fadein">
+                        <a href="./html/hd.html" class="works__card fadein">
                             <div class="card__img-cont"><img src="./images/HikoraDesign_UI.png" alt=""></div>
                             <div class="card__text">
                                 <h3 class="card__ttl">Hikora Design コーポレートサイト</h3>
@@ -155,24 +135,8 @@
                                 </ul>
                             </div>
                         </a>
-
-                        <a href="https://benzy78.github.io/DesignNotes/" class="works__card scroll-fadein" target="_blank" rel="noopener noreferrer">
-                            <div class="card__img-cont"><img src="./images/DesignNotes_UI.png" alt=""></div>
-                            <div class="card__text">
-                                <h3 class="card__ttl">Design Notes</h3>
-                                <p class="card__desc">
-                                    これまでの学習や実務経験を通して得たUI/UXに関する知見を、自分なりに整理・言語化したドキュメントサイト
-                                </p>
-                                <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">ドキュメント</li>
-                                </ul>
-                            </div>
-                        </a>
-
                         <a href="./html/ba.html" class="works__card scroll-fadein">
-                            <div class="card__img-cont"><img src="./images/BA_UI.jpg" alt=""></div>
+                            <div class="card__img-cont"><img src="./images/BA_UI.jpg" alt="Boulangerie Amande UI"></div>
                             <div class="card__text">
                                 <h3 class="card__ttl">Boulangerie Amande 店舗サイト</h3>
                                 <p class="card__desc">
@@ -199,22 +163,109 @@
                                 </ul>
                             </div>
                         </a>
+                        <a href="https://benzy78.github.io/DesignNotes/" class="works__card scroll-fadein" target="_blank" rel="noopener noreferrer">
+                            <div class="card__img-cont"><img src="./images/DesignNotes_UI.png" alt=""></div>
+                            <div class="card__text">
+                                <h3 class="card__ttl">Design Notes</h3>
+                                <p class="card__desc">
+                                    これまでの学習や実務経験を通して得たUI/UXに関する知見を、自分なりに整理・言語化したドキュメントサイトです
+                                </p>
+                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">Webデザイン</li>
+                                    <li class="cate-item-01">コーディング</li>
+                                    <li class="cate-item-01">ドキュメント</li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
+                    <p class="works__anno scroll-fadein">
+                        ※本サイトでは、機密保持契約（NDA）の関係上、自主制作プロダクトのみを掲載しています。<br>
+                        エントリー時には、実務で関わった案件の成果物も含めたポートフォリオ資料を別途ご提出しております。
+                    </p>
                 </div>
               </section>
              <!-- Works end -->
+            <!-- Introduction -->
+            <section class="introduction scroll-fadein" id="about">
+                <div class="container">
+                    <h2 class="intro__ttl">About<span>自己紹介</span></h2>
+                    <div class="intro__cont">
+                        <div class="intro__left">
+                            <p class="intro__name">Yuki Nishimura</p>
+                            <p class="intro__body">
+                                「本質的な課題を捉え、論理的に解決策を導くこと」を軸にデザインに取り組んできました。
+                                表層的な使いにくさの改善だけでなく、ユーザーの背景にある潜在的な課題や欲求を探り、マーケットやビジネス視点も交えた設計を得意としています。
+                            </p>
+                            <p class="intro__body">
+                                また、システムの仕組みや実装の現実性を理解したうえで、エンジニアとスムーズに連携し、無理なく実現可能なUIを提案できるのも強みです。
+                                さらに、変化の早いこの業界で常に最新の知識や技術を学び、実務に活かしてきた自走力があります。
+                                これらの力を活かし、課題解決とともに、ビジネス成果に貢献できるデザインを目指しています。
+                            </p>
+                        </div>
+                        <div class="intro__right">
+                            <div class="intro__skill">
+                                <h3 class="intro__skill-ttl">Skill</h3>
+                                <ul class="intro__skill-list">
+                                    <li class="cate-item-02">Figma</li>
+                                    <li class="cate-item-02">XD</li>
+                                    <li class="cate-item-02">Photoshop</li>
+                                    <li class="cate-item-02">Webデザイン</li>
+                                    <li class="cate-item-02">UIデザイン</li>
+                                    <li class="cate-item-02">情報設計</li>
+                                    <li class="cate-item-02">プロトタイピング</li>
+                                    <li class="cate-item-02">UXデザイン</li>
+                                    <li class="cate-item-02">定性調査</li>
+                                    <li class="cate-item-02">定量調査</li>
+                                    <li class="cate-item-02">仮説設定</li>
+                                    <li class="cate-item-02">リサーチ</li>
+                                    <li class="cate-item-02">ペルソナ設計</li>
+                                    <li class="cate-item-02">CJ作成</li>
+                                    <li class="cate-item-02">アクセシビリティ</li>
+                                    <li class="cate-item-02">ユーザービリティ</li>
+                                    <li class="cate-item-02">コンポーネント設計</li>
+                                    <li class="cate-item-02">人間中心設計</li>
+                                    <li class="cate-item-02">OOUI</li>
+                                    <li class="cate-item-02">デザインシステム</li>
+                                    <li class="cate-item-02">HTML/CSS</li>
+                                    <li class="cate-item-02">Sass</li>
+                                    <li class="cate-item-02">JavaScript</li>
+                                    <li class="cate-item-02">git</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Introduction end -->
+             <footer class="footer">
+                <div class="container">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-group">
+                            <h2 class="footer__nav-ttl">Works</h2>
+                            <ul class="footer__nav-list">
+                                <li class="footer__list-item"><a href="./html/soapp.html">SmartOrdee App</a></li>
+                                <li class="footer__list-item"><a href="./html/hd.html">Hikora Design</a></li>
+                                <li class="footer__list-item"><a href="./html/solp.html">SmartOrdee LP</a></li>
+                                <li class="footer__list-item"><a href="./html/ba.html">Boulangerie Amande</a></li>
+                                <li class="footer__list-item"><a href="./html/eh.html">Eco Hybe</a></li>
+                                <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_w.svg">Design Notes</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-group">
+                            <h2 class="footer__nav-ttl">Others</h2>
+                            <ul class="footer__nav-list">
+                                <li class="footer__list-item"><a href="#about">About</a></li>
+                                <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_w.svg">note</a></li>
+                                <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_w.svg">Github</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+                </div>
+            </footer>
          </main>
-         <footer class="footer">
-            <div class="container">
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_w.svg">note</a></li>
-                        <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="./images/icon_open_w.svg">Github</a></li>
-                    </ul>
-                </nav>
-                <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-            </div>
-         </footer>
+         
+        </div>
     </div>
     <!--wrapper end-->
 

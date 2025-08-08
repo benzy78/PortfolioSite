@@ -1,17 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // const menuToggle = document.querySelector(".menu-toggle");
-  // const navLinks = document.querySelector(".header__nav");
-  // const navItems = document.querySelectorAll(".header__nav-links a"); 
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerNav = document.querySelector(".header__nav");
 
-  // menuToggle.addEventListener("click", () => {
-  //   navLinks.classList.toggle("active");
-  // });
+  menuToggle.addEventListener("click", function () {
+    // toggle 'active' class on the nav
+    const isActive = headerNav.classList.toggle("active");
 
-  // navItems.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     navLinks.classList.remove("active"); // メニューを閉じる
-  //   });
-  // });
+    // 要素の表示・非表示制御
+    const groups = headerNav.querySelectorAll(".header__group, .header__back");
+    groups.forEach(el => {
+      if (isActive) {
+        el.style.display = "block";
+        // トランジションを効かせるため、少し遅らせてクラス付与
+        setTimeout(() => {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        }, 10);
+      } else {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(-10px)";
+        // アニメーションが終わった後に非表示に
+        setTimeout(() => {
+          el.style.display = "none";
+        }, 300);
+      }
+    });
+  });
 
 
   // 最上部のアニメーション
@@ -33,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 各セクションのアニメーション
   $(document).ready(function() {
     // スクロール時に処理を実行
-    $(window).on("scroll", function() {
+    $(".maincontents").on("scroll", function() {
       $(".scroll-fadein").each(function() {
         // 要素の位置を取得
         const elementTop = $(this).offset().top;
@@ -48,25 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 });
-
-
-
-$(function () {
-  $('.animate-text').each(function () {
-    const text = $(this).text();
-    $(this).empty();
-    $.each(text.split(''), function (i, char) {
-      const delay = i * 100;
-      const span = $('<span>')
-        .addClass('char')
-        .html(char === ' ' ? '&nbsp;' : char)
-        .css('animation-delay', delay + 'ms');
-      $(this).append(span);
-    }.bind(this));
-  });
-});
-
-// window.addEventListener('load', function () {
-//   const bg = document.querySelector('.mv');
-//   bg.classList.add('animate');
-// });

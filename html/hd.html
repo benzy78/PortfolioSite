@@ -17,19 +17,49 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
         type="text/css" media="all">
     <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__cont">
-          <a href="../index.html" class="header__back"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
-        </div>
-      </header>
+      <div class="layout">
+        <header class="header">
+          <div class="header__cont">
+            <div class="header__logo">
+              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio"></a>
+            </div>
+            <div class="header__nav">
+              <button class="menu-toggle" aria-label="Toggle navigation">
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <!-- <span class="menu-label">Menu</span> -->
+              </button>
+              <div class="header__group">
+                <h3 class="header__head3">Works</h3>
+                <ul class="header__list">
+                  <li><a href="./soapp.html">SmartOrdee App</a></li>
+                  <li><a href="./hd.html">Hikora Design</a></li>
+                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
+                  <li><a href="./ba.html">Boulangerie Amande</a></li>
+                  <li><a href="./eh.html">EcoHybe</a></li>
+                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_b.svg">Design Notes</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">Others</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#about">About</a></li>
+                  <li><a href="https://note.com/aganir_seshisa"><img src="../images/icon_open_b.svg">note</a></li>
+                  <li><a href="https://github.com/benzy78"><img src="../images/icon_open_b.svg">Github</a></li>
+                </ul>
+              </div>
+              <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
+              </div>
+            </div>
+          </div>
+        </header>
          <main class="maincontents">
             <div class="article__cont">
               <article class="article">
@@ -59,24 +89,42 @@
                   <li>リンク：<a href="https://benzy78.github.io/HikoraDesign-New/" class="art__link" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_bl.svg" alt=""> コーポレートサイトはこちら</a></li>
                 </ul>
 
-                <h2 class="art__hed2">サイトの目的・ゴール</h2>
-                <p class="art__p">
-                  本サイトは、コーポレートサイトとして、企業の顔となるホームページを構築することを目的としています。
-                  モダンで洗練されたデザインを通じて、信頼性のあるIT企業としての印象を与えることを意図しており、<span class="marker">訪問者に対して基本的な会社情報や事業内容、制作実績を簡潔かつ明確に伝えることを主なゴール</span>としています。
-                </p>
-                <p class="art__p">
-                  採用や受注といった機能もサイト内には一部組み込まれていますが、これらはあくまで補助的な位置づけに留めています。
-                  採用に関しては、求人媒体やSNSなど他のチャネルからの流入がメインになることが想定されており、ホームページ単体で完結するものではないという前提があります。そのため、過度に採用に特化した情報設計にはしていません。
-                </p>
-                <p class="art__p">
-                  また、受注に関しても同様で、システム開発やコンサルティングといった性質上、一般的なECサイトのようにコンテンツによる訴求だけで契約に至ることは現実的ではありません。
-                  むしろ、業界内での実績の積み重ねや人脈、営業活動が案件獲得の鍵を握るため、Webサイト内においては、問い合わせからの即時的なコンバージョンを強く意識した設計にはしていません。
-                </p>
-                <p class="art__p mb32">
-                  したがって、<span class="marker">このサイトの本質的な役割は、企業の信頼性や専門性を示し、訪問者が必要とする情報にスムーズにアクセスできるよう整備された情報基盤を提供すること</span>にあります。
-                  見た目の美しさだけでなく、情報の的確な伝達を通じて、会社のブランディングと信頼形成を支える役割を果たすことを目指しています。
-                </p>
-
+                <h2 class="art__hed2">設計方針</h2>
+                <div class="art__memo">
+                  <div class="art__memo-container">
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">会社概要</h3>
+                      <p class="art__memo-p">
+                        Hikora Designは、UI/UX設計から業務フローの最適化、フロントエンド開発、運用支援までを一気通貫で手がける、DX（デジタルトランスフォーメーション）パートナーです。
+                        戦略立案から導入・改善フェーズまでクライアントに伴走し、本質的な変革を実現します。
+                      </p>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">サイト制作の目的</h3>
+                      <p class="art__memo-p">
+                        本サイトは、コーポレートサイトとして、企業の顔となるホームページを構築することを目的としています。
+                        モダンで洗練されたデザインを通じて、信頼性のあるIT企業としての印象を与えることを意図しており、訪問者に対して基本的な会社情報や事業内容、制作実績を簡潔かつ明確に伝えることを主なゴールとしています。
+                        採用や受注といった機能もサイト内には一部組み込まれていますが、これらはあくまで補助的な位置づけに留めています。
+                      </p>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">ターゲット層</h3>
+                      <ul class="art__memo-list">
+                        <li>中小〜中堅企業の経営層・事業責任者</li>
+                        <li>スタートアップや新規事業の責任者</li>
+                        <li>ITや開発のリソースが不足している企業のマネージャー</li>
+                        <li>当社に就職を考えている人</li>
+                      </ul>
+                    </div>
+                    <div class="art__memo-item">
+                      <h3 class="art__memo-head3"><img src="../images/icon--check.svg">デザインコンセプト</h3>
+                      <p class="art__memo-p">
+                        Hikora DesignのWebサイトは、「本質的な課題と向き合う伴走型のDXパートナー」というブランドメッセージを軸に、静かで誠実な佇まいを大切にしたデザインを目指しました。
+                        先進性よりも“信頼できる知的パートナー”としての印象を重視し、トーンを抑えた配色やミニマルなUI設計、余白を活かしたレイアウトによって、読み手に思考の余白と深さを提供しています。
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
                 <h2 class="art__hed2">情報設計</h2>
                 <p class="art__p">
@@ -93,9 +141,8 @@
                   その後、お知らせや更新情報を通じて企業の活動を示し、最後にお問い合わせへと誘導する構成とすることで、ユーザーが迷うことなく情報を取得し、必要に応じて次のアクションへと進めるよう設計しています。
                   このように、<span class="marker">単なる情報の羅列ではなく、訪問者の理解と行動を支える流れを重視した情報設計</span>を心がけました。
                 </p>
-                <div class="art__img"><img src="../images/HD_IA.png" alt="サイトマップ"></div>
                 
-                <h2 class="art__hed2">UI設計</h2>
+                <h2 class="art__hed2">ビジュアル設計</h2>
                 <h3 class="art__hed3">配色</h3>
                 <p class="art__p">
                   信頼感とモダンなIT企業の雰囲気を出せるように青系統でトーンを統一しています。
@@ -119,11 +166,6 @@
                   また、テキスト情報が主体となる構成においては、<span class="marker">過度な情報量が閲覧体験を妨げないよう配慮</span>しています。
                   文章の合間には、サイト全体のトーンや雰囲気に調和したイラストを適度に配置し、視線のリズムを生むとともに、読み進める中での心理的な負荷を軽減するようにしています。
                   単なる装飾ではなく、情報の理解を補助しながら、視覚的な余白を作る役割も担っています。
-                </p>
-                <p class="art__p">
-                  <span class="marker">カラム構成については、掲載する情報の内容や役割に応じて柔軟に設計</span>しています。
-                  読み物としての集中を促したい場面では1カラム、比較や並列的な情報提示には2カラムや3カラムを採用し、意図に応じた最適なレイアウトを選択しています。
-                  ただし、カラム数に関わらず、全体としての一貫性や整合性が損なわれないよう、各セクション間の余白や構造のルールを明確に定め、デザイン全体に統一感を持たせています。
                 </p>
                 <p class="art__p mb32">
                   このように、<span class="marker">レイアウト設計においては単に見た目の整え方だけでなく、情報の受け取りやすさ、読みやすさ、そして閲覧体験としての心地よさまでを含めて総合的にデザイン</span>しています。
@@ -157,15 +199,16 @@
                   しかし、そうした演出は、しばしば雰囲気だけで評価されており、<span class="marker">情報の構造や可読性、さらには表示速度といったユーザー体験の根幹を損なう原因に</span>なり得ます。
                   特にコーポレートサイトのように、企業情報やブランドイメージを正しく伝えることが主目的である場合においては、そのような演出は本質的にそぐわないと考えています。
                 </p>
-                <p class="art__p">
+                <p class="art__p mb32">
                   だからこそ、本サイトではアニメーションを最小限にとどめ、あくまで自然なインタラクションや重要な情報への視線誘導といった、ユーザーにとって意味のある場面にのみ限定的に使用しています。
                   加えて、ボタンなどのUI要素も過度に装飾せず、明確な操作対象であることとタップしやすさを重視した、実用的でストレスのない設計を徹底しています。
                 </p>
-                <p class="art__p mb32">
-                  <span class="marker">デザイナーとしての自己主張よりも、閲覧者にとってのわかりやすさや快適さを最優先する。</span>
-                  この姿勢こそが、本サイト全体に一貫して通底している設計上のこだわりです。
-                </p>
-                
+
+                <h2 class="art__hed2">アウトプット</h2>
+                <h3 class="art__hed3">ロゴ</h3>
+                <div class="art__img"><img src="../images/HD_Logo.svg" alt="HikoraDesign ロゴ"></div>
+                <h3 class="art__hed3">Webデザイン</h3>
+                <div class="art__img"><img src="../images/HD_UI_capture.jpg" alt="HikoraDesign UI"></div>
 
                 <a class="art__cv" href="https://benzy78.github.io/HikoraDesign-New/"  target="_blank" rel="noopener noreferrer">
                   <div class="art__cv-img"><img src="../images/HikoraDesign_UI.png" alt=""></div>
@@ -176,19 +219,34 @@
                 </a>
               </article>
             </div>
-            
+            <footer class="footer">
+              <div class="container">
+                  <nav class="footer__nav">
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Works</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
+                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
+                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
+                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
+                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Design Notes</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Others</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#about">About</a></li>
+                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
+                              <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
+                          </ul>
+                      </div>
+                  </nav>
+                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+              </div>
+          </footer>
          </main>
-         <footer class="footer">
-            <div class="container">
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
-                        <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
-                    </ul>
-                </nav>
-                <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-            </div>
-         </footer>
+      </div>
     </div>
     <!--wrapper end-->
 

@@ -17,19 +17,50 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
         type="text/css" media="all">
     <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__cont">
-          <a href="../index.html" class="header__back"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
-        </div>
-      </header>
+      <div class="layout">
+        <header class="header">
+          <div class="header__cont">
+            <div class="header__logo">
+              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio"></a>
+            </div>
+            <div class="header__nav">
+              <button class="menu-toggle" aria-label="Toggle navigation">
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <!-- <span class="menu-label">Menu</span> -->
+              </button>
+              <div class="header__group">
+                <h3 class="header__head3">Works</h3>
+                <ul class="header__list">
+                  <li><a href="./soapp.html">SmartOrdee App</a></li>
+                  <li><a href="./hd.html">Hikora Design</a></li>
+                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
+                  <li><a href="./ba.html">Boulangerie Amande</a></li>
+                  <li><a href="./eh.html">EcoHybe</a></li>
+                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_b.svg">Design Notes</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">Others</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#about">About</a></li>
+                  <li><a href="https://note.com/aganir_seshisa"><img src="../images/icon_open_b.svg">note</a></li>
+                  <li><a href="https://github.com/benzy78"><img src="../images/icon_open_b.svg">Github</a></li>
+                </ul>
+              </div>
+              <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="アローアイコン"> Homeに戻る</a>
+              </div>
+            </div>
+          </div>
+        </header>
          <main class="maincontents">
             <div class="article__cont">
               <article class="article">
@@ -135,6 +166,12 @@
                   <span class="marker">視覚的なフィードバックを通じて操作性を高めるとともに、UIのアクセシビリティ向上にも寄与</span>しています。
                 </p>
 
+                <h2 class="art__hed2">アウトプット</h2>
+                <h3 class="art__hed3">ロゴ</h3>
+                <div class="art__img"><img src="../images/SOLP_logo.svg" alt="SmartOrdee LP ロゴ"></div>
+                <h3 class="art__hed3">Webデザイン</h3>
+                <div class="art__img"><img src="../images/SOLP_capture.jpg" alt="SmartOrdee LPキャプチャー"></div>
+
 
                 <a class="art__cv" href="https://benzy78.github.io/SmartOrdee/index.html"  target="_blank" rel="noopener noreferrer">
                   <div class="art__cv-img"><img src="../images/SmartOrdeeLP_UI.png" alt=""></div>
@@ -145,19 +182,34 @@
                 </a>
               </article>
             </div>
-            
+            <footer class="footer">
+              <div class="container">
+                  <nav class="footer__nav">
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Works</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
+                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
+                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
+                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
+                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Design Notes</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">Others</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#about">About</a></li>
+                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
+                              <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
+                          </ul>
+                      </div>
+                  </nav>
+                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+              </div>
+          </footer>
          </main>
-         <footer class="footer">
-            <div class="container">
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">note</a></li>
-                        <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer"><img src="../images/icon_open_w.svg">Github</a></li>
-                    </ul>
-                </nav>
-                <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-            </div>
-         </footer>
+      </div>
     </div>
     <!--wrapper end-->
 
