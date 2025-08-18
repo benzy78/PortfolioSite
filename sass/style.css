@@ -583,7 +583,7 @@ select:focus {
   }
 }
 .mv__caption {
-  color: #808080;
+  color: #757575;
   font-size: 16px;
 }
 
@@ -693,7 +693,7 @@ select:focus {
 }
 
 .anno {
-  color: #808080;
+  color: #757575;
 }
 
 .bold {
@@ -757,7 +757,7 @@ select:focus {
 }
 
 .works__anno {
-  color: #808080;
+  color: #757575;
   font-size: 16px;
 }
 @media (max-width: 768px) {
@@ -1177,7 +1177,7 @@ select:focus {
   font-size: 14px;
   line-height: 1.75;
   letter-spacing: 0.02em;
-  color: #808080;
+  color: #757575;
 }
 
 .open-icon {
@@ -1244,7 +1244,7 @@ select:focus {
 }
 
 .anno {
-  color: #808080;
+  color: #757575;
 }
 
 .art__memo {
