@@ -586,7 +586,7 @@
     padding-top: 120px;
   }
   @include sp{
-    padding: 84px 20px 40px;
+    padding: 88px 20px 40px;
   }
 }
 .art__hed1{
@@ -597,7 +597,8 @@
   margin-bottom: 16px;
   color: $TextDef;
   @include sp{
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 12px;
   }
 }
 .art__p{
