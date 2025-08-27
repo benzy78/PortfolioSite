@@ -577,7 +577,7 @@
 
 // 下層ページ
 .article__cont{
-  max-width: 960px;
+  max-width: 880px;
   width: 100%;
   padding: 32px 40px;
   margin: 0 auto;
@@ -650,9 +650,13 @@
       height: auto;
       display: block;
     }
-    
   }
-  
+}
+.art__eyecatch-img--nolink{
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid $BorderSubtler;
 }
 .art__hed2{
   font-size: 24px;
@@ -832,6 +836,9 @@
 
 .mb32{
   margin-bottom: 32px;
+}
+.mb40{
+  margin-bottom: 40px;
 }
 
 .figma-prototype{
