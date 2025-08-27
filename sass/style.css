@@ -1120,6 +1120,21 @@ select:focus {
   height: auto;
 }
 
+.art__bnr-img {
+  margin-bottom: 16px;
+}
+.art__bnr-img img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .art__bnr-img img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .art__cv {
   display: flex;
   border: 1px solid #ccc;
