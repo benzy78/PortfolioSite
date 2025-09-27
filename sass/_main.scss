@@ -1,6 +1,6 @@
 .layout{
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 268px 1fr;
   height: 100vh;
   @include tab{
     grid-template-columns: 1fr; 
