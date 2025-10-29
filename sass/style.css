@@ -417,7 +417,7 @@ select:focus {
 
 .header__head3 {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.04em;
 }
 
@@ -760,6 +760,7 @@ select:focus {
 .works__anno {
   color: #757575;
   font-size: 16px;
+  margin-bottom: 32px;
 }
 @media (max-width: 768px) {
   .works__anno {
@@ -937,7 +938,7 @@ select:focus {
   }
 }
 .article__cont {
-  max-width: 880px;
+  max-width: 800px;
   width: 100%;
   padding: 32px 40px;
   margin: 0 auto;
@@ -1180,7 +1181,7 @@ select:focus {
 }
 
 .art__cv-ttl {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.75;
   letter-spacing: 0.02em;
   color: #1a1a1a;
