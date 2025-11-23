@@ -37,7 +37,7 @@
 }
 
 .header__logo{
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   @include tab{
     margin-bottom: 0;
   }
@@ -147,6 +147,7 @@
 }
 
 .header__back{
+  margin-bottom: 32px;
   @include tab{
     display: none;
     opacity: 0;
@@ -161,14 +162,11 @@
   align-items: center;
   text-decoration: none;
   color: $TextDef;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
-  padding: 12px 8px;
-  // border-radius: 12px;
+  padding: 8px;
   // background-color: $BgSubtle;
   border: 1px solid $BorderSubtle;
-  // position: absolute;
-  // bottom: 32px;
   letter-spacing: 0.08em;
   position: relative;
   background: linear-gradient(to right, $BgSubtler 50%, $BgDef 50%);
@@ -248,8 +246,8 @@
   }
 }
 .mv__body{
-  width: 380px;
-  padding-left: 64px;
+  width: 400px;
+  padding-left: 80px;
   padding-right: 40px;
   margin: auto 0;
   box-sizing: border-box;
@@ -268,8 +266,8 @@
 }
 .mv__ttl{
   font-size: 32px;
-  line-height: 1.2;
-  letter-spacing: 0.08em;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
   color: $TextDef;
   margin-bottom: 12px;
   font-weight: normal;
@@ -286,7 +284,7 @@
   font-size: 16px;
 }
 .mv__img{
-  width: calc(100% - 380px);
+  width: calc(100% - 400px);
   @include tab-lg{
     width: calc(100% - 340px);
   }
@@ -304,8 +302,8 @@
   }
 }
 
-// introduction
-.introduction{
+// about
+.about{
   padding: 48px 0;
   background-color: $BgSubtle;
   @include tab{
@@ -315,80 +313,181 @@
     padding: 24px 0 48px;
   }
 }
-.intro__cont{
+.about__layout{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:48px;
-  @include tab{
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  @include sp{
+    grid-template-columns: 1fr;
     gap: 24px;
   }
-  @include sp{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
+}
+.about__visual{
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
   }
 }
-.intro__ttl{
-  font-size: 32px;
-  font-weight: normal;
-  margin-bottom: 32px;
-  line-height: 1.25;
-  span{
-    display: block;
-    font-size: 16px;
-    @include sp{
-      font-size: 14px;
-    }
-  }
-  @include tab{
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
+.about__header{
+  margin-bottom: 28px;
 }
-.intro__name{
+.about__name{
   font-size: 24px;
-  margin-bottom: 16px;
-  font-weight: normal;
-  @include sp{
-    font-size: 20px;
-  }
 }
-.intro__skill{
-  font-size: 20px;
+.about__role{
+  color: $TextSubtler;
 }
-.intro__body{
-  margin-bottom: 8px;
+.about__section{
+  margin-bottom: 28px;
+}
+.about__section-ttl{
+  margin-bottom: 4px;
   font-size: 16px;
-  line-height: 2;
+  position: relative;
+  padding-left: 2.5em;
+}
+.about__section-ttl::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2rem;
+  height: 1px;
+  background: $TextDef;
+  transform: translateY(-50%);
+}
+.about__section-body{
+  color: $TextSubtle;
+  font-size: 16px;
   @include sp{
     font-size: 14px;
   }
 }
+
 .anno{
   color: $TextSubtler;
 }
 .bold{
   font-weight: bold;
 }
-.intro__skill-ttl{
-  font-size: 24px;
-  margin-bottom: 8px;
-  font-weight: normal;
+
+// 共通要素
+.section__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
   @include sp{
-    font-size: 20px;
+    margin-bottom: 16px;
   }
 }
-.intro__skill-list{
-  li{
-    margin-bottom: 8px;
-    @include sp{
-      font-size: 14px;
-    }
+
+.section__ttl {
+  font-size: 32px;
+  font-weight: 400;
+  @include sp{
+   font-size: 24px; 
+  }
+}
+
+.section__subttl {
+  position: relative;
+  padding-left: 2.6rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  @include sp{
+    font-size: 14px;
+  }
+}
+
+.section__subttl::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2.1rem;
+  height: 1px;
+  background: $TextDef;
+  transform: translateY(-50%);
+}
+
+// skills
+.skills{
+  padding: 40px 0 64px;
+  background-color: $BgDef;
+  border-bottom: 1px solid $BorderSubtler;
+  @include tab{
+    padding: 24px 0 48px;
+  }
+}
+.skills__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
+
+.skills__card{
+  padding: 24px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-color: $BgDef;
+}
+.skill-card__header{
+  display: flex;
+  align-items: center;
+  gap:8px;
+  margin-bottom: 16px;
+}
+.skill-card__title{
+  font-size: 20px;
+  @include sp{
+    font-size: 18px;
+  }
+}
+.skill-card__icon{
+  background-color: $BgSubtler;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  @include sp{
+    padding: 8px;
   }
   img{
-    vertical-align: middle;
-    margin-right: 8px;
+    display: block;
   }
+}
+.skill-card__item{
+  margin-bottom: 16px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.skill-card__item-head{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.skill-card__item-icon{
+  img{
+    display: block;
+  }
+}
+.skill-card__item-title{
+  font-weight: 500;
+  font-size: 16px;
+  @include sp{
+    font-size: 14px;
+  }
+}
+.skill-card__item-text{
+  color: $TextSubtle;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 // works
@@ -399,26 +498,10 @@
     padding: 24px 0 48px;
   }
 }
-.works__ttl{
-  font-size: 32px;
-  font-weight: normal;
-  margin-bottom: 32px;
-  line-height: 1.25;
-  span{
-    display: block;
-    font-size: 16px;
-    @include sp{
-      font-size: 14px;
-    }
-  }
-  @include tab{
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-}
+
 
 .works__anno{
-  color: $TextSubtler;
+  color: $TextSubtle;
   font-size: 16px;
   margin-bottom: 32px;
   @include sp{
@@ -429,8 +512,7 @@
 .works__card-cont{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 64px;
-  margin-bottom: 40px;
+  gap: 40px;
   @include tab-lg{
     gap: 40px;
   }
@@ -442,7 +524,7 @@
 .works__card{
   background-color: $BgDef;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
   border: 1px solid $BorderSubtler;
   &:hover{
     // box-shadow: 0 8px 12px 2px rgba(0,0,0,0.3);
@@ -493,16 +575,17 @@
 
 // footer
 .footer{
-  background-color: $BgPrimaryDef;
-  padding: 40px 40px 20px;
+  background-color: $BgPrimaryHigh;
+  padding: 40px 0 20px;
   @include sp{
     padding: 24px 0;
   }
 }
 .footer__nav{
   display: grid;
-  margin-bottom: 24px;
-  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   @include sp{
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
@@ -510,15 +593,15 @@
 }
 .footer__nav-ttl{
   color: $TextInverse;
-  font-size: 24px;
+  font-size: 20px;
   @include sp{
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .footer__nav-list{
   a{
     color: $TextInverse;
-    padding: 12px 20px;
+    padding: 8px 20px;
     transition: all 0.3s ease-in-out;
     display: inline-flex;
     align-items: center;

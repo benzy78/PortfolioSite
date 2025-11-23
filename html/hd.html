@@ -19,7 +19,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"/>
 </head>
 
 <body>
@@ -37,6 +37,16 @@
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
+              <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="" aria-hidden="true" width="20" height="20"> Homeに戻る</a>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">プロフィール</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#skill">私にできること</a></li>
+                  <li><a href="../index.html#about">自己紹介</a></li>
+                </ul>
+              </div>
               <div class="header__group">
                 <h3 class="header__head3">作品一覧</h3>
                 <ul class="header__list">
@@ -46,7 +56,7 @@
                   <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
                   <li><a href="./ba.html">Boulangerie Amande</a></li>
                   <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
+                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                   <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                   <li><a href="./bnr.html">Banner一覧</a></li>
                 </ul>
@@ -54,13 +64,8 @@
               <div class="header__group">
                 <h3 class="header__head3">その他</h3>
                 <ul class="header__list">
-                  <li><a href="../index.html#about">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer">Github<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                 </ul>
-              </div>
-              <div class="header__back">
-                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="" aria-hidden="true" width="20" height="20"> Homeに戻る</a>
               </div>
             </div>
           </div>
@@ -80,7 +85,7 @@
                 </ul>
                 <figure class="art__eyecatch">
                   <a href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" fetchpriority="high" width="2400" height="1700">
+                    <img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" fetchpriority="high" width="3000" height="1800">
                     <p class="art__eyecatch-label"><span>Hikora Design HPへ</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
                   </a>
                 </figure>
@@ -216,7 +221,7 @@
                 <figure class="art__img"><img src="../images/HD_capture.webp" alt="HikoraDesign UIキャプチャー" width="1500" height="3926" loading="lazy" decoding="async"></figure>
 
                 <a class="art__cv" href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" width="2400" height="1700"></div>
+                  <div class="art__cv-img"><img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" width="3000" height="1800"></div>
                   <div class="art__cv-text">
                     <p class="art__cv-ttl">Hikora Designのサイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" loading="lazy" decoding="async" width="24" height="24"></p>
                     <p class="art__cv-desc">Hikora Designは、ビジネスの構造をテクノロジーとデザインで根本から再設計するDX事業の会社です。</p>
@@ -228,7 +233,14 @@
               <div class="container">
                   <nav class="footer__nav">
                       <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">Works</h2>
+                          <h2 class="footer__nav-ttl">プロフィール</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
+                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">作品一覧</h2>
                           <ul class="footer__nav-list">
                               <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
                               <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
@@ -236,17 +248,15 @@
                               <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
                               <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
                               <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer" alt="" aria-hidden="true">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                               <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                               <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
                           </ul>
                       </div>
                       <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">Others</h2>
+                          <h2 class="footer__nav-ttl">その他</h2>
                           <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#about">About</a></li>
                               <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer">Github<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                           </ul>
                       </div>
                   </nav>

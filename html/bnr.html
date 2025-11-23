@@ -19,7 +19,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"/>
 
 </head>
 
@@ -39,8 +39,18 @@
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
 
+              <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="" aria-hidden="true" width="20" height="20"> Homeに戻る</a>
+              </div>
               <div class="header__group">
-                <h3 class="header__head3">制作一覧</h3>
+                <h3 class="header__head3">プロフィール</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#skill">私にできること</a></li>
+                  <li><a href="../index.html#about">自己紹介</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">作品一覧</h3>
                 <ul class="header__list">
                   <li><a href="./soapp.html">SmartOrdee App</a></li>
                   <li><a href="./voislet.html">Voislet</a></li>
@@ -56,14 +66,10 @@
               <div class="header__group">
                 <h3 class="header__head3">その他</h3>
                 <ul class="header__list">
-                  <li><a href="../index.html#about">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer">Github<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                 </ul>
               </div>
-              <div class="header__back">
-                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="" aria-hidden="true" width="20" height="20"> Homeに戻る</a>
-              </div>
+
             </div>
           </div>
         </header>
@@ -79,7 +85,7 @@
                   <li class="cate-item-01">バナーデザイン</li>
                 </ul>
                 <figure class="art__eyecatch mb40">
-                  <img src="../images/bnr_img.webp" class="art__eyecatch-img--nolink" alt="" aria-hidden="true" width="1800" height="1200" fetchpriority="high">
+                  <img src="../images/bnr_img.png" class="art__eyecatch-img--nolink" alt="" aria-hidden="true" width="3000" height="1800" fetchpriority="high">
                 </figure>
 
 
@@ -307,7 +313,14 @@
               <div class="container">
                   <nav class="footer__nav">
                       <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">Works</h2>
+                          <h2 class="footer__nav-ttl">プロフィール</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
+                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">作品一覧</h2>
                           <ul class="footer__nav-list">
                               <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
                               <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
@@ -315,17 +328,15 @@
                               <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
                               <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
                               <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true"></a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                               <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                               <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
                           </ul>
                       </div>
                       <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">Others</h2>
+                          <h2 class="footer__nav-ttl">その他</h2>
                           <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#about">About</a></li>
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true"></a></li>
-                              <li class="footer__list-item"><a href="https://github.com/benzy78" target="_blank" rel="noopener noreferrer">Github<img src="../images/icon_open_w.svg" alt="" aria-hidden="true"></a></li>
+                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                           </ul>
                       </div>
                   </nav>
