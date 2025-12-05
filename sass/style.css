@@ -492,8 +492,9 @@ select:focus {
 }
 
 .header__nav.active {
-  height: 100vh;
-  margin-top: 48px;
+  height: calc(100vh - 74px);
+  overflow-y: auto;
+  padding-top: 48px;
 }
 .header__nav.active .header__group {
   display: block;
