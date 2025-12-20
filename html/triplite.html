@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Triplite | 出張申請サービスのデザインプロセス</title>
+    <meta name="description" content="出張申請アプリ「Triplite」のデザインプロセスを紹介しています">
+    <meta name="keywords" content="UIUX, Portfolio">
+    <!--style css-->
+    <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!--font-awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- wow -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
+        type="text/css" media="all">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"/>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+      <div class="layout">
+        <header class="header">
+          <div class="header__cont">
+            <div class="header__logo">
+              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
+            </div>
+            <div class="header__nav">
+              <button class="menu-toggle" aria-label="Toggle navigation">
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <span class="menu-icon"></span>
+                  <!-- <span class="menu-label">Menu</span> -->
+              </button>
+              <!-- <div class="header__back">
+                <a href="../index.html"><img class="header__icon" src="../images/icon_arrow_back.svg" alt="" aria-hidden="true" width="20" height="20"> Homeに戻る</a>
+              </div> -->
+              <div class="header__group">
+                <h3 class="header__head3">プロフィール</h3>
+                <ul class="header__list">
+                  <li><a href="../index.html#skill">私にできること</a></li>
+                  <li><a href="../index.html#about">自己紹介</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">作品一覧</h3>
+                <ul class="header__list">
+                  <li><a href="./soapp.html">SmartOrdee App</a></li>
+                  <li><a href="./triplite.html">Triplite</a></li>
+                  <li><a href="./voislet.html">Voislet</a></li>
+                  <li><a href="./eh.html">EcoHybe</a></li>
+                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
+                  <li><a href="./ba.html">Boulangerie Amande</a></li>
+                  <li><a href="./hd.html">Hikora Design</a></li>
+                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
+                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
+                  <li><a href="./bnr.html">Banner一覧</a></li>
+                </ul>
+              </div>
+              <div class="header__group">
+                <h3 class="header__head3">その他</h3>
+                <ul class="header__list">
+                  <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+         <main class="maincontents">
+            <div class="article__cont">
+              <article class="article">
+                <h1 class="art__hed1">Triplite</h1>
+                <p class="art__p">
+                  「Triplite（トリップライト）」は、紙の申請業務をオンラインで完結できるように再構築した、出張申請・承認サービスです。入力から承認、進捗確認までを迷わず進められる設計を目指しました。
+                </p>
+                <ul class="art__cate">
+                  <li class="cate-item-01">Webアプリ</li>
+                  <li class="cate-item-01">リサーチ</li>
+                  <li class="cate-item-01">コンセプト定義</li>
+                  <li class="cate-item-01">情報設計</li>
+                  <li class="cate-item-01">ビジュアルデザイン</li>
+                </ul>
+                <div class="art__eyecatch">
+                  <a href="https://www.figma.com/design/4a94ZZ9y3Bd8rWmWwKmTW7/%E5%87%BA%E5%BC%B5%E7%94%B3%E8%AB%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=0-1&t=73FrlrktNyD4XKxO-1" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/triplite/triplite_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
+                    <p class="art__eyecatch-label"><span>TripliteのFigmaファイルはこちら</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
+                  </a>
+                </div>
+                <h2 class="art__hed2">プロジェクト概要</h2>
+                <ul class="art__list mb32">
+                  <li>カテゴリー：Webアプリケーション、SaaS</li>
+                  <li>制作種別：自主制作</li>
+                  <li>担当領域：要件定義、情報設計、ビジュアルデザイン</li>
+                  <li>使用ツール：Figma</li>
+                  <li>制作期間：1.5ヶ月</li>
+                </ul>
+
+                <h2 class="art__hed2">どんなプロダクトか？</h2>
+                <p class="art__p">
+                  本プロダクトは、紙で運用されていた出張申請・精算フローをオンライン上で統合し、一気通貫で処理できるように再構築した社内向けワークフローシステムです。
+                  <span class="bold">「迷わず・滞らず・一気通貫で完了できる」をコンセプトに</span>、申請作成から承認、精算までの流れを途切れさせない情報設計と、進行状況を把握しやすいUIを重視しています。
+                </p>
+                
+                <div class="art__img mb32">
+                  <img src="../images/triplite/triplite_outline.png" alt="Tripliteの概要" width="1440" height="904" loading="lazy" decoding="async">
+                </div>
+
+                <h2 class="art__hed2">最終成果物</h2>
+                <p class="art__p">
+                  以下でプロトタイプとFigmaのデザインファイルを掲載しています。
+                </p>
+                <h3 class="art__hed3">プロトタイプ</h3>
+                <p class="art__p anno">＊拡大推奨</p>
+                <iframe class="figma-prototype mb32" src="https://embed.figma.com/proto/4a94ZZ9y3Bd8rWmWwKmTW7/%E5%87%BA%E5%BC%B5%E7%94%B3%E8%AB%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=290-1952&p=f&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=290%3A1952&embed-host=share" allowfullscreen></iframe>
+
+                <h3 class="art__hed3">Figmaデザインファイル</h3>
+                <a class="art__cv mb48" href="https://www.figma.com/design/4a94ZZ9y3Bd8rWmWwKmTW7/%E5%87%BA%E5%BC%B5%E7%94%B3%E8%AB%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=0-1&t=73FrlrktNyD4XKxO-1"  target="_blank" rel="noopener noreferrer">
+                  <figure class="art__cv-img"><img src="../images/triplite/triplite_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                  <div class="art__cv-text">
+                    <p class="art__cv-ttl">TripliteのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                    <p class="art__cv-desc">要件定義、情報設計、ビジュアルデザインのデータを公開しています</p>
+                  </div>
+                </a>
+
+                <h2 class="art__hed2">設計プロセス</h2>
+                <p class="art__p">
+                  本プロジェクトは、実務を想定した演習として取り組んだ自主制作の UI/UX 設計で、架空の企業を想定し、
+                  「これまで紙で行っていた出張申請〜精算承認のプロセスを、社内の承認フローを踏襲しつつオンラインで完結できるシステムとして再構築する」という前提条件を置いています。
+                </p>
+                <p class="art__p">
+                  具体的には、「申請 → 上長の承認 → 経理部の承認 → 仮払い → 出張 → 出張終了後の精算申請 → 経理部の精算承認」という既存の社内フローを変えずに、
+                  その流れにフィットする業務システムを新規に設計する、という設定です。
+                  この要件を起点に、実際のプロダクト開発に近いプロセスを想定しながら、要件定義・情報設計・ビジュアルデザインまで一連の設計演習として進めました。
+                </p>
+                <p class="art__p">
+                  以降で、詳細な設計プロセスを説明します。
+                </p>
+                <div class="art__img mb48"><img src="../images/triplite/triplite_process.png" alt="設計プロセス" width="1440" height="567" loading="lazy" decoding="async"></div>
+                
+
+                <h2 class="art__hed2">1. 要件定義</h2>
+                <p class="art__p mb32">
+                  まず、紙運用で発生しがちな課題を行動フローから抽出し、新システムが目指す状態を整理しました。
+                  そのうえで、競合サービスの分析やペルソナ設定を通じてユーザーの課題や行動を深掘りし、本サービスのコンセプトと要件を定義しています。
+                </p>
+
+                <h3 class="art__hed3">1-1. 行動フローの整理</h3>
+                <p class="art__p">
+                  既存の申請・承認に関する行動フローを整理し、課題の整理や、プロダクトが目指す状態を整理しました。
+                </p>
+                <div class="art__img"><img src="../images/triplite/triplite_flow1.webp" alt="申請・承認フロー" width="4096" height="1541" loading="lazy" decoding="async"></div>
+                <div class="art__img mb32"><img src="../images/triplite/triplite_flow2.webp" alt="閲覧・共有フロー" width="4096" height="942" loading="lazy" decoding="async"></div>
+
+                <h3 class="art__hed3">1-2. ペルソナ設定</h3>
+                <p class="art__p">
+                  次に、ペルソナを設定し、ユーザーの課題やニーズを深掘りました。ペルソナは、申請者・承認者・経理担当の3つの役割を中心に設定しました。
+                </p>
+                <ul class="art__list">
+                  <li><span class="bold">申請者（一般社員）：</span>記入漏れや差し戻しを避け、短時間で申請を完了したい。</li>
+                  <li><span class="bold">承認者（上長）：</span>一目で内容を把握し、迅速に承認判断をしたい。</li>
+                  <li><span class="bold">経理担当：</span>不備の少ないデータで正確に処理し、履歴を効率的に管理したい。</li>
+                </ul>
+                <p class="art__p">
+                  以下が詳細なペルソナの内容。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_persona.webp" alt="ペルソナの詳細" width="1440" height="2474" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">1-3. 課題の整理と提供価値の定義</h3>
+                <p class="art__p">
+                  行動フローとペルソナの内容を参考に、紙での申請・承認業務の課題整理と、プロダクトの目指す状態および、コアコンセプトを定義しサービスの方向性を定めました。
+                </p>
+                <div class="art__img mb48"><img src="../images/triplite/triplite_concept.png" alt="課題整理" width="1440" height="940" loading="lazy" decoding="async"></div>
+                
+                
+                <h2 class="art__hed2">2. 情報設計</h2>
+                <h3 class="art__hed3">2-1. ユースケース洗い出し</h3>
+                <p class="art__p">
+                  まず、行動フローや既存の出張申請サービス（紙・ソフトウェア両方）をベースに、ユースケースを洗い出しました。
+                  ユースケースは、「誰が・何を・できるか」で、利用シーンと合わせて整理しました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_usecase.png" alt="ユースケースの洗い出し" width="1440" height="1330" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">2-2. オブジェクト/アクションの抽出</h3>
+                <p class="art__p">
+                  次に、ユースケースを元に、オブジェクトとアクションの抽出を行いました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_object.png" alt="オブジェクト、アクションの抽出" width="760" height="804" loading="lazy" decoding="async"></figure>
+                
+                <h3 class="art__hed3">2-3. メインオブジェクトの特定</h3>
+                <p class="art__p">
+                  次に、メインオブジェクトの特定を行い、付随するアクションを整理しました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_mainObject.png" alt="メインオブジェクトの特定" width="1240" height="757" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">2-4. ビューとナビゲーションの検討</h3>
+                <p class="art__p">
+                  次に、各ビューの役割と、それらの遷移関係を整理しました。
+                  申請一覧・詳細・編集・精算・承認といった一連の業務プロセスを画面単位で可視化し、それぞれのビューがどの情報を保持し、どのタイミングで他のビューへ遷移するのかを把握できるようにしています。
+                </p>
+                <p class="art__p">
+                  なお、この遷移関係は初期案のままではなく、レイアウトパターンの適用やローファイプロトタイプを用いた動作検証を通して、
+                  ユーザーの操作負荷や判断ポイントを分析しながら、何度も改善を重ねてブラッシュアップしたものです。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_viewNavi.png" alt="ビューとナビゲーション" width="1658" height="1638" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">2-5. プロトタイプ作成</h3>
+                <p class="art__p">
+                  次に、レイアウトパターンを適用し、ワイヤフレームを作成した後、コア機能に絞ったプロトタイプを作成しました。
+                </p>
+                <p class="art__p">
+                  この段階では、コア機能（申請、承認のフロー）のフローの最適化や、各ページの情報の優先づけ、グルーピングを重視して設計。
+                  プロトタイプを動かしながら、検証改善を重ね、ブラッシュアップしました。
+                </p>
+                <figure class="art__img"><img src="../images/triplite/triplite_wf_top.png" alt="ワイヤフレームTop" width="1440" height="900" loading="lazy" decoding="async"></figure>
+                <figure class="art__img mb48"><img src="../images/triplite/triplite_wf_apply.png" alt="ワイヤフレーム申請ページ" width="1440" height="968" loading="lazy" decoding="async"></figure>
+                
+
+
+                <h2 class="art__hed2">3. ビジュアルデザイン</h2>
+                <h3 class="art__hed3">3-1. ビジュアルコンセプト・トンマナ</h3>
+                <p class="art__p">
+                  サービスコンセプトである「迷わず・滞らず・一気通貫で完了できる出張申請」を視覚的にも支えるため、まずキーワード抽出とブレストを行い、「軽やかさ」「空」「鳥」などのイメージを導出しました。
+                  それらをもとに、操作の流れが明瞭で見通しの良い UI を目指し、配色・タイポグラフィ・形状などの主要なビジュアル要素へ落とし込んで全体のトンマナを構築しています。
+                </p>
+                <p class="art__p">
+                  なお、フォントに関しては、<span class="bold">Web フォントを使用せず、システムフォントを採用</span>しています。
+                  その理由は、SaaS というサービス特性上、フォントの見栄えを追求するよりも<span class="bold">表示速度と操作性の快適さを優先する必要がある</span>ためです。
+                  Web フォントは読み込みコストが発生し初回描画が遅れる可能性があるため、OS 標準のシステムフォントを用いることで、軽快な操作体験と十分な可読性を両立しています。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_visualConcept.webp" alt="ビジュアルコンセプト策定の流れ" width="1440" height="1255" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">3-2. UIビジュアル</h3>
+                <p class="art__p">
+                  ビジュアルコンセプト・トンマナを定義した後は、ワイヤフレームにスタイルを当てはめ、
+                  UIのビジュアルをブラッシュアップするとともに、関連機能などのUIも設計していきました。
+                  基本的に視認性、操作性の観点から、インタラクションコストを最小化するUI設計を意識しています。
+                </p>
+                <p class="art__p">
+                  以下、申請一覧ページ
+                </p>
+                <figure class="art__img"><img src="../images/triplite/triplite_top.png" alt="申請一覧ページ" width="1442" height="900" loading="lazy" decoding="async"></figure>
+                <p class="art__p">
+                  以下、新規申請ページ
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_apply.png" alt="新規申請ページ" width="1442" height="949" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">3-3. プロトタイプと検証改善</h3>
+                <p class="art__p mb32">
+                  UIのビジュアルをブラッシュアップしたら、プロトタイプを作成し、実際のプロダクトに近い挙動で細かいフローや情報のグルーピングなど検証と改善を重ねました。
+                </p>
+                
+                <h3 class="art__hed3">3-4. コンポーネント設計・スタイルガイド作成</h3>
+                <p class="art__p">
+                  UIビジュアルをブラッシュアップしていく過程で、全体の保守性、一貫性を保てるようにコンポーネントを整理しました。また、合わせてスタイルガイドも整備しています。
+                </p>
+                <figure class="art__img"><img src="../images/triplite/triplite_btn.png" alt="コンポーネント/ボタン" width="2494" height="2135" loading="lazy" decoding="async"></figure>
+                <figure class="art__img"><img src="../images/triplite/triplite_color.png" alt="カラーパレット" width="1440" height="962" loading="lazy" decoding="async"></figure>
+                <figure class="art__img mb48"><img src="../images/triplite/triplite_SpacingElevationCorner.png" alt="スペーシング、エレベーション、角丸" width="1440" height="832" loading="lazy" decoding="async"></figure>
+
+
+                <h2 class="art__hed2">工夫した点</h2>
+                <h3 class="art__hed3">工夫した点①：OOUIに基づく一貫した情報設計</h3>
+                <p class="art__p">
+                  本プロジェクトでは、表層的なUIの見た目や操作性だけでなく、<span class="bold">アプリケーション全体の情報構造とナビゲーションを設計することに重点を置きました。</span>
+                  業務フローをオブジェクトモデリングによって丁寧に分解し、複雑化しやすい業務フローをシンプルで一貫した構造に落とし込みました。
+                </p>
+                <p class="art__p mb32">
+                  その結果、ユーザーは画面ごとに意味や操作方法を迷うことなく、自身が行うべきタスクの位置づけを自然に把握できるようになり、
+                  <span class="bold">学習コストが低く、メンタルモデルに沿った利用体験を提供できる設計</span>となっています。
+                </p>
+
+                <h3 class="art__hed3">工夫した点②：新規申請をモードのステップ式に</h3>
+                <p class="art__p">
+                  新規申請のページは、単一ページ式にするか、ステップ式にするかに関して、両者のUIを作成しプロトタイプを動かした上で、
+                  それぞれのメリット・デメリットを比較し、出張申請の性質（利用頻度・正確性等）や、想定ユーザーから考え、<span class="bold">ステップ式のUIを採用</span>しました。
+                  また、新規申請の作成という重要な操作であることから、<span class="bold">操作へ集中させるためモードを採用</span>しました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_stepSingle.webp" alt="申請ページの比較" width="2538" height="4970" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">工夫した点③：ボタンのスタイル、配置、文言に関して</h3>
+                <p class="art__p">
+                  ボタンに関しては、見た目だけでなく「意味」と「挙動の解釈」を間違えさせないことを重視して設計しました。
+                  まず、<span class="bold">ボタンやラベルの文言は、ユーザーが迷わず意図を読み取れることを最優先</span>にし、「送信」「登録」など抽象的な表現ではなく、
+                  「申請を提出する」「差し戻し理由を送信する」など、<span class="bold">操作の結果が具体的にイメージできる表現に統一</span>しています。
+                </p>
+                <p class="art__p">
+                  スタイルや配置については、Human Interface Guidelines や Material Design、一般的なユーザビリティの知見を参考にしながら、
+                  「ユーザーが最も選ぶ可能性が高い操作はどれか」「破壊的な操作を誤って実行しないためにはどう見せるべきか」といった観点で検討を重ねました。
+                  プライマリーボタンとセカンダリーボタンの強弱、右左どちらに配置するか、破棄・削除系アクションの色や位置などを整理し、
+                  <span class="bold">誤操作を防ぎつつ、自然に優先されるべき操作に目がいく構成</span>にしています。
+                </p>
+                <p class="art__p">
+                  また、主要なボタンにはテキストだけでなく<span class="bold">アイコンを付与し、意味を視覚的にも補強することで、認知負荷の軽減と操作の素早い判断を助ける設計</span>としました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_btnIntention.webp" alt="ボタンのスタイル、配置、文言に関して" width="2354" height="3285" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">工夫した点④：ナビゲーションの設計</h3>
+                <p class="art__p">
+                  ナビゲーション設計にあたっては、まず本サービスのナビゲーション情報のグルーピングと優先づけを行いました。
+                </p>
+                <figure class="art__img"><img src="../images/triplite/triplite_naviGroup.png" alt="ナビゲーションのグルーピングと優先づけ" width="1440" height="568" loading="lazy" decoding="async"></figure>
+                <p class="art__p">
+                  次に、主要なサービス（Youtube, note等）のナビゲーション構造を分析し、ナビゲーションのレイアウトパターンをいくつか作成しました。
+                  それぞれのパターンを比較し、ユーザーの認知や操作性、拡張性を考慮して最適なパターンを選定しました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_naviComp.webp" alt="ナビゲーションの比較" width="2545" height="5264" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">工夫した点⑤：申請詳細ページ</h3>
+                <p class="art__p">
+                  申請詳細ページは、ワイヤフレームにスタイルを適用した段階では、<span class="bold">情報の一覧性の低さ、情報のグルピングや優先づけ、進捗状況の分かりやすさに課題がありました。</span>
+                  そこで、構造の似たサービスの構造を分析し、情報の優先づけやグルーピングを再定義した上で、現状の課題を解決したUIを作成しました。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_applyDetail.webp" alt="申請詳細ページの比較" width="2461" height="5340" loading="lazy" decoding="async"></figure>
+
+                <h3 class="art__hed3">工夫した点⑥：承認フロー</h3>
+                <p class="art__p">
+                  承認操作は業務上の重要度が高く、誤操作や見落としが許容されにくい領域であるため、「承認専用のモードを用意するべきか」、あるいは「詳細ページ内で承認を完結させるべきか」をまず検討しました。
+                  UIのまとまりやすさだけでなく、<span class="bold">ユーザーが行うべき導線（内容確認 → 承認／差し戻し）が途切れずに進められるかを判断基準</span>としています。
+                </p>
+                <p class="art__p">
+                  検討の結果、<span class="bold">詳細ページを起点として承認専用モードへ遷移するパターンを採用</span>しました。
+                  これにより、詳細情報の確認と承認操作が視覚的にも機能的にも分離され、誤操作を防ぎつつ、承認に必要な情報をしっかり確認してから操作できるフローを実現しています。
+                </p>
+                <figure class="art__img mb32"><img src="../images/triplite/triplite_approveProcess.webp" alt="承認フローの比較" width="2581" height="10173" loading="lazy" decoding="async"></figure>
+
+
+
+                <h2 class="art__hed2">おわりに</h2>
+                <p class="art__p">
+                  今回の題材は「架空のサービス開発依頼」という設定であり、主に情報設計と UI デザインを中心に取り組んだため、
+                  実プロダクト開発で重要となる<span class="bold">ユーザーリサーチやゼロベースのコンセプト策定は十分に行えていません。</span>
+                  実際の業務では、利用者の行動・文脈・制約から課題を抽出し、それをプロダクトの方向性に反映するプロセスが不可欠であり、この部分については今後の課題だと感じています。
+                </p>
+                <p class="art__p mb32">
+                  また、今回扱ったフローは「申請 → 承認」という比較的シンプルな構造であったため、実プロダクトで求められるような
+                  <span class="bold">複雑な機能間の参照関係や、組織構造・権限設定による分岐までは十分に検討できていません。</span>
+                  より大規模な業務システムでは、データモデル・アクセス権・タスクの依存関係など、UI に影響する構造的な要素が増えるため、
+                  そうしたケースに対応できる設計力をさらに高めていく必要があると考えています。
+                </p>
+
+
+                <a class="art__cv" href="https://www.figma.com/design/4a94ZZ9y3Bd8rWmWwKmTW7/%E5%87%BA%E5%BC%B5%E7%94%B3%E8%AB%8B%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=0-1&t=73FrlrktNyD4XKxO-1"  target="_blank" rel="noopener noreferrer">
+                  <figure class="art__cv-img"><img src="../images/triplite/triplite_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                  <div class="art__cv-text">
+                    <p class="art__cv-ttl">TripliteのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                    <p class="art__cv-desc">要件定義、情報設計、ビジュアルデザインのデータを公開しています</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <footer class="footer">
+              <div class="container">
+                  <nav class="footer__nav">
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">プロフィール</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
+                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">作品一覧</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
+                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
+                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
+                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
+                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
+                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
+                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
+                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
+                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
+                          </ul>
+                      </div>
+                      <div class="footer__nav-group">
+                          <h2 class="footer__nav-ttl">その他</h2>
+                          <ul class="footer__nav-list">
+                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
+                          </ul>
+                      </div>
+                  </nav>
+                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+              </div>
+          </footer>
+         </main>
+         
+      </div>
+    </div>
+    <!--wrapper end-->
+
+    <!-- script js-->
+    <script src="../js/script.js"></script>
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</body>
+
+</html>

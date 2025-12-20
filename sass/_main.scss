@@ -25,7 +25,7 @@
   background-color:$BgDef ;
   padding: 32px 24px;
   z-index: 1000;
-  box-shadow: 2px 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: 2px 0 4px 0 rgba(0,0,0,0.08);
   @include tab{
     position: fixed;
     padding: 20px 40px;
@@ -167,9 +167,9 @@
   color: $TextDef;
   font-weight: 500;
   font-size: 14px;
-  padding: 8px;
+  // padding: 8px;
   // background-color: $BgSubtle;
-  border: 1px solid $BorderSubtle;
+  // border: 1px solid $BorderSubtle;
   letter-spacing: 0.08em;
   position: relative;
   background: linear-gradient(to right, $BgSubtler 50%, $BgDef 50%);
@@ -229,7 +229,6 @@
     }
   }
 }
-
 
 // mv
 .mv{
@@ -597,7 +596,7 @@
 }
 .footer__nav-ttl{
   color: $TextInverse;
-  font-size: 20px;
+  font-size: 16px;
   @include sp{
     font-size: 16px;
   }
@@ -667,7 +666,7 @@
 
 // 下層ページ
 .article__cont{
-  max-width: 800px;
+  max-width: 780px;
   width: 100%;
   padding: 32px 40px;
   margin: 0 auto;
@@ -676,7 +675,7 @@
     padding-top: 120px;
   }
   @include sp{
-    padding: 96px 20px 40px;
+    padding: 80px 20px 40px;
   }
 }
 .art__hed1{
@@ -936,12 +935,7 @@
   letter-spacing: 0.02em;
 }
 
-.mb32{
-  margin-bottom: 32px;
-}
-.mb40{
-  margin-bottom: 40px;
-}
+
 
 .figma-prototype{
   width: 100%;
@@ -1005,4 +999,14 @@
       top: 0;
     }
   }
+}
+
+.mb32{
+  margin-bottom: 32px;
+}
+.mb40{
+  margin-bottom: 40px;
+}
+.mb48{
+  margin-bottom: 48px;
 }
