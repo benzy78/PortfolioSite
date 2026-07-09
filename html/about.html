@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Portfolio Site | 自己紹介</title>
+    <meta name="description" content="自己紹介">
+    <meta name="keywords" content="UIUX, Portfolio">
+    <!--style css-->
+    <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
+    <!--font-awesome-->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <!-- wow -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
+        type="text/css" media="all">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"/>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+      <header class="header fadein">
+              <div class="header__cont">
+                  <div class="header__back-link">
+                      <a href="../index.html" class="back-link">
+                        <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <line x1="17" y1="10" x2="3" y2="10"/>
+                            <polyline points="10 3 3 10 10 17"/>
+                        </svg>
+                        <span class="back-link__text">Homeに戻る</span>
+                      </a>
+                  </div>
+                  <div class="header__nav">
+                      <button class="menu-toggle" aria-label="Toggle navigation">
+                          <span class="menu-icon"></span>
+                          <span class="menu-icon"></span>
+                          <span class="menu-icon"></span>
+                          <!-- <span class="menu-label">Menu</span> -->
+                      </button>
+                      <ul class="header__nav-list">
+                          <li><a href="../index.html#works">作品一覧</a></li>
+                          <li><a href="./about.html">自己紹介</a></li>
+                          <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
+                      </ul>
+                  </div>
+              </div>
+      </header>
+      <section class="profile">
+          <div class="container--sm">
+              <div class="profile__header">
+                  <h2 class="profile__ttl"><img src="../images/PortfolioTitleProfile.svg" alt="Profile"></h2>
+                  <p class="profile__subttl">自己紹介</p>
+              </div>
+              <div class="profile__layout">
+                  <figure class="profile__visual">
+                      <img src="../images/UserImage.webp" alt="" aria-hidden="true" width="1170" height="1146" loading="lazy" decoding="async">
+                  </figure>
+                  <div class="profile__content">
+                      <div class="profile__header">
+                          <h2 class="profile__name"><img src="../images/ProfileName.svg" alt="Yuki Nishimura"></h2>
+                          <p class="profile__role">Product Designer</p>
+                      </div>
+                      <p class="profile__body">
+                          1997年生まれ / 北海道出身 / 慶應義塾大学卒<br>
+                          制作会社にてWebサイトやLP制作を中心に、デザインから実装までを一気通貫で担当。その傍ら、WebアプリケーションのUIデザインにも一部携わりました。その後、フリーランスとして活動。<br>
+                          多様なプロジェクトを経験する中で、プロダクトデザインの領域を専門として深めていくことを決意。転向を見据えて一度フリーランスの活動を離れ、プロダクト開発に必要な知識を体系的に学習し、現在プロダクトデザイナーとして就職活動中。
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="strength profile__section">
+        <div class="container--sm">
+          <h2 class="profile__hed">
+            <span class="profile__hed-en">MY STRENGTH</span>
+            自分の強み
+          </h2>
+          <ul class="strength__list">
+            <li class="strength__item">
+              <div class="strength__item-hed">
+                <span class="strength__item-num">1</span>
+                <h3 class="strength__item-ttl">実装制約を理解したUI設計</h3>
+              </div>
+              <div class="strength__item-body">
+                <p class="strength__item-text">
+                  Webサイト制作において、デザインだけでなく実装も担当していたため、ブラウザの描画構造やスタイリングの制約を熟知しており、デザイン段階からエンジニアと密にコミュニケーションを取り、実装コストや技術的制約を考慮した現実的な提案が可能です。また、一貫性と保守性を担保したコンポーネント設計を行い、開発フェーズでの手戻りを最小化することで、チーム全体の生産性に貢献できます。
+                </p>
+              </div>
+            </li>
+
+            <li class="strength__item">
+              <div class="strength__item-hed">
+                <span class="strength__item-num">2</span>
+                <h3 class="strength__item-ttl">メンタルモデルに沿った構造・骨格の設計</h3>
+              </div>
+              <div class="strength__item-body">
+                <p class="strength__item-text">
+                  複雑な情報や機能扱うアプリケーションにおいては、表面的なビジュアル以上に、情報のつながりやナビゲーションといった「構造・骨格」こそがプロダクトの根幹であると考えています。複雑な要件をユーザーの認知行動やユースケースに基づいて整理し、メンタルモデルに沿ったシンプルで迷いのない設計を得意としています。
+                </p>
+              </div>
+            </li>
+
+            <li class="strength__item">
+              <div class="strength__item-hed">
+                <span class="strength__item-num">3</span>
+                <h3 class="strength__item-ttl">必要なスキルを自ら習得し実務に反映させる自走力</h3>
+              </div>
+              <div class="strength__item-body">
+                <p class="strength__item-text">
+                  コーディングからWebデザイン、UIデザインに至るまで、その時々の実務や課題に合わせて必要なスキルを自分で判断し、書籍やスクール、Udemyなどを活用しながら主体的に習得し、実務に反映させてきました。AIによる設計プロセスの変化や技術トレンドの移り変わりが激しい業界において、自身に足りない要素を自ら判断し、習得し続ける自走力は自身の強みだと考えています。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skill profile__section">
+        <div class="container--sm">
+          <h2 class="profile__hed">
+            <span class="profile__hed-en">SKILL</span>
+            スキル
+          </h2>
+          <div class="skill__group">
+            <!-- <h3 class="skill__group-ttl">アプリケーションデザイン</h3> -->
+            <ul class="skill__list">
+              <li class="skill__item">
+                <h4 class="skill__ttl">UI・ビジュアルデザイン</h4>
+                <p class="skill__text">
+                  Webサイト、ランディングページ、WebアプリケーションにおけるUIおよびビジュアル制作に対応できます。
+                  ブランドコンセプトを的確に体現した美しさはもちろんのこと、全体の一貫性とアクセシビリティを担保したビジュアル表現を得意としています。
+                </p>
+              </li>
+              
+              <li class="skill__item">
+                <h4 class="skill__ttl">UXリサーチ</h4>
+                <p class="skill__text">
+                  ユーザーの潜在的なニーズやプロダクトの本質的な課題を捉えるため、ユーザーインタビューやペルソナ策定、カスタマージャーニーマップの作成、ヒューリスティック評価など、状況に応じた最適なリサーチ手法を用いてユーザー理解を深め、要件定義や情報設計へと活かすことができます。
+                </p>
+              </li>
+              
+              <li class="skill__item">
+                <h4 class="skill__ttl">情報設計</h4>
+                <p class="skill__text">
+                  複雑なビジネス要件や機能要件をロジカルに整理し、ユーザーのメンタルモデルに沿った構造と骨格を設計します。ゴール・ダイレクテッド・デザインやオブジェクト指向UI（OOUI）の思想を取り入れ、認知的な負荷の低いナビゲーションやオブジェクト構成を定義します。
+                </p>
+              </li>
+
+              <li class="skill__item">
+                <h4 class="skill__ttl">検証・改善</h4>
+                <p class="skill__text">
+                  作成したデザインをそのまま実装に回すのではなく、プロトタイプを用いたユーザーヒアリングや検証を自ら推進できます。ユーザーの実際の挙動や反応を観察することで、リリース前にプロダクトの課題を発見し、迅速な改善へと繋げます。
+                </p>
+              </li>
+
+              <li class="skill__item skill__item--wide">
+                <h4 class="skill__ttl">コーディング・実装理解</h4>
+                <p class="skill__text">
+                  HTML、CSS（Sass）、JavaScript、WordPressを用いたWebサイトの実装力を備えています。このマークアップ実務の経験を背景に、アプリケーションのUI設計においてもブラウザの描画構造や実装制約を常に意識した設計を行います。骨格や表層の段階からエンジニアと密に連携し、実装コストやシステム制約を事前に相談しておくことで、手戻りのないスムーズな開発移行を実現できます。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="why profile__section">
+        <div class="container--sm">
+          <h2 class="profile__hed">
+            <span class="profile__hed-en">WHY PRODUCT DESIGNER</span>
+            なぜプロダクトデザイナーを目指したのか
+          </h2>
+          <div class="why__group">
+            <p class="why__body">
+              受託制作会社でWebデザインを中心に活動する中で、名刺代わりのWebサイト制作など、ビジネス目標が曖昧なまま「見栄え」を優先する案件も少なくありませんでした。そうした環境では、予算や期間の制約からリリース後の検証・改善が行われる場面も少なく、「自分が作ったものが、本当にターゲットユーザーの役に立っているのか」を確かめる術がないことに、疑問を感じるようになりました。
+            </p>
+            <p class="why__body">
+              また、表層のビジュアル表現は重要である一方、個人の好みに左右されやすく、AIによる代替が進む領域でもあると考えています。だからこそ、表面的な美しさを作るだけでなく、ユーザーの潜在的なニーズをリサーチから導き出し、そこから具体的なソリューションや骨格・構造を組み立てていく設計のプロセスにこそ、これからのデザイナーとしての本質的な価値があると考えました。
+            </p>
+            <p class="why__body">
+              加えて、実際にアプリケーションのUI設計に携わった際、複雑な要件を整理し、論理的に解決策を形にしていく過程に大きな手応えとやりがいを感じました。この経験から、単発の納品で終わるWebサイト制作ではなく、明確な目的を持ってソフトウェアのプロダクトを中長期的に育てていくプロダクトデザイナーを志向するようになりました。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision profile__section">
+        <div class="container--sm">
+          <h2 class="profile__hed">
+            <span class="profile__hed-en">FUTURE VISION</span>
+            今後の展望
+          </h2>
+          <div class="why__group mb64">
+            <p class="why__body">
+              これまでは、主に要件に基づいた構造・骨格・表層のデザインから、実装への橋渡しを担ってきました。今後はこの経験を土台とし、さらに広い領域でプロダクトの価値に貢献していきたいと考えています。
+              具体的には、リサーチを通じたユーザーや顧客理解からペルソナ策定、ソリューション策定、要件定義といった上流工程から関与することで、ユーザーの課題解決を軸に据えた設計を遂行できることを目指しています。実務における上流工程の経験はまだ浅いものの、こうした設計プロセスを遂行するための手法については、自主学習を通じて深く追求してきました。今後はそれらの知見を実務の現場に適応させ、「誰の、どの課題を、どのように解決すべきか」という本質的な問いからデザインする役割を担っていきたいと考えています。
+            </p>
+            <p class="why__body">
+              また、こうしたユーザーの課題解決を起点とした設計を徹底すると同時に、事業目標やKPIなどのビジネス戦略も考慮した設計を追求したいと考えています。ユーザー体験と事業成果が相反しうる局面でも、双方のバランスを見極めて柔軟に設計を進める視点を持ち、ユーザーの課題を解決するだけでなく、デザインを軸に事業成果に貢献できるデザイナーを目指しています。
+            </p>
+          </div>
+          <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+        </div>
+      </section>
+    </div><!--wrapper end-->
+
+    <!-- script js-->
+    <script src="../js/script.js"></script>
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</body>
+
+</html>

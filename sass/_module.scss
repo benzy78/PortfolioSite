@@ -1,16 +1,18 @@
 .container{
   width: 100%;
-  // max-width: 1280px;
-  // margin: 0 auto;
-  padding: 0 80px;
-  @include tab-lg{
-    padding: 0 40px;
-  }
-  @include sp{
-    padding: 0 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
+.container--sm{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.container--xs{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
 .icon--check{
   vertical-align: middle;
   margin-right: 8px;
@@ -19,10 +21,10 @@
 
 
 .cate-item-01{
-  background-color: $BgSubtler;
-  color: $TextSubtle;
-  // border: 1px solid $BorderSubtler;
-  // border-radius: 8px;
+  background-color: $PrimaryLower;
+  color: $PrimaryHigher;
+  border: 1px solid $PrimaryHigh;
+  border-radius: 4px;
   font-size: 12px;
   letter-spacing: 0.04em;
   padding: 8px 12px;
@@ -65,7 +67,7 @@
 .marker{
   font-weight: bold;
   // 金色
-  background: linear-gradient(transparent 60%, rgba(196, 166, 113, 0.4) 60%);
+  // background: linear-gradient(transparent 60%, rgba(196, 166, 113, 0.4) 60%);
 
   // ワインレッド
   // background:linear-gradient(transparent 60%, rgba(139, 58, 58, 0.3) 60%);
@@ -80,5 +82,5 @@
   // background:linear-gradient(transparent 60%, #FADADA 60%);
   
   // 水色
-  // background:linear-gradient(transparent 60%, #CDE7F8 60%);
+  background:linear-gradient(transparent 60%, #CDE7F8 60%);
 }

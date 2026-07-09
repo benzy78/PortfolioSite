@@ -45,52 +45,114 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // 各セクションのアニメーション
-  // $(document).ready(function() {
-  //   // スクロール時に処理を実行
-  //   $(".maincontents").on("scroll", function() {
-  //     $(".scroll-fadein").each(function() {
-  //       // 要素の位置を取得
-  //       const elementTop = $(this).offset().top;
-  //       const windowBottom = $(".maincontents").scrollTop() + $(".maincontents").height();
-  //       // 要素が画面内に入ったらクラスを追加
-  //       if (elementTop < windowBottom - 50) { // 50pxのマージンを持たせる
-  //         $(this).addClass("show");
-  //       }
-  //     });
-  //   });
-  // });
+  $(document).ready(function() {
+    // スクロール時に処理を実行
+    $(".maincontents").on("scroll", function() {
+      $(".scroll-fadein").each(function() {
+        // 要素の位置を取得
+        const elementTop = $(this).offset().top;
+        const windowBottom = $(".maincontents").scrollTop() + $(".maincontents").height();
+        // 要素が画面内に入ったらクラスを追加
+        if (elementTop < windowBottom - 50) { // 50pxのマージンを持たせる
+          $(this).addClass("show");
+        }
+      });
+    });
+  });
 
+  // スクロール処理
+    const scrollBtn = document.getElementById('scroll-btn');
+    const worksSection = document.getElementById('works');
+
+    if (scrollBtn && worksSection) {
+        scrollBtn.addEventListener('click', () => {
+            worksSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
 });
 
 
-$(document).ready(function () {
-  function checkFadeIn() {
-    $(".scroll-fadein").each(function () {
-      const rect = this.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 80) {
-        $(this).addClass("show");
+// $(document).ready(function () {
+//   function checkFadeIn() {
+//     $(".scroll-fadein").each(function () {
+//       const rect = this.getBoundingClientRect();
+//       if (rect.top < window.innerHeight - 80) {
+//         $(this).addClass("show");
+//       }
+//     });
+//   }
+
+//   function bindScrollTarget() {
+//     const isSP = window.innerWidth < 768;
+
+//     // イベントを一旦全解除
+//     $(window).off("scroll", checkFadeIn);
+//     $(".maincontents").off("scroll", checkFadeIn);
+
+//     if (isSP) {
+//       // SP表示：windowがスクロール対象
+//       $(window).on("scroll", checkFadeIn);
+//     } else {
+//       // PC表示：mainがスクロール対象
+//       $(".maincontents").on("scroll", checkFadeIn);
+//     }
+
+//     checkFadeIn(); // 初期表示でも1回実行
+//   }
+
+//   bindScrollTarget();
+//   $(window).on("resize", bindScrollTarget); // 画面幅変更にも対応
+// });
+
+
+
+// 以下、目次アニメーション
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. 監視対象の見出しと、目次のリンクをすべて取得
+  const targets = document.querySelectorAll('.art__hed2, .art__hed3');
+  const navLinks = document.querySelectorAll('.index__link, .index__sub-link');
+
+  // 2. 監視の設定
+  const options = {
+    root: null, // ビューポートを基準にする
+    // 上部10%〜下部80%の範囲で見出しを検知（実質、画面上端に近い位置で反応させる）
+    rootMargin: "-10% 0px -80% 0px",
+    threshold: 0
+  };
+
+  // 3. 実行する処理
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // 見出しが判定エリアに入ってきた場合
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        
+        // 全てのハイライトを一度リセット
+        navLinks.forEach(link => {
+          link.classList.remove('is-active');
+        });
+
+        // 現在の見出しに対応する目次リンクにクラスを付与
+        const activeLink = document.querySelector(`[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('is-active');
+            // 目次の現在地を、サイドバーの中央付近にスムーズにスクロールさせる
+          activeLink.scrollIntoView({
+            behavior: 'smooth', // スルスル動かす
+            block: 'nearest'    // 見えていない時だけ、最短距離で表示エリアに入れる
+          });
+        }
       }
     });
-  }
+  }, options);
 
-  function bindScrollTarget() {
-    const isSP = window.innerWidth < 768;
-
-    // イベントを一旦全解除
-    $(window).off("scroll", checkFadeIn);
-    $(".maincontents").off("scroll", checkFadeIn);
-
-    if (isSP) {
-      // SP表示：windowがスクロール対象
-      $(window).on("scroll", checkFadeIn);
-    } else {
-      // PC表示：mainがスクロール対象
-      $(".maincontents").on("scroll", checkFadeIn);
+  // 4. 監視を開始
+  targets.forEach((target) => {
+    if (target.id) { // IDがあるものだけ監視
+      observer.observe(target);
     }
-
-    checkFadeIn(); // 初期表示でも1回実行
-  }
-
-  bindScrollTarget();
-  $(window).on("resize", bindScrollTarget); // 画面幅変更にも対応
+  });
 });
+// 以下、目次アニメーション end

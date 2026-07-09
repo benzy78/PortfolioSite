@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>SmartOrdee 紹介LP | デザインプロセス</title>
+    <title>SmartOrdee 紹介LP | Portfolio</title>
     <meta name="description" content="This portfolio showcases landing pages, websites, and app designs I’ve created in the past.">
     <meta name="keywords" content="UIUX, Portfolio">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!--jquery-->
@@ -25,209 +27,257 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
-            </div>
-            <div class="header__nav">
+
+      <header class="header fadein">
+        <div class="header__cont">
+          <div class="header__back-link">
+              <a href="../index.html#works" class="back-link">
+                <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="17" y1="10" x2="3" y2="10"/>
+                    <polyline points="10 3 3 10 10 17"/>
+                </svg>
+                <span class="back-link__text">Homeに戻る</span>
+              </a>
+          </div>
+          <div class="header__nav">
               <button class="menu-toggle" aria-label="Toggle navigation">
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
-              
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
+              <ul class="header__nav-list">
+                  <li><a href="../index.html#works">作品一覧</a></li>
+                  <li><a href="./about.html">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-            </div>
+              </ul>
           </div>
-        </header>
-         <main class="maincontents">
-            <div class="article__cont">
+        </div>
+      </header>
+
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
-                <h1 class="art__hed1">SmartOrdee 紹介LP</h1>
-                <p class="art__p">
-                  このLPは、飲食店向けQRコードオーダーシステム「SmartOrdee」を紹介するためのページです。
-                  人手不足や業務効率化に課題を抱える経営者に向けて、サービスの機能や魅力を分かりやすく伝え、無料トライアルや資料請求へ繋げることを目的としています。
-                </p>
-                <ul class="art__cate">
-                  <li class="cate-item-01">Webデザイン</li>
-                  <li class="cate-item-01">コーディング</li>
-                  <li class="cate-item-01">LP</li>
-                </ul>
-                <figure class="art__eyecatch">
-                  <a href="https://benzy78.github.io/SmartOrdee/index.html" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/SmartOrdeeLP_UI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
-                    <p class="art__eyecatch-label"><span>SmartOrdee LPへ</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
-                  </a>
-                </figure>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
-                  <li>カテゴリー：LP</li>
-                  <li>制作種別：自主制作</li>
-                  <li>担当領域：Webデザイン、コーディング</li>
-                  <li>使用ツール：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
-                  <li>制作期間：3週間</li>
-                  <li>リンク：<a href="https://benzy78.github.io/SmartOrdee/index.html" class="art__link" target="_blank" rel="noopener noreferrer">SmartOrdee LPはこちら<img src="../images/icon_open_bl.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                </ul>
-                <h2 class="art__hed2">サイト制作の目的</h2>
-                <p class="art__p mb32">
-                  本サイトは、飲食店向けQRコードオーダーアプリ「SmartOrdee」の機能や利点を効果的に紹介し、<span class="marker">ターゲット層である飲食店経営者にサービスの魅力を伝えることを目的</span>としています。
-                  アプリケーションの開発後、さらに登録者を増やす施策として制作されたLPであり、新規登録をKGIとし、無料トライアルの申し込みや資料請求の問い合わせをKPIとしています。
-                </p>
-                <h2 class="art__hed2">ターゲット層の設定</h2>
-                <p class="art__p mb32">
-                  本サイトの<span class="marker">ターゲットは、主に席数30～100席程度の小〜中規模の飲食店を運営する経営者や店舗マネージャー</span>です。
-                  彼らは、人手不足への対応や業務効率化を課題に感じており、特に注文率の向上、注文ミスの削減、ホールとキッチン間の連携強化などに強いニーズを抱えています。
-                  こうした悩みを解決する手段として、SmartOrdeeの導入を検討してもらうことを目指しています。
-                </p>
-                <h2 class="art__hed2">調査分析</h2>
-                <p class="art__p mb32">
-                  本LP制作にあたっては、同業他社のLPを参考に、ページ構成やトンマナ（トーン＆マナー）の分析を行いました。
-                  また、自分自身をQRコードオーダーの導入を検討する飲食店経営者と仮定し、実際に各LPを閲覧した際に登録したいと思える導線になっているかを検証。
-                  文言やイラストの使い方、訴求ポイントの内容とその見せ方についても細かく分析し、効果的な訴求方法の把握に努めました。
-                </p>
-                <h2 class="art__hed2">情報設計</h2>
-                <p class="art__p">
-                  本サイトは、SmartOrdeeのアプリ機能とその魅力を効果的に訴求することを最重要の目的として設計しています。
-                </p>
-                <p class="art__p">
-                  まずファーストビューでは、アプリのUIビジュアルとキャッチコピーを用い、サービスの概要を直感的に伝えることでユーザーの関心を引きます。
-                  続いて「こんなお悩みはありませんか？」というセクションを設け、<span class="marker">ターゲット層が抱えるペインやニーズを具体的に列挙し、課題共感を促します。</span>
-                  その後、SmartOrdeeの基本的な機能を紹介し、さらに<span class="marker">導入によるメリットを効果的な訴求ポイントとして整理して提示</span>します。
-                </p>
-                <p class="art__p">
-                  また、導入事例では、<span class="marker">実際に導入した店舗における具体的な成果を定量的なデータを交えて紹介</span>し、サービスの信頼性と導入効果を実感してもらう構成としています。
-                  料金プランは3種類を用意していますが、最も推奨するのは中間価格帯のスタンダードプランであり、「一番人気」と強調することで機能面・価格面ともに最適な選択肢であることを印象づけています。
-                  残りの2つのプランは選択肢として提示することで、ユーザーに自ら選択したという納得感を持たせる設計としています。
-                </p>
-                <p class="art__p mb32">
-                  さらに、よくある質問のセクションでユーザーの疑問を解消し、最後にCTAとして無料トライアル申し込みと資料請求の導線を配置。
-                  加えて、無料トライアルや資料請求のCVボタンは各セクション内にも適宜配置し、ヘッダーにも問い合わせボタンを固定表示することで、<span class="marker">ユーザーが興味を持った瞬間に即アクションへ繋げられるよう導線設計</span>を行っています。
-                </p>
-
-                <h2 class="art__hed2">UI設計の意図</h2>
-                <h3 class="art__hed3">配色</h3>
-                <p class="art__p">
-                  本LPでは、アプリケーションで使用しているプライマリーカラーを踏襲し、ブランドの一貫性を重視しています。
-                  プライマリーカラーには、飲食店での利用を想定し、食欲を損なわず、かつモダンで洗練された印象を与えることを目的として、ワインレッド（#A52A2A）を採用しています。
-                  さらに、このプライマリーカラーの諧調（明度・彩度のバリエーション）から、セカンダリーカラーやバックグラウンドカラーを選定することで、
-                  全体の統一感を保ちつつ、情報の階層や視覚的コントラストを表現しています。
-                  また、全体を通してWCAG基準に準拠したコントラスト比を保ち、視認性やアクセシビリティにも配慮した設計としています。
-                </p>
-                <figure class="art__img"><img src="../images/SOLP_color.png" alt="SmartOrdee LPカラーパレット" width="2979" height="800" loading="lazy" decoding="async"></figure>
-
-                <h3 class="art__hed3">タイポグラフィー</h3>
-                <p class="art__p">
-                  本サイトでは、書体としてアプリと同じ Noto Sans JP を採用しています。
-                  これは、SmartOrdeeが異なるデバイスで利用されることや、幅広い年代のユーザーが利用することを想定し、視認性・可読性が高く、クセのない標準的なフォントであることを選定理由としています。
-                  フォントサイズは16pxを基準とし、基本的には4の倍数で設計することで統一感を持たせています。
-                  ラインハイトは本文を2.0、見出しを1.5に設定し、文字間隔は0.02emとすることで、余白のバランスや可読性を確保しつつ、視認性の向上を図っています。
-                  これらの設定は、UI全体の統一感を保つとともに、読みやすさを高めるための根拠に基づいています。
-                </p>
-
-                <h3 class="art__hed3">レイアウト</h3>
-                <p class="art__p mb32">
-                  レイアウトはシンプルで視認性の高い1カラム構成を採用し、各セクションを縦に積み重ねることで、ユーザーが迷わず情報を順に読み進められるようにしました。
-                  また、全体に十分な余白を設けることで情報を整理し、視覚的な負担を軽減しています。
-                  加えて、テキスト偏重にならないように、適度にイラストや写真を用いることで、読んでいて疲れない構成にしています。
-                </p>
-
-                <h2 class="art__hed2">実装・インタラクション等に関して</h2>
-                <p class="art__p">
-                  実装にあたっては、PCのみならずスマートフォンやタブレットでの閲覧も想定し、各デバイスでの表示崩れが起こらないように設計・調整を行っています。
-                  <span class="marker">単にレイアウトが収まるだけでなく、画面幅に応じて余白やコンテンツの幅、フォントサイズといった要素を適切に変化させることで、どの環境で見ても快適に閲覧できるユーザー体験を担保</span>しています。
-                </p>
-                <p class="art__p">
-                  アニメーションに関しては、ユーザーが読み進めるのを妨げないよう、必要最低限の表現にとどめ、主にフェードインを中心とした自然な動きのみを採用しました。
-                  これによって、ページの表示速度や情報の可視性を損なうことなく、落ち着いた雰囲気の中でスムーズな体験を実現しています。
-                </p>
-                <p class="art__p mb32">
-                  また、リンクやボタンなどのインタラクティブな要素については、ホバー時に微細なアニメーションを加えることで、ユーザーがその要素がクリック可能であることを直感的に理解できるよう工夫しています。
-                  <span class="marker">視覚的なフィードバックを通じて操作性を高めるとともに、UIのアクセシビリティ向上にも寄与</span>しています。
-                </p>
-
-                <h2 class="art__hed2">アウトプット</h2>
-                <h3 class="art__hed3">ロゴ</h3>
-                <figure class="art__img"><img src="../images/SOLP_logo.svg" alt="SmartOrdee LP ロゴ" loading="lazy" decoding="async" width="880" height="156"></figure>
-                <h3 class="art__hed3">Webデザイン</h3>
-                <figure class="art__img"><img src="../images/SOLP_capture.webp" alt="SmartOrdee LPのUIキャプチャー" width="1500" height="3399" loading="lazy" decoding="async"></figure>
-
-
-                <a class="art__cv" href="https://benzy78.github.io/SmartOrdee/index.html" target="_blank" rel="noopener noreferrer">
-                  <figure class="art__cv-img"><img src="../images/SmartOrdeeLP_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">SmartOrdee紹介LPはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
-                    <p class="art__cv-desc">飲食店向けSass型オーダー管理システム「SmartOrdee」の紹介ページ</p>
+                <h1 class="art__hed1">SmartOrdeeアプリ紹介LP</h1>
+                  <ul class="art__cate">
+                    <li class="cate-item-01">LP</li>
+                    <li class="cate-item-01">自主制作</li>
+                  </ul>
+                  <div class="art__eyecatch">
+                    <img src="../images/SOLP/SOLP_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="2800" height="1680" fetchpriority="high">
                   </div>
-                </a>
+
+                  <p class="art__p">
+                  このLPは、飲食店向けQRコードオーダーシステム「SmartOrdee」を紹介するためのページです。
+                  人手不足や業務効率化に課題を抱える飲食店オーナーに向けて、サービスの機能や魅力を分かりやすく伝え、無料トライアルや資料請求へ繋げることを目的としています。
+                </p>
+                <ul class="art__list--blue mb32">
+                    <li>カテゴリー：LP</li>
+                    <li>制作種別：自主制作</li>
+                    <li>担当領域：企画、デザイン、コーディング</li>
+                    <li>使用ツール：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
+                    <li>制作期間：3週間</li>
+                  </ul>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec01">プロジェクト概要</h2>
+                    <p class="art__p">
+                      本サイトは、飲食店のオペレーション効率化を支援するQRコードオーダーシステム「SmartOrdee」の紹介用ランディングページです。
+                      人手不足や注文ミスなどの課題を抱える飲食店の経営者やオーナーを主要ターゲットに据え、サービスの利便性と導入メリットを直感的に伝えることで、認知拡大および導入のきっかけとなる問い合わせへ繋げることを目的に制作しました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/SOLP/SOLP_Summary.webp" alt="プロジェクト要件" width="1920" height="1015" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec02">最終成果物</h2>
+                    <figure class="art__img mb32">
+                      <img style="border: 1px solid #e3e4e6;" src="../images/SOLP/SOLP_capture.webp" alt="最終成果物UI" width="1440" height="6723" loading="lazy" decoding="async">
+                    </figure>
+                    <a class="art__cv" href="https://benzy78.github.io/SmartOrdee/"  target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/SOLP/SOLP_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">SmartOrdee紹介LPはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                        <p class="art__cv-desc">飲食店向けSass型オーダー管理システム「SmartOrdee」の紹介ページ</p>
+                      </div>
+                    </a>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec03">デザインプロセス</h2>
+                    <p class="art__p">
+                      デザインプロセスは以下の手順で進めました。以下の章で詳細なプロセスを紹介します。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/SOLP/SOLP_DesignProcess.webp" alt="デザインプロセス" width="1920" height="995" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec04">1. 要件整理</h2>
+                    <p class="art__p mb32">
+                      本プロジェクトは、飲食店のオペレーションを効率化する架空のQRコードオーダーシステム「SmartOrdee」の紹介用ランディングページです。
+                      サービスの新規開発に伴い、その利便性を広く周知することで認知度を高め、導入検討店舗の獲得および利用拡大を図るため制作しました。
+                    </p>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-01">対象製品の概要整理</h3>
+                      <p class="art__p">
+                        SmartOrdeeは、来店客のスマートフォンを活用して注文から会計までを完結させる、飲食店向けのQRコードオーダーシステムです。
+                        専用端末が不要なため導入コストを抑えられるほか、多言語対応やオンライン決済機能により、人手不足の解消とインバウンド対応を同時に実現します。
+                        注文・会計業務の自動化を通じて、オペレーションの効率化、注文ミスの防止、さらには客単価や回転率の向上を支援するデジタルソリューションです。
+                      </p>
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-02">サイト制作の目的</h3>
+                      <ul class="art__list--blue">
+                        <li><span class="bold">サービスの認知拡大：</span> アプリの機能や利点を宣伝し、本プロダクトの認知を拡大すること</li>
+                        <li><span class="bold">サービス導入への導線：</span> サービスの利便性と導入メリットを伝えることで問合せや導入に繋げること</li>
+                      </ul>
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-03">ターゲット層</h3>
+                      <p class="art__p">
+                        席数30～100席程度の小〜中規模の飲食店を運営する経営者や店舗マネージャー。
+                        また、人手不足への対応や業務効率化を課題に感じており、特に注文率の向上、注文ミスの削減、ホールとキッチン間の連携強化などに強いニーズを抱えている層。
+                      </p>
+                    </section>
+
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec05">2. リサーチ</h2>
+                    <p class="art__p mb32">
+                      次に、リサーチとして、競合サイトの分析および、デザイントレンドの分析、参考となるサイトの収集を行いました。
+                    </p>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec05-01">競合サイトの分析</h3>
+                      <p class="art__p">
+                        高く評価されている類似のモバイルオーダーサービスやアプリ紹介LPを複数選定し、構成や訴求文言を分析しました。ユーザーを迷わせない情報の優先順位や、信頼感を与えるデザインの共通項を抽出。それらを本プロジェクトの設計に反映させることで、説得力の高いコンテンツ構成を目指しました。
+                      </p>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec05-02">トレンド分析・リファレンス集め</h3>
+                      <p class="art__p">
+                        サービスのコンセプトに合わせ、モダンかつ信頼感のあるビジュアルデザインを中心に、最新のLPトレンドを調査・分析しました。
+                        テクノロジーの利便性を感じさせるクリーンな配色や、直感的な操作性を想起させるUIパーツの活用事例を収集。それらの要素を言語化・整理することで、ターゲットの期待に応える視覚表現の方向性を定義しました。
+                      </p>
+                    </section>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec06">3. 情報設計</h2>
+                    <p class="art__p">
+                      これまでのリサーチ結果を基に、ターゲットの懸念を払拭し、期待を高めるために必要な情報を厳選しました。
+                      ユーザーが抱える課題から解決、そして導入へと至る「ユーザーシナリオ」を策定。
+                      それに基づき、情報の優先順位と最適な配置を検討したワイヤフレームを作成し、コンバージョンを最大化するための論理的なサイト構成を具体化しました。
+                    </p>
+                    <p class="art__p">
+                      具体的な構成として、まずファーストビューでは、アプリのUIビジュアルとキャッチコピーを用い、サービスの概要を直感的に伝えることでユーザーの関心を引きます。
+                      続いて「こんなお悩みはありませんか？」というセクションを設け、<span class="marker">ターゲット層が抱えるペインやニーズを具体的に列挙し、課題共感を促します。</span>
+                      その後、SmartOrdeeの基本的な機能を紹介し、さらに<span class="marker">導入によるメリットを効果的な訴求ポイントとして整理して提示</span>します。
+                    </p>
+                    <p class="art__p">
+                      また、導入事例では、<span class="marker">実際に導入した店舗における具体的な成果を定量的なデータを交えて紹介</span>し、サービスの信頼性と導入効果を実感してもらう構成としています。
+                      料金プランは3種類を用意していますが、最も推奨するのは中間価格帯のスタンダードプランであり、「一番人気」と強調することで機能面・価格面ともに最適な選択肢であることを印象づけています。
+                      残りの2つのプランは選択肢として提示することで、ユーザーに自ら選択したという納得感を持たせる設計としています。
+                    </p>
+                    <p class="art__p">
+                      さらに、よくある質問のセクションでユーザーの疑問を解消し、最後にCTAとして無料トライアル申し込みと資料請求の導線を配置。
+                      加えて、無料トライアルや資料請求のCVボタンは各セクション内にも適宜配置し、ヘッダーにも問い合わせボタンを固定表示することで、<span class="marker">ユーザーが興味を持った瞬間に即アクションへ繋げられるよう導線設計</span>を行っています。
+                    </p>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec07">4. ビジュアルデザイン</h2>
+                    <p class="art__p">
+                      レイアウトはシンプルで視認性の高い1カラム構成を採用し、各セクションを縦に積み重ねることで、ユーザーが迷わず情報を順に読み進められるようにしました。
+                      また、全体に十分な余白を設けることで情報を整理し、視覚的な負担を軽減しています。
+                      加えて、テキスト偏重にならないように、適度にイラストや写真を用いることで、読んでいて疲れない構成にしています。
+                    </p>
+                    <p class="art__p">
+                      カラーに関しては、アプリケーションで使用しているプライマリーカラーを踏襲し、ブランドの一貫性を重視しています。
+                      プライマリーカラーには、飲食店での利用を想定し、食欲を損なわず、かつモダンで洗練された印象を与えることを目的として、ワインレッド（#A52A2A）を採用しています。
+                      さらに、このプライマリーカラーの諧調（明度・彩度のバリエーション）から、セカンダリーカラーやバックグラウンドカラーを選定することで、 全体の統一感を保ちつつ、情報の階層や視覚的コントラストを表現しています。
+                      また、全体を通してWCAG基準に準拠したコントラスト比を保ち、視認性やアクセシビリティにも配慮した設計としています。
+                    </p>
+                    <figure class="art__img mb32"><img src="../images/SOLP/SOLP_Color.png" alt="カラーパレット" width="2979" height="800" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      ロゴ
+                    </p>
+                    <figure class="art__img mb32"><img src="../images/SOLP/SOLP_logo.svg" alt="SmartOrdeeロゴ" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      最終的に出来上がったデザインカンプは以下。
+                    </p>
+                    <figure class="art__img mb">
+                      <img style="border: 1px solid #e3e4e6;" src="../images/SOLP/SOLP_capture.webp" alt="最終成果物UI" width="1440" height="6723" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec08">5. 実装・公開・検証改善</h2>
+                    <p class="art__p mb32">
+                      作成したデザインカンプを基に、HTML/CSS(Sass)およびJavaScriptを用いて実装しました。
+                      あらゆる閲覧環境で最適な体験を提供するため、モバイルファーストのレスポンシブ対応に加え、アクセシビリティや表示速度、視認性の多角的な検証を実施。
+                      特定デバイスでのレイアウト崩れや読み込み負荷などの課題を洗い出し、細部まで改善を繰り返すことで、実用性と品質を兼ね備えた状態で公開しました。
+                    </p>
+                    <a class="art__cv" href="https://benzy78.github.io/SmartOrdee/"  target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/SOLP/SOLP_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">SmartOrdee紹介LPはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                        <p class="art__cv-desc">飲食店向けSass型オーダー管理システム「SmartOrdee」の紹介ページ</p>
+                      </div>
+                    </a>
+                  </section>
+
+
               </article>
-            </div>
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">プロジェクト概要</a></li>
+                  <li><a href="#sec02" class="index__link">最終成果物</a></li>
+                  <li><a href="#sec03" class="index__link">詳細なデザインプロセス</a></li>
+                  <li><a href="#sec04" class="index__link">1. 要件整理</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec04-01" class="index__sub-link">1-1. クライアント情報</a></li>
+                    <li><a href="#sec04-02" class="index__sub-link">1-2. サイト制作の目的</a></li>
+                    <li><a href="#sec04-03" class="index__sub-link">1-3. ターゲット層</a></li>
+                  </ul>
+                  <li><a href="#sec05" class="index__link">2. リサーチ</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec05-01" class="index__sub-link">2-1. 競合サイトの分析</a></li>
+                    <li><a href="#sec05-02" class="index__sub-link">2-2. トレンド分析・リファレンス集め</a></li>
+                  </ul>
+                  <li><a href="#sec06" class="index__link">3. 情報設計</a></li>
+                  <li><a href="#sec07" class="index__link">4. ビジュアルデザイン</a></li>
+                  <li><a href="#sec08" class="index__link">5. 実装・公開・検証改善</a></li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
+        </div>
       </div>
+
+
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
     </div>
     <!--wrapper end-->
 

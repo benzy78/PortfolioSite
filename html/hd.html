@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Hikora Design | コーポレートサイトのデザインプロセス</title>
+    <title>Hikora Design コーポレートサイト | Portfolio</title>
     <meta name="description" content="This portfolio showcases landing pages, websites, and app designs I’ve created in the past.">
     <meta name="keywords" content="UIUX, Portfolio">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
     <!--font-awesome-->
@@ -24,248 +26,254 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
-            </div>
-            <div class="header__nav">
+
+      <header class="header fadein">
+        <div class="header__cont">
+          <div class="header__back-link">
+              <a href="../index.html#works" class="back-link">
+                <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="17" y1="10" x2="3" y2="10"/>
+                    <polyline points="10 3 3 10 10 17"/>
+                </svg>
+                <span class="back-link__text">Homeに戻る</span>
+              </a>
+          </div>
+          <div class="header__nav">
               <button class="menu-toggle" aria-label="Toggle navigation">
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
+              <ul class="header__nav-list">
+                  <li><a href="../index.html#works">作品一覧</a></li>
+                  <li><a href="./about.html">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-            </div>
+              </ul>
           </div>
-        </header>
-         <main class="maincontents">
-            <div class="article__cont">
+        </div>
+      </header>
+
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
                 <h1 class="art__hed1">Hikora Design コーポレートサイト</h1>
+                <ul class="art__cate">
+                  <li class="cate-item-01">Webサイト</li>
+                  <li class="cate-item-01">自主制作</li>
+                </ul>
+                <figure class="art__eyecatch">
+                  <img src="../images/HikoraDesign/HikoraDesign_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" fetchpriority="high" width="2800" height="1680">
+                </figure>
                 <p class="art__p">
                   本サイトは、Webデザインにおけるスキル（情報設計・ビジュアルデザイン・ブランド構築力など）を包括的に証明することを目的として制作した架空の企業サイトです。
                   業界問わず通用する、洗練された印象と信頼感を併せ持つコーポレートサイトを意識し、ユーザー体験とビジュアルの両面から設計しています。
                 </p>
-                <ul class="art__cate">
-                  <li class="cate-item-01">Webデザイン</li>
-                  <li class="cate-item-01">コーディング</li>
-                  <li class="cate-item-01">コーポレートサイト</li>
-                </ul>
-                <figure class="art__eyecatch">
-                  <a href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" fetchpriority="high" width="3000" height="1800">
-                    <p class="art__eyecatch-label"><span>Hikora Design HPへ</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
-                  </a>
-                </figure>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
+                <ul class="art__list--blue mb40">
                   <li>カテゴリー：コーポレートサイト</li>
                   <li>制作種別：自主制作</li>
-                  <li>担当領域：Webデザイン、コーディング</li>
-                  <li>使用ツール：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
+                  <li>担当領域：企画、デザイン、コーディング</li>
+                  <li>使用ツール等：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
                   <li>制作期間：3週間</li>
-                  <li>リンク：<a href="https://benzy78.github.io/HikoraDesign-New/" class="art__link" target="_blank" rel="noopener noreferrer">コーポレートサイトはこちら<img src="../images/icon_open_bl.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
                 </ul>
 
-                <h2 class="art__hed2">設計方針</h2>
-                <div class="art__memo">
-                  <div class="art__memo-container">
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">会社概要</h3>
-                      <p class="art__memo-p">
-                        Hikora Designは、UI/UX設計から業務フローの最適化、フロントエンド開発、運用支援までを一気通貫で手がける、DX（デジタルトランスフォーメーション）パートナーです。
-                        戦略立案から導入・改善フェーズまでクライアントに伴走し、本質的な変革を実現します。
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec01">プロジェクト概要</h2>
+                  <p class="art__p">
+                    本プロジェクトは、信頼感のあるIT企業としてのブランドイメージを確立するため、企業の「顔」となるコーポレートサイトとして制作しました。
+                    訪問者に対して事業内容や制作実績を簡潔かつ明確に伝えることで、確かな技術力と信頼性を印象付けることを主眼に置いています。
+                  </p>
+                  <p class="art__p mb32">
+                    ターゲットは、開発リソースを求める経営層や事業責任者、および採用候補者などを幅広く想定。
+                    特定の層への強い訴求よりも、まずは企業としての誠実な姿勢を正しく伝えることに注力しました。
+                    アプローチとしては、モダンで洗練されたデザインと整理された情報設計を軸に、過度な装飾を排したスマートな表現を採用。
+                    IT企業としてのプロフェッショナルな側面を体現し、ブランド価値を底上げする構成を追求しました。
+                  </p>
+                  <figure class="art__img">
+                    <img src="../images/HikoraDesign/HikoraDesign_Summary.webp" alt="プロジェクト概要" width="1920" height="995" loading="lazy" decoding="async">
+                  </figure>
+                </section>
+
+                <section class="art__section">
+                    <h2 class="art__hed2" id="sec02">最終成果物</h2>
+                    <figure class="art__img mb32"><img src="../images/HikoraDesign/HikoraDesign_capture.webp" alt="HikoraDesign UIキャプチャー" width="1500" height="3926" loading="lazy" decoding="async"></figure>
+
+                    <a class="art__cv" href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/HikoraDesign/HikoraDesign_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Hikora Designのサイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" loading="lazy" decoding="async" width="24" height="24"></p>
+                        <p class="art__cv-desc">Hikora Designは、ビジネスの構造をテクノロジーとデザインで根本から再設計するDX事業の会社です。</p>
+                      </div>
+                    </a>
+
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec03">デザインプロセス</h2>
+                    <p class="art__p">
+                      デザインプロセスは以下の手順で進めました。以下の章で詳細なプロセスを紹介します。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/HikoraDesign/HikoraDesign_DesignProcess.webp" alt="デザインプロセス" width="1920" height="9995" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec04">1. 要件整理</h2>
+                    <p class="art__p mb32">
+                      本プロジェクトは、信頼感のあるIT企業としてのブランドイメージを確立するため、企業の「顔」となるコーポレートサイトとして制作しました。
+                      実務における要件を想定し、以下の設定を構築して制作を開始しました。
+                    </p>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-01">クライアント情報</h3>
+                      <p class="art__p">
+                        Hikora Designは、UI/UX設計から業務フローの最適化、フロントエンド開発、そして運用支援までを一気通貫で手がけるDX（デジタルトランスフォーメーション）パートナーです。
+                        戦略立案から導入・改善フェーズにいたるまでクライアントに深く伴走し、ビジネスの本質的な変革を実現することを強みとしています。
                       </p>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">サイト制作の目的</h3>
-                      <p class="art__memo-p">
-                        本サイトは、コーポレートサイトとして、企業の顔となるホームページを構築することを目的としています。
-                        モダンで洗練されたデザインを通じて、信頼性のあるIT企業としての印象を与えることを意図しており、訪問者に対して基本的な会社情報や事業内容、制作実績を簡潔かつ明確に伝えることを主なゴールとしています。
-                        採用や受注といった機能もサイト内には一部組み込まれていますが、これらはあくまで補助的な位置づけに留めています。
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-02">サイト制作の目的</h3>
+                      <p class="art__p">
+                        本サイトの制作目的は、企業の「顔」として、信頼感のあるIT企業というブランドイメージを確立し、会社情報や実績を簡潔かつ明確に伝えるサイト構築です。
                       </p>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">ターゲット層</h3>
-                      <ul class="art__memo-list">
-                        <li>中小〜中堅企業の経営層・事業責任者</li>
-                        <li>スタートアップや新規事業の責任者</li>
-                        <li>ITや開発のリソースが不足している企業のマネージャー</li>
-                        <li>当社に就職を考えている人</li>
-                      </ul>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">デザインコンセプト</h3>
-                      <p class="art__memo-p">
-                        Hikora DesignのWebサイトは、「本質的な課題と向き合う伴走型のDXパートナー」というブランドメッセージを軸に、静かで誠実な佇まいを大切にしたデザインを目指しました。
-                        先進性よりも“信頼できる知的パートナー”としての印象を重視し、トーンを抑えた配色やミニマルなUI設計、余白を活かしたレイアウトによって、読み手に思考の余白と深さを提供しています。
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-03">ターゲット層</h3>
+                      <p class="art__p">
+                        経営層、事業責任者、開発マネージャー、採用候補者など。特定の層に特化せず、幅広いステークホルダーに対して誠実な印象を与えることを重視しています。
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </section>
 
-                <h2 class="art__hed2">情報設計</h2>
-                <p class="art__p">
-                  本サイトの情報設計は、まず競合他社のコーポレートサイトを複数調査・分析し、一般的に必要とされる情報要素や、ユーザーの行動パターンを整理するところから始めました。
-                  そのうえで、当社サイトにおいて伝えるべき情報を取捨選択し、閲覧者にとって無理のない情報の流れとなるよう、全体の画面遷移構成やページ内の情報配置を設計しました。
-                </p>
-                <p class="art__p">
-                  設計の中心に置いたのは、<span class="marker">初めて訪れたユーザーが「この会社は何をしているのか」「どのような価値を提供しているのか」を素早く把握できること</span>です。
-                  そこで、トップページには企業概要・事業内容・実績・理念といった要点を凝縮し、視認性と情報量のバランスに配慮しながら、限られたスペースの中に必要十分な情報を配置しました。
-                </p>
-                <p class="art__p">
-                  導線の設計においては、閲覧者の関心が自然に移り変わる順序を意識しています。まずは事業内容を紹介し、その具体例として制作実績を提示。
-                  次に、他社との違いや当社ならではの価値を伝えるために強みのセクションを設け、企業理念へとつなげています。
-                  その後、お知らせや更新情報を通じて企業の活動を示し、最後にお問い合わせへと誘導する構成とすることで、ユーザーが迷うことなく情報を取得し、必要に応じて次のアクションへと進めるよう設計しています。
-                  このように、<span class="marker">単なる情報の羅列ではなく、訪問者の理解と行動を支える流れを重視した情報設計</span>を心がけました。
-                </p>
-                
-                <h2 class="art__hed2">ビジュアル設計</h2>
-                <h3 class="art__hed3">配色</h3>
-                <p class="art__p">
-                  信頼感とモダンなIT企業の雰囲気を出せるように青系統でトーンを統一しています。
-                  また、情報の重要度に応じて、色の濃淡を変えることで、認知負荷を下げる設計にしています。
-                  加えて、全体を通してWCAG基準に準拠したコントラスト比を保ち、視認性やアクセシビリティにも配慮した設計としています。
-                </p>
-                <figure class="art__img"><img src="../images/HD_color.png" alt="Hikora Design カラーパレット" width="2042" height="648" loading="lazy" decoding="async"></figure>
-                <h3 class="art__hed3">タイポグラフィー</h3>
-                <p class="art__p mb32">
-                  モダンで先進的なIT企業感を演出するために、<span class="marker">書体には癖がなく、可読性と視認性が高いInterを採用</span>しました。
-                  フォントサイズは16pxを基準に、基本的には4の倍数単位で階層的に設計しています。
-                  また、読みやすさを考慮し、行間（line-height）は見出しは1.5、本文は2.0で設定し、文字間隔（letter-spacing）は0.02emで細かく最適化しています。
-                </p>
-                <h3 class="art__hed3">レイアウト</h3>
-                <p class="art__p">
-                  本サイトの<span class="marker">レイアウトは、視覚的な統一感と可読性を重視して設計</span>しています。
-                  まず全体としては、グリッドシステムを採用し、コンテンツの最大幅を一定に保つことで、どのページにおいても均整の取れた印象を与えるようにしています。
-                  これにより、情報の散漫さを防ぎ、閲覧者が内容に集中しやすい構造となっています。
-                </p>
-                <p class="art__p">
-                  また、テキスト情報が主体となる構成においては、<span class="marker">過度な情報量が閲覧体験を妨げないよう配慮</span>しています。
-                  文章の合間には、サイト全体のトーンや雰囲気に調和したイラストを適度に配置し、視線のリズムを生むとともに、読み進める中での心理的な負荷を軽減するようにしています。
-                  単なる装飾ではなく、情報の理解を補助しながら、視覚的な余白を作る役割も担っています。
-                </p>
-                <p class="art__p mb32">
-                  このように、<span class="marker">レイアウト設計においては単に見た目の整え方だけでなく、情報の受け取りやすさ、読みやすさ、そして閲覧体験としての心地よさまでを含めて総合的にデザイン</span>しています。
-                </p>
+                  </section>
 
-                <h2 class="art__hed2">実装・インタラクション等に関して</h2>
-                <p class="art__p">
-                  実装にあたっては、PCのみならずスマートフォンやタブレットでの閲覧も想定し、各デバイスでの表示崩れが起こらないように設計・調整を行っています。
-                  <span class="marker">単にレイアウトが収まるだけでなく、画面幅に応じて余白やコンテンツの幅、フォントサイズといった要素を適切に変化させることで、どの環境で見ても快適に閲覧できるユーザー体験を担保</span>しています。
-                </p>
-                <p class="art__p">
-                  アニメーションに関しては、競合他社のサイトに見られるような、過度な動きや視覚効果がユーザー体験を妨げている事例を踏まえ、必要最低限の表現にとどめています。
-                  <span class="marker">アニメーションは自己満足的な装飾ではなく、あくまでもユーザーの認知や理解を補助するものであるべきだと考え、</span>主にフェードインを中心とした自然な動きのみを採用しました。
-                  その結果、ページの表示速度や情報の可視性を損なうことなく、落ち着いた雰囲気の中でスムーズな体験を実現しています。
-                </p>
-                <p class="art__p">
-                  さらに、リンクやボタンなどのインタラクティブな要素については、ホバー時に微細なアニメーションを加えることで、ユーザーがその要素がクリック可能であることを直感的に理解できるよう工夫しています。
-                  <span class="marker">視覚的なフィードバックを通じて操作性を高めるとともに、UIのアクセシビリティ向上にも寄与</span>しています。
-                </p>
-                <p class="art__p mb32">
-                  このように、実装とインタラクション設計においては、見た目の演出に偏ることなく、あくまでユーザー目線での快適さと機能性を最優先に考えた設計を徹底しています。
-                </p>
 
-                <h2 class="art__hed2">設計上のこだわり</h2>
-                <p class="art__p">
-                  本サイトは、一見すると装飾性が少なく、デザインの個性が抑えられているように見えるかもしれません。
-                  しかしそれは、無個性であるという意味ではなく、ユーザー体験を最優先に考えた結果として、<span class="marker">あえてシンプルな表現を採用しているという明確な設計思想に基づいたもの</span>です。
-                </p>
-                <p class="art__p">
-                  昨今のWebデザインでは、独自性や表現力をアピールする目的で、過度に装飾的で奇抜なアニメーションや視覚効果を多用する風潮があります。
-                  しかし、そうした演出は、しばしば雰囲気だけで評価されており、<span class="marker">情報の構造や可読性、さらには表示速度といったユーザー体験の根幹を損なう原因に</span>なり得ます。
-                  特にコーポレートサイトのように、企業情報やブランドイメージを正しく伝えることが主目的である場合においては、そのような演出は本質的にそぐわないと考えています。
-                </p>
-                <p class="art__p mb32">
-                  だからこそ、本サイトではアニメーションを最小限にとどめ、あくまで自然なインタラクションや重要な情報への視線誘導といった、ユーザーにとって意味のある場面にのみ限定的に使用しています。
-                  加えて、ボタンなどのUI要素も過度に装飾せず、明確な操作対象であることとタップしやすさを重視した、実用的でストレスのない設計を徹底しています。
-                </p>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec05">2. リサーチ</h2>
+                    <p class="art__p">
+                      次に、競合他社が展開するコーポレートサイトの構成や機能性を多角的に分析し、IT業界における標準的な情報設計と他社との差別化ポイントを明確化しました。
+                      あわせて、近年のモダンなWebデザイントレンドを精査し、信頼感と先進性を両立させる視覚的な最適解を模索しています。
+                      これらの分析結果に基づき、本プロジェクトの指針となる参考サイトを収集・整理することで、目指すべきブランドイメージの具体化を図りました。
+                    </p>
+                  </section>
 
-                <h2 class="art__hed2">アウトプット</h2>
-                <h3 class="art__hed3">ロゴ</h3>
-                <figure class="art__img"><img src="../images/HD_Logo.svg" alt="HikoraDesign ロゴ" loading="lazy" decoding="async" width="880" height="160"></figure>
-                <h3 class="art__hed3">Webデザイン</h3>
-                <figure class="art__img"><img src="../images/HD_capture.webp" alt="HikoraDesign UIキャプチャー" width="1500" height="3926" loading="lazy" decoding="async"></figure>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec06">3. 情報設計</h2>
+                    <p class="art__p">
+                      リサーチによって明確になった競合との差別化要因やターゲットのニーズに基づき、ITパートナーとしての信頼性を担保するために必要なコンテンツを厳選しました。
+                      訪問者が企業の専門性と事業内容をすばやく理解できるよう情報の優先順位を整理し、導入から実績紹介まで淀みない動線を描く論理的な情報構成を設計しています。
+                      この設計指針を具体化するためにサイトマップとワイヤーフレームを作成し、情報の配置や画面遷移の最適化を図りました。
+                    </p>
+                    <p class="art__p">
+                      設計の中心に置いたのは、初めてサイトを訪れたユーザーが「この会社は何をしているのか」「どのような価値を提供しているのはか」を瞬時に把握できる構成です。
+                      トップページには企業概要、事業内容、実績、理念といった要点を凝縮し、視認性と情報量のバランスを細部まで調整しながら、限られたスペースの中に必要十分な要素を配置しました。
+                    </p>
+                    <p class="art__p">
+                      導線の設計においては、閲覧者の関心が自然に移り変わるストーリー性を重視しています。まず事業内容を提示し、その裏付けとして制作実績を紹介。
+                      次に、他社との違いや独自の価値を伝える「強み」のセクションを経て、企業理念へとつなげました。
+                      その後、直近の活動を示すお知らせを配置し、最終的にお問い合わせへと誘導する構成にすることで、ユーザーが迷うことなく理解を深め、次のアクションへ進めるよう配慮しています。
+                      単なる情報の羅列ではなく、訪問者の理解と行動を支える論理的な流れを重視した情報設計を追求しました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/HikoraDesign/HikoraDesign_IA.png" alt="サイトマップ" width="970" height="530" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
 
-                <a class="art__cv" href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/HikoraDesignUI.webp" alt="" aria-hidden="true" width="3000" height="1800"></div>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">Hikora Designのサイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" loading="lazy" decoding="async" width="24" height="24"></p>
-                    <p class="art__cv-desc">Hikora Designは、ビジネスの構造をテクノロジーとデザインで根本から再設計するDX事業の会社です。</p>
-                  </div>
-                </a>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec07">4. ビジュアルデザイン</h2>
+                    <p class="art__p">
+                      信頼感とモダンなIT企業のプロフェッショナルな姿勢を表現するため、視覚表現の細部にわたり一貫したデザインを施しました。
+                    </p>
+                    <p class="art__p">
+                      配色は、誠実さと先進性を象徴する青系統のトーンで統一し、情報の重要度に合わせて色の濃淡を使い分けることで、ユーザーの認知負荷を軽減する直感的なカラー設計を行っています。同時に、すべての配色においてWCAG基準に準拠したコントラスト比を維持し、視認性とアクセシビリティへの配慮を徹底しました。
+                    </p>
+                    <p class="art__p">
+                      書体には、癖がなくモダンな印象を与えるInterと、可読性に優れたゴシック体を採用し、情報の正確な伝達を最優先しています。
+                      レイアウト設計においては、テキスト主体となるコンテンツでも閲覧の妨げにならないよう、情報の密度を適切にコントロールしました。
+                      単なる視覚的な整理に留まらず、情報の受け取りやすさや読み進める際の心地よさまでを追求し、総合的なユーザー体験の向上を目指したビジュアルデザインを構築しています。
+                    </p>
+                    
+                    <figure class="art__img mb32"><img src="../images/HikoraDesign/HikoraDesign_color.png" alt="カラーパレット" width="2042" height="648" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      以下がロゴ。
+                    </p>
+                    <figure class="art__img mb32"><img src="../images/HikoraDesign/HikoraDesign_Logo.svg" alt="ロゴ" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      最終的に出来上がったデザインカンプは以下。
+                    </p>
+                    <figure class="art__img mb32"><img src="../images/HikoraDesign/HikoraDesign_capture.webp" alt="HikoraDesign UIキャプチャー" width="1500" height="3926" loading="lazy" decoding="async"></figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec08">5. 実装・公開・検証改善</h2>
+                    <p class="art__p mb32">
+                      実機での検証を重ね、PCからスマートフォンまであらゆるデバイスで一貫したパフォーマンスを発揮できるよう実装を行いました。
+                      単にレイアウトを画面内に収めるだけでなく、デバイスごとの画面幅に応じて余白、コンテンツ幅、フォントサイズを緻密に調整することで、どのような閲覧環境でもストレスのない快適なユーザー体験を担保しています。
+                    </p>
+                    <p class="art__p">
+                      アニメーション設計においては、過度な視覚効果が情報の理解を妨げている競合事例を分析し、必要最低限の表現に厳選しました。
+                      装飾としての動きではなく、ユーザーの視線誘導や認知を補助することを目的とし、フェードインを中心とした自然な挙動を採用。
+                      これにより、ページの表示速度や情報の可視性を維持したまま、信頼感のある落ち着いた操作感を実現しています。
+                      また、ボタンやリンクには微細なホバーアクションを加え、クリック可能性を直感的に伝える視覚的なフィードバックを実装することで、UIのアクセシビリティと操作性を高めました。
+                    </p>
+                    <p class="art__p">
+                      公開に際しては、表示負荷の最適化や多角的なブラウザテストを実施。検証過程で見つかった微細なズレや読み込み速度の課題を改善し続けることで、見た目の演出に偏ることのない、ユーザー目線での実用性と機能性を追求した品質に仕上げています。
+                    </p>
+                    <a class="art__cv" href="https://benzy78.github.io/HikoraDesign-New/" target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/HikoraDesign/HikoraDesign_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Hikora Designのサイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" loading="lazy" decoding="async" width="24" height="24"></p>
+                        <p class="art__cv-desc">Hikora Designは、ビジネスの構造をテクノロジーとデザインで根本から再設計するDX事業の会社です。</p>
+                      </div>
+                    </a>
+                    
+                  </section>
+
               </article>
-            </div>
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">プロジェクト概要</a></li>
+                  <li><a href="#sec02" class="index__link">最終成果物</a></li>
+                  <li><a href="#sec03" class="index__link">詳細なデザインプロセス</a></li>
+                  <li><a href="#sec04" class="index__link">1. 要件整理</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec04-01" class="index__sub-link">1-1. クライアント情報</a></li>
+                    <li><a href="#sec04-02" class="index__sub-link">1-2. サイト制作の目的</a></li>
+                    <li><a href="#sec04-03" class="index__sub-link">1-3. ターゲット層</a></li>
+                  </ul>
+                  <li><a href="#sec05" class="index__link">2. リサーチ</a></li>
+                  <li><a href="#sec06" class="index__link">3. 情報設計</a></li>
+                  <li><a href="#sec07" class="index__link">4. ビジュアルデザイン</a></li>
+                  <li><a href="#sec08" class="index__link">5. 実装・公開・検証改善</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </div>
+        </div>
       </div>
-    </div>
-    <!--wrapper end-->
+
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
+
+
+
+    </div><!--wrapper end-->
 
     <!-- script js-->
     <script src="../js/script.js"></script>

@@ -13,25 +13,26 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Portfolio | UI/UX Designer - Yuki Nishimura</title>
-    <meta name="description" content="UI/UXデザイナーとしてのポートフォリオサイト。設計意図や制作過程まで一貫して紹介しています。">
-    <meta name="keywords" content="UIUX, Portfolio">
+    <title>Portfolio | Yuki Nishimura</title>
+    <meta name="description" content="Yuki Nishimuraのポートフォリオサイト。制作物や自己紹介を掲載しています。">
+    <meta name="keywords" content="プロダクトデザイナー, Portfolio">
+    <!-- favicon -->
+    <link rel="icon" href="./images/PortfolioFavicon.svg" type="image/png">
     <!--style css-->
     <link rel="stylesheet" href="./sass/style.css" media="all">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- OGP -->
-    <meta property="og:title" content="Portfolio | UI/UX Designer - Yuki Nishimura" />
-    <meta property="og:description" content="UI/UXデザイナー Yuki Nishimuraのポートフォリオサイト。制作作品および、設計意図、制作過程を紹介しています。" />
+    <meta property="og:title" content="Portfolio | Product Designer - Yuki Nishimura" />
+    <meta property="og:description" content="プロダクトデザイナー Yuki Nishimuraのポートフォリオサイト。制作作品および、設計意図、制作過程を紹介しています。" />
     <meta property="og:image" content="https://benzy78.github.io/PortfolioSite/images/OGP_Portfolio.png" />
     <meta property="og:url" content="https://benzy78.github.io/PortfolioSite/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Portfolio | UI/UX Designer - Yuki Nishimura" />
+    <meta property="og:site_name" content="Portfolio | Product Designer - Yuki Nishimura" />
     <!--jquery-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <!-- wow -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
-        type="text/css" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" media="all">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,452 +49,270 @@
             <header class="header fadein">
                 <div class="header__cont">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="./images/Portfolio_Logo.svg" alt="Portfolio UI/UXデザイナー" width="176" height="49" fetchpriority="high"></a>
+                        <a href="./index.html"><img src="./images/PortfolioLogo.svg" alt="Portfolio Product Desinger" width="156" height="48" fetchpriority="high"></a>
                     </div>
                     <div class="header__nav">
-                    <button class="menu-toggle" aria-label="Toggle navigation">
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
-                        <span class="menu-icon"></span>
-                        <!-- <span class="menu-label">Menu</span> -->
-                    </button>
-                    <div class="header__group">
-                        <h3 class="header__head3">プロフィール</h3>
-                        <ul class="header__list">
-                            <li><a href="#skills">私にできること</a></li>
-                            <li><a href="#about">自己紹介</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__group">
-                        <h3 class="header__head3">作品一覧</h3>
-                        <ul class="header__list">
-                            <li><a href="./html/soapp.html">SmartOrdee App</a></li>
-                            <li><a href="./html/triplite.html">Triplite</a></li>
-                            <li><a href="./html/voislet.html">Voislet</a></li>
-                            <li><a href="./html/eh.html">EcoHybe</a></li>
-                            <li><a href="./html/solp.html">SmartOrdee 紹介LP</a></li>
-                            <li><a href="./html/ba.html">Boulangerie Amande</a></li>
-                            <li><a href="./html/hd.html">Hikora Design</a></li>
-                            <li><a href="https://benzy78.github.io/DesignNotes/"  target="_blank" rel="noopener noreferrer">Design Notes<img src="./images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                            <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="./images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                            <li><a href="./html/bnr.html">Banner一覧</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__group">
-                        <h3 class="header__head3">その他</h3>
-                        <ul class="header__list">
+                        <button class="menu-toggle" aria-label="Toggle navigation">
+                            <span class="menu-icon"></span>
+                            <span class="menu-icon"></span>
+                            <span class="menu-icon"></span>
+                            <!-- <span class="menu-label">Menu</span> -->
+                        </button>
+                        <ul class="header__nav-list">
+                            <li><a href="./index.html#works">作品一覧</a></li>
+                            <li><a href="./html/about.html">自己紹介</a></li>
                             <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="./images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                         </ul>
-                    </div>
                     </div>
                 </div>
             </header>
             <main class="maincontents">
             <!-- mv -->
               <section class="mv fadein">
-                <div class="mv__container">
-                    <div class="mv__body">
-                        <h1 class="mv__ttl">UI/UX Designer<br>Yuki Nishimura</h1>
-                        <p class="mv__caption">This is my design portfolio</p>
+                <div class="container">
+                    <div class="mv__container">
+                        <div class="mv__body">
+                            <h1 class="mv__ttl"><img src="./images/PortfolioName.svg" alt="Yuki Nishimura"></h1>
+                            <div class="mv__job-container">
+                                <span class="mv__job-line"></span>
+                                <p class="mv__job-title">Product Designer</p>
+                            </div>
+                            <p class="mv__description">
+                                見栄えや操作性の追求にとどまらず、ユーザーの動機やゴールを深く理解し、ユーザーを中心とした要件定義から情報設計、ビジュアルデザインを重視しています。
+                                また、ユーザーの満足だけに留まらず、ビジネス目標や利益への貢献も視野に入れ、デザインを軸にした事業成果への貢献という視点を大切にしています。
+                            </p>
+                            <div id="scroll-btn" class="scroll-button" style="animation-delay: 1.2s;">
+                                <span class="scroll-text">Scroll Down</span>
+                                <svg class="scroll-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mv__decoration">
+                            <div class="visual-right" style="animation-delay: 0.4s;">
+                                <div class="visual-wrapper">
+                                    <div class="circle-container">
+                                        <div class="ring outer-ring"></div>
+                                        <div class="ring middle-ring"></div>
+                                        <div class="inner-gradient-circle"></div>
+                                        <div class="center-dot-container">
+                                            <div class="center-dot"></div>
+                                        </div>
+                                        
+                                        <div class="orbiting-dot dot-1"></div>
+                                        <div class="orbiting-dot dot-2"></div>
+                                        <div class="orbiting-dot dot-3"></div>
+                                    </div>
+
+                                    <div class="floating-square square-1"></div>
+                                    <div class="floating-square square-2"></div>
+
+                                    <svg class="connecting-lines" viewBox="0 0 500 500">
+                                        <defs>
+                                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.5" />
+                                                <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.5" />
+                                            </linearGradient>
+                                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.5" />
+                                                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.5" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path class="path-anim" d="M 100,200 Q 250,100 400,300" stroke="url(#gradient1)" />
+                                        <path class="path-anim" d="M 150,400 Q 300,250 450,450" stroke="url(#gradient2)" />
+                                    </svg>
+
+                                    <div class="accent-dot ad-1"></div>
+                                    <div class="accent-dot ad-2"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <figure class="mv__img"><img src="./images/Eyecatch.webp" alt="" aria-hidden="true" fetchpriority="high" width="1680" height="800" ></figure>
                 </div>
             </section>
             <!-- mv end -->
-             <section class="skills" id="skills">
-                <div class="container">
-                    <div class="section__header fadein">
-                        <h2 class="section__ttl">Skills</h2>
-                        <p class="section__subttl">私にできること</p>
-                    </div>
-                    <div class="skills__grid">
-                        <!-- UI Design -->
-                        <article class="skills__card skill-card fadein" aria-labelledby="skill-ui-title">
-                            <div class="skill-card__header">
-                                <div class="skill-card__icon" aria-hidden="true">
-                                    <img src="./images/icon_uidesign.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async">
-                                </div>
-                                <h3 class="skill-card__title" id="skill-ui-title">UI Design</h3>
-                            </div>
-
-                            <ul class="skill-card__list">
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">Figma</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                オートレイアウト、変数、コンポーネント/Variants を活用し、拡張性・一貫性を備えたデザインシステムと UI ライブラリを設計・運用できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">情報設計</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                要件や行動フローをベースに、情報・アクションの整理やオブジェクトモデリングを用いて、サービス全体の画面構造（階層・ナビゲーション・遷移）を体系的に設計し、
-                                UIの骨格となるワイヤーフレームを合理的かつ一貫性のある構造として構築できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">ビジュアルデザイン</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                サービスの性質やコンセプトに基づくトンマナ策定や、HIG/Material Design に準拠した設計を行い、視線誘導・可読性・操作性に配慮したUI設計ができる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">プロトタイピング</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                インタラクションや遷移を備えたプロトタイプを構築し、操作性・設計意図を的確に共有するための検証用アセットとして運用できる。
-                                </p>
-                            </li>
-                            </ul>
-                        </article>
-
-                        <!-- UX Design -->
-                        <article class="skills__card skill-card fadein" aria-labelledby="skill-ux-title">
-                            <div class="skill-card__header">
-                                <div class="skill-card__icon" aria-hidden="true">
-                                    <img src="./images/icon_chart.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async">
-                                </div>
-                                <h3 class="skill-card__title" id="skill-ux-title">UX Design</h3>
-                            </div>
-
-                            <ul class="skill-card__list">
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">ユーザー理解</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                ユーザーの行動特性・目的・課題を正確に把握するためのインタビューや簡易リサーチを実施し、
-                                得られた知見を設計の根拠として整理・活用できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">競合・市場リサーチ</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                類似サービスのフロー・情報構造・UIパターンを分析し、共通原則や差別化要素を抽出。
-                                ユーザビリティや業界特性の観点から、設計判断に必要な示唆を得ることができる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">企画・コンセプト定義</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                リサーチ結果を基に、サービスの価値提供・体験ゴール・主要タスクを言語化し、
-                                UI/UX設計の方向性となるコンセプトを一貫性のある形で定義できる。
-                                </p>
-                            </li>
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">要件定義</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                ユーザーの課題やニーズを調査から明確化し、プロダクトの目的やビジネス上の目標と照合しながら、必要な機能要件・非機能要件へ整理できる。
-                                </p>
-                            </li>
-                            </ul>
-                        </article>
-
-                        <!-- Web Design -->
-                        <article class="skills__card skill-card scroll-fadein" aria-labelledby="skill-web-title">
-                            <div class="skill-card__header">
-                                <div class="skill-card__icon" aria-hidden="true">
-                                    <img src="./images/icon_palette.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async">
-                                </div>
-                                <h3 class="skill-card__title" id="skill-web-title">Web Design</h3>
-                            </div>
-
-                            <ul class="skill-card__list">
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">対応領域</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                コーポレートサイトやサービス紹介のLPを対象に、企画・設計・デザイン・実装まで一貫したWebデザインを遂行できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">ヒアリング</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                目的・課題・訴求ポイントを整理し、サイト構成やデザインの方向性に必要な要件を引き出せる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">リサーチ</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                競合サイトや業界トレンドを分析し、構成・導線・UIパターンの比較から、企画・デザイン判断に必要な示唆を得られる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">情報設計</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                サイトマップ、ユーザーシナリオ、ワイヤーフレームを用いて、情報構造と導線を明確に定義し、目的達成に最適化した構成を設計できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">デザイン</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                トンマナ作成（タイプグラフィ・配色・ビジュアル基調）、素材準備、写真加工を行い、世界観と可読性を両立したページデザインを構築できる。
-                                </p>
-                            </li>
-                            </ul>
-                        </article>
-
-                        <!-- Coding -->
-                        <article class="skills__card skill-card scroll-fadein" aria-labelledby="skill-coding-title">
-                            <div class="skill-card__header">
-                                <div class="skill-card__icon" aria-hidden="true">
-                                    <img src="./images/icon_code.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async">
-                                </div>
-                                <h3 class="skill-card__title" id="skill-coding-title">Coding</h3>
-                            </div>
-
-                            <ul class="skill-card__list">
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">HTML / CSS / Sass</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                セマンティックな HTML 構造化、BEM によるスケーラブルな命名設計、SEO、レスポンシブ対応、アクセシビリティを考慮したマークアップを実装できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">JavaScript（ES6）</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                DOM 操作や入力バリデーション、モーダル・タブ・アコーディオンなどのインタラクションを実装し、UI の操作性を改善する動的処理を構築できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">Git / GitHub</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                コミット・ブランチ運用・マージを中心とした基本的なバージョン管理を行い、履歴管理や GitHub Pages を用いたサイト公開を安定して運用できる。
-                                </p>
-                            </li>
-
-                            <li class="skill-card__item">
-                                <div class="skill-card__item-head">
-                                    <span class="skill-card__item-icon" aria-hidden="true"><img src="./images/icon_checkCircle.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async"></span>
-                                    <h4 class="skill-card__item-title">パフォーマンス最適化</h4>
-                                </div>
-                                <p class="skill-card__item-text">
-                                画像最適化、LCP 改善、fetchpriority / decoding / preload などの最適化手法を用いて、表示速度とユーザビリティを向上させる実装ができる。
-                                </p>
-                            </li>
-                            </ul>
-                        </article>
-                        </div>
-                </div>
-             </section>
+             
              <!-- Works -->
               <section class="works" id="works">
                 <div class="container">
                     <div class="section__header scroll-fadein">
-                        <h2 class="section__ttl">Works</h2>
-                        <p class="section__subttl">作品一覧</p>
+                        <p class="section-subttl">SELECTED PROJECTS</p>
+                        <h2 class="section-ttl"><img src="./images/PortfolioTitleWorks.svg" alt="Works"></h2>
                     </div>
                     
                     <p class="works__anno scroll-fadein">
-                        ※本サイトでは、機密保持契約（NDA）の関係上、自主制作のプロダクトのみを掲載しています。<br>
-                        エントリー時には、実務で関わった案件の成果物も含めたポートフォリオ資料を別途ご提出しております。
+                        実務で携わったプロジェクトや個人の制作物を掲載しています
                     </p>
 
                     <div class="works__card-cont">
-                        <a href="./html/soapp.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/SmartOrdee_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+
+                        <a href="./html/wh.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/WH/WH_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">SmartOrdee</h3>
+                                <h3 class="card__ttl">CtoC住宅見学アプリ</h3>
                                 <p class="card__desc">
-                                    飲食店の注文体験をスムーズにするQRコードオーダーシステムのUIデザインを制作しました
+                                    住宅オーナーと家を見たい人のマッチングを行うアプリの開発に携わりました
                                 </p>
                                 <ul class="card__cate-list">
                                     <li class="cate-item-01">Webアプリ</li>
-                                    <li class="cate-item-01">リサーチ</li>
-                                    <li class="cate-item-01">コンセプト定義</li>
-                                    <li class="cate-item-01">情報設計</li>
-                                    <li class="cate-item-01">ビジュアルデザイン</li>
-                                    <li class="cate-item-01">デザインシステム</li>
+                                    <li class="cate-item-01">実務案件</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                        <a href="./html/rl.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/RL/RL_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">コンテンツマネジメントシステム</h3>
+                                <p class="card__desc">
+                                    コンテンツの一元管理・ログ活用ができるクラウドサービスの開発案件に携わりました
+                                </p>
+                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">Webアプリ</li>
+                                    <li class="cate-item-01">実務案件</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                        <a href="./html/soapp.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/SmartOrdee/SmartOrdee_eyecatch.webp" alt="" aria-hidden="true" width="2000" height="1200" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">飲食店向けモバイルオーダー</h3>
+                                <p class="card__desc">
+                                    飲食店の食事体験を最適化するモバイルオーダーのUIデザインを制作しました
+                                    
+                                </p>
+                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">Webアプリ</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
 
                         <a href="./html/triplite.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/triplite/triplite_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/triplite/triplite_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">Triplite</h3>
+                                <h3 class="card__ttl">出張申請アプリ</h3>
                                 <p class="card__desc">
                                     出張の社内申請をオンラインで行えるSaaSアプリのUIデザインを制作しました
                                 </p>
                                 <ul class="card__cate-list">
                                     <li class="cate-item-01">Webアプリ</li>
-                                    <li class="cate-item-01">リサーチ</li>
-                                    <li class="cate-item-01">コンセプト定義</li>
-                                    <li class="cate-item-01">情報設計</li>
-                                    <li class="cate-item-01">ビジュアルデザイン</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
 
                         <a href="./html/voislet.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" width="2000" height="1200" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">Voislet</h3>
+                                <h3 class="card__ttl">音声SNS</h3>
                                 <p class="card__desc">
-                                    「評価されるための発信」から人々を解放する音声SNSのUIデザインを制作しました
+                                    心理的に安全な環境で気軽に音声投稿できる音声SNSのUIデザインを制作しました
                                 </p>
                                 <ul class="card__cate-list">
                                     <li class="cate-item-01">iOSアプリ</li>
-                                    <li class="cate-item-01">リサーチ</li>
-                                    <li class="cate-item-01">コンセプト定義</li>
-                                    <li class="cate-item-01">情報設計</li>
-                                    <li class="cate-item-01">ビジュアルデザイン</li>
+                                    <li class="cate-item-01">自主制作</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                        <a href="./html/wedding.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/wedding/wedding_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">結婚式場のWebサイト</h3>
+                                <p class="card__desc">
+                                    結婚式場のWebサイト制作のデザインと実装に携わりました
+                                    
+                                </p>
+                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">Webサイト</li>
+                                    <li class="cate-item-01">実務案件</li>
+                                </ul>
+                            </div>
+                        </a>
+
+                        <a href="./html/recruit.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/recruit/recruit_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">就活アプリの紹介LP</h3>
+                                <p class="card__desc">
+                                    就活アプリの紹介LPのデザインと実装に携わりました
+                                    
+                                </p>
+                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">LP</li>
+                                    <li class="cate-item-01">実務案件</li>
                                 </ul>
                             </div>
                         </a>
 
                         <a href="./html/eh.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/EcoHybe_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/EcoHybe/EcoHybe_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">EcoHybe 店舗サイト</h3>
+                                <h3 class="card__ttl">リサイクルショップ 店舗サイト</h3>
                                 <p class="card__desc">
                                     リサイクルショップEcoHybeの店舗サイトのデザインとコーディングを行いました
                                 </p>
                                 <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">店舗サイト</li>
+                                    <li class="cate-item-01">Webサイト</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
 
                         <a href="./html/solp.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/SmartOrdeeLP_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/SOLP/SOLP_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
                                 <h3 class="card__ttl">SmartOrdee アプリ紹介LP</h3>
                                 <p class="card__desc">
                                     飲食店の注文体験をスムーズにするQRコードオーダーアプリの紹介LPのデザインとコーディングを行いました
                                 </p>
                                 <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
                                     <li class="cate-item-01">LP</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
 
                         <a href="./html/ba.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/BA_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/BA/BA_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">Boulangerie Amande 店舗サイト</h3>
+                                <h3 class="card__ttl">本格ベーカリー 店舗サイト</h3>
                                 <p class="card__desc">
                                     本格ベーカリーBoulangerie Amandeのホームページのデザインとコーディングを行いました
                                 </p>
                                 <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">店舗サイト</li>
-                                </ul>
-                            </div>
-                        </a>
-
-                        <a href="./html/hd.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/HikoraDesignUI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                            <div class="card__text">
-                                <h3 class="card__ttl">Hikora Design コーポレートサイト</h3>
-                                <p class="card__desc">
-                                    DX事業を行う会社のコーポレートサイトのデザインとコーディングを行いました
-                                </p>
-                                <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">コーポレートサイト</li>
+                                    <li class="cate-item-01">Webサイト</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
                         
                         <a href="https://benzy78.github.io/DesignNotes/" class="works__card scroll-fadein" target="_blank" rel="noopener noreferrer">
-                            <figure class="card__img-cont"><img src="./images/DesignNotes_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                            <figure class="card__img-cont"><img src="./images/DesignNotes_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
                                 <h3 class="card__ttl">Design Notes<img src="./images/icon_open_b.svg" alt="" aria-hidden="true" width="20" height="20"></h3>
                                 <p class="card__desc">
-                                    これまでの学習や実務経験を通して得たコーディング、Webデザイン、UI/UXデザインに関する知見を、自分なりに整理・言語化したドキュメントサイトです
+                                    これまでの学習や実務経験を通して得たコーディング、Webデザイン、UIデザインに関する知見を、自分なりに整理・言語化したドキュメントサイトです
                                 </p>
                                 <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">ドキュメント</li>
+                                    <li class="cate-item-01">ドキュメントサイト</li>
+                                    <li class="cate-item-01">自主制作</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="https://benzy78.github.io/DeploymentChecklist/" class="works__card scroll-fadein" target="_blank" rel="noopener noreferrer">
-                            <figure class="card__img-cont"><img src="./images/DC_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                        <a href="./html/others.html" class="works__card scroll-fadein">
+                            <figure class="card__img-cont"><img src="./images/others_eyecatch.png" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></figure>
                             <div class="card__text">
-                                <h3 class="card__ttl">Deployment Checklist<img src="./images/icon_open_b.svg" alt="" aria-hidden="true" width="20" height="20"></h3>
+                                <h3 class="card__ttl">その他の制作物</h3>
                                 <p class="card__desc">
-                                    Web制作のデプロイ前に確認したいチェックリストを制作しました。見やすさ、操作性、マークアップ、表示速度の4カテゴリで整理しています
+                                    その他の自主制作の制作物をまとめています。
                                 </p>
                                 <ul class="card__cate-list">
-                                    <li class="cate-item-01">Webデザイン</li>
-                                    <li class="cate-item-01">コーディング</li>
-                                    <li class="cate-item-01">チェックリスト</li>
-                                </ul>
-                            </div>
-                        </a>
-
-                        <a href="./html/bnr.html" class="works__card scroll-fadein">
-                            <figure class="card__img-cont"><img src="./images/bnr_img.png" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                            <div class="card__text">
-                                <h3 class="card__ttl">バナーデザイン</h3>
-                                <p class="card__desc">
-                                    広告・キャンペーンを想定したバナーデザインの制作一覧。旅行、通信、サービスなど多様なジャンルを題材に、目的に応じた訴求力のあるビジュアルを制作しています。
-                                </p>
-                                <ul class="card__cate-list">
+                                    <li class="cate-item-01">自主制作</li>
+                                    <li class="cate-item-01">Webサイト</li>
                                     <li class="cate-item-01">バナーデザイン</li>
                                 </ul>
                             </div>
@@ -506,9 +325,9 @@
             <!-- about -->
             <section class="about scroll-fadein" id="about">
                 <div class="container">
-                    <div class="section__header">
-                        <h2 class="section__ttl">Profile</h2>
-                        <p class="section__subttl">自己紹介</p>
+                    <div class="section__header scroll-fadein">
+                        <p class="section-subttl">WHO I AM</p>
+                        <h2 class="section-ttl"><img src="./images/PortfolioTitleProfile.svg" alt="Profile"></h2>
                     </div>
                     <div class="about__layout">
                         <figure class="about__visual">
@@ -516,85 +335,69 @@
                         </figure>
                         <div class="about__content">
                             <div class="about__header">
+                                <p class="about__role">Product Designer</p>
                                 <h2 class="about__name">Yuki Nishimura</h2>
-                                <p class="about__role">UIUX Designer / Web Designer</p>
                             </div>
-                            <div class="about__section">
-                                <h3 class="about__section-ttl">経歴と現在</h3>
-                                <p class="about__section-body">
-                                    慶應義塾大学 経済学部卒
-                                    <br>
-                                    受託開発の会社にて、主にコーポレートサイトやサービス紹介のLPなど、Webデザインを中心とした案件に携わりつつ、
-                                    アプリケーションUIのデザインにも一部関わってきました。Web領域では構成設計からデザイン、静的コーディングまで一貫して担当し、
-                                    フリーランスとしてもコーポレートサイトやLP制作を中心に、要件整理から実装まで幅広く経験してきました。
-                                    <br>
-                                    制作を続ける中で、表層的なビジュアルだけではなく、ユーザーの目的や課題から構造全体を設計する領域により魅力を感じるようになり、
-                                    現在は UI/UX デザインを専門として深めていくことを志向しています。
-                                </p>
-                            </div>
-
-                            <div class="about__section">
-                                <h3 class="about__section-ttl">デザインで大事にしていること</h3>
-                                <p class="about__section-body">
-                                    デザインを行う際には、意匠的な魅力だけでなく、「ユーザーが迷わず操作できるか」「課題や目的に対して本当に必要な構造か」という視点を常に重視しています。
-                                    課題や目的から必要な情報や機能を抽出し、それらを導線・遷移構造・情報の優先度として整理することで、負荷やストレスの少ない体験へと落とし込む設計を心がけています。
-                                    <br>
-                                    また、プロダクトはデザイナーだけでは成立しないため、実装コストや技術的制約への理解を前提に、
-                                    エンジニアとのコミュニケーションを密に取りながら現実的で再現性のある UI に仕上げることを大切にしています。
-                                </p>
-                            </div>
-
-                            <div class="about__section">
-                                <h3 class="about__section-ttl">今後の展望</h3>
-                                <p class="about__section-body">
-                                    表層的な見た目の改善にとどまらず、ユーザーの目的や課題から本質的な構造を設計し、プロダクトそのものの価値向上に寄与できる UI/UX デザインに取り組んでいきたいと考えています。
-                                    <br>
-                                    また、ユーザー体験の向上だけでなく、事業全体を俯瞰しながらコストとリターンを踏まえた判断を行い、デザインを軸に事業へ貢献できるデザイナーを目指しています。
-                                </p>
-                            </div>
-
+                            <p class="about__body">
+                                1997年生まれ / 北海道出身 / 慶應義塾大学卒<br>
+                                制作会社にてWebサイトやLP制作を中心に、デザインから実装までを一気通貫で担当。その傍ら、WebアプリケーションのUIデザインにも一部携わりました。
+                                その後、フリーランスとして活動。<br>
+                                多様なプロジェクトを経験する中で、プロダクトデザインの領域を専門として深めていくことを決意。転向を見据えて一度フリーランスの活動を離れ、プロダクト開発に必要な知識を体系的に学習し、現在プロダクトデザイナーとして就職活動中。
+                            </p>
+                            <a href="./html/about.html" class="about__btn">
+                                <span>詳しいプロフィールを見る</span>
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
-
                     </div>
-                    
                 </div>
             </section>
             <!-- Introduction end -->
-             <footer class="footer">
+            <!-- writing -->
+            <section class="writing">
                 <div class="container">
-                    <nav class="footer__nav">
-                        <div class="footer__nav-group">
-                            <h2 class="footer__nav-ttl">プロフィール</h2>
-                            <ul class="footer__nav-list">
-                                <li class="footer__list-item"><a href="#skills">私にできること</a></li>
-                                <li class="footer__list-item"><a href="#about">自己紹介</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__nav-group">
-                            <h2 class="footer__nav-ttl">作品一覧</h2>
-                            <ul class="footer__nav-list">
-                                <li class="footer__list-item"><a href="./html/soapp.html">SmartOrdee App</a></li>
-                                <li class="footer__list-item"><a href="./html/voislet.html">Voislet</a></li>
-                                <li class="footer__list-item"><a href="./html/eh.html">Eco Hybe</a></li>
-                                <li class="footer__list-item"><a href="./html/solp.html">SmartOrdee LP</a></li>
-                                <li class="footer__list-item"><a href="./html/hd.html">Hikora Design</a></li>
-                                <li class="footer__list-item"><a href="./html/ba.html">Boulangerie Amande</a></li>
-                                <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="./images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                                <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="./images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                                <li class="footer__list-item"><a href="./html/bnr.html">Banner一覧</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__nav-group">
-                            <h2 class="footer__nav-ttl">その他</h2>
-                            <ul class="footer__nav-list">
-                                <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="./images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                            </ul>
-                        </div>
-                        
-                    </nav>
-                    <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
+                    <div class="section__header scroll-fadein">
+                        <p class="section-subttl">note</p>
+                        <h2 class="section-ttl writing__ttl"><img src="./images/PortfolioTitleWriting.svg" alt="Writing"></h2>
+                    </div>
+                    <p class="writing__anno scroll-fadein">
+                        制作のプロセスや、デザインに関する日々の気づきをnoteで発信しています
+                    </p>
+                    <div class="writing__card-container scroll-fadein">
+                        <a href="https://note.com/aganir_seshisa/n/n2bbf14b10c20?sub_rt=share_sb" class="writing__card" target="_blank" rel="noopener noreferrer">
+                            <figure class="card__img-cont"><img src="./images/PortfolioNote01.webp" alt="" aria-hidden="true" width="1920" height="1006" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">UI/UXという表記は誤りなのか</h3>
+                                <p class="card__time">2026/3/24</p>
+                            </div>
+                        </a>
+                        <a href="https://note.com/aganir_seshisa/n/n44d8ab108cc8?sub_rt=share_sb" class="writing__card" target="_blank" rel="noopener noreferrer">
+                            <figure class="card__img-cont"><img src="./images/PortfolioNote02.webp" alt="" aria-hidden="true" width="1920" height="1006" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">配置・スタイル・文言から考えるダイアログのボタン設計</h3>
+                                <p class="card__time">2025/11/21</p>
+                            </div>
+                        </a>
+                        <a href="https://note.com/aganir_seshisa/n/ne8f7ec66f155?sub_rt=share_sb" class="writing__card" target="_blank" rel="noopener noreferrer">
+                            <figure class="card__img-cont"><img src="./images/PortfolioNote03.webp" alt="" aria-hidden="true" width="1920" height="1006" loading="lazy" decoding="async"></figure>
+                            <div class="card__text">
+                                <h3 class="card__ttl">WebデザイナーとUIデザイナーの違いについて考えた</h3>
+                                <p class="card__time">2025/10/2</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="writing__btn-container scroll-fadein">
+                        <a href="https://note.com/aganir_seshisa" class="writing__btn">
+                                <span>noteへ</span>
+                                <img src="./images/icon_open_w.svg" alt="" aria-hidden="true" width="16" height="16">
+                            </a>
+                    </div>
+                    <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
                 </div>
-            </footer>
+            </section>
+            <!-- writing end -->
          </main>
          
         </div>

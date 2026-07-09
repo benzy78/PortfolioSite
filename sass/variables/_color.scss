@@ -1,5 +1,48 @@
 // 色の定義
 
+
+// primary
+$PrimaryHigher:#2B7FFF;
+$PrimaryHigh:#80B2FF;
+$PrimaryMiddle:#DBEAFE;
+$PrimaryLow:#EFF6FF;
+$PrimaryLower:rgba(239,246,255,0.5);
+
+// text
+$TextHigh:#101828;
+$TextMiddle:#4A5565;
+$TextLow:#6A7282;
+$TextLower:#99A1AF;
+$TextBody:#2D3748;
+$TextInverse:#FFFFFF;
+
+// background
+$BgMiddle:#EDEEEF;
+$BgLow:#F3F4F6;
+$BgLower:#F9FAFB;
+$BgLowest:#FFFFFF;
+
+// border
+$BorderMiddle:#D9DCDF;
+$BorderLow:#E5E7EB;
+$BorderLower:#F0F5F9;
+
+// gradient
+$PrimaryGradMain:linear-gradient(90deg, #2B7FFF 0%, #00B8DB 100%);
+$PrimaryGradCenter:linear-gradient(90deg, #155DFC 0%, #00B8DB 50%, #155DFC 100%);
+$BgGradWhite:linear-gradient(135deg, #EFF6FF 0%, #FFF 50%, #ECFEFF 100%);
+$BgGradBlue:linear-gradient(135deg, #F9FAFB 0%, #FFF 50%, #EFF6FF 100%);
+
+// shadow
+$ShadowNeutralLow:0 2px 8px 0 rgba(0,0,0,0.1);
+$ShadowPrimaryLow:0 2px 12px 0 rgba(43,127,255,0.5);
+
+
+
+
+
+
+// 以下、旧カラー
 // Text
 $TextDef:#363636;
 $TextInverse:#FFF;

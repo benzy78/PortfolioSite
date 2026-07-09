@@ -4,9 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Eco Hybe | デザインプロセス</title>
+    <title>リサイクルショップ 店舗サイト | Portfolio</title>
     <meta name="description" content="This portfolio showcases landing pages, websites, and app designs I’ve created in the past.">
     <meta name="keywords" content="UIUX, Portfolio">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
     <!--font-awesome-->
@@ -25,202 +27,244 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
-            </div>
-            <div class="header__nav">
+      
+      <header class="header fadein">
+        <div class="header__cont">
+          <div class="header__back-link">
+              <a href="../index.html#works" class="back-link">
+                <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="17" y1="10" x2="3" y2="10"/>
+                    <polyline points="10 3 3 10 10 17"/>
+                </svg>
+                <span class="back-link__text">Homeに戻る</span>
+              </a>
+          </div>
+          <div class="header__nav">
               <button class="menu-toggle" aria-label="Toggle navigation">
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
-
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
+              <ul class="header__nav-list">
+                  <li><a href="../index.html#works">作品一覧</a></li>
+                  <li><a href="./about.html">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-            </div>
+              </ul>
           </div>
-        </header>
+        </div>
+      </header>
 
-         <main class="maincontents">
-            <div class="article__cont">
+
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
-                <h1 class="art__hed1">Eco Hybe 店舗サイト</h1>
-                <p class="art__p">
-                  「Eco Hybe」は、中古品の買取、リユース品・アップサイクル品の販売を行う架空のリサイクルショップです。
-                  本サイトはポートフォリオ用に制作したもので、Webデザインのスキルやブランド表現力を伝えることを目的としています。
-                </p>
-                <ul class="art__cate">
-                  <li class="cate-item-01">Webデザイン</li>
-                  <li class="cate-item-01">コーディング</li>
-                  <li class="cate-item-01">店舗サイト</li>
-                </ul>
-                <div class="art__eyecatch">
-                  <a href="https://benzy78.github.io/EcoHybe/" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/EcoHybe_UI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
-                    <p class="art__eyecatch-label"><span>店舗サイトへ</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"> </p>
-                  </a>
-                </div>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
-                  <li>カテゴリー：店舗サイト</li>
-                  <li>制作種別：自主制作</li>
-                  <li>担当領域：企画、デザイン、コーディング</li>
-                  <li>使用ツール・言語等：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
-                  <li>制作期間：1ヶ月</li>
-                  <li>リンク：<a href="https://benzy78.github.io/EcoHybe/" class="art__link" target="_blank" rel="noopener noreferrer">店舗サイトはこちら<img src="../images/icon_open_bl.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                </ul>
-
-                <h2 class="art__hed2">設計方針</h2>
-                <div class="art__memo">
-                  <div class="art__memo-container">
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">店舗概要</h3>
-                      <p class="art__memo-p">
-                        EcoHybe（エコハイブ）は、「今日の選択が、明日を作る」というコンセプトを掲げる、サステナブル志向のリユースショップです。
-                        ただの中古品販売ではなく、価値あるプロダクトの“再流通”と“再発見”を目的とし、販売・買取・リメイクの3つのサービスを展開。<br>
-                        環境への配慮はもちろん、デザイン性や品質にもこだわり、使う人の感性やライフスタイルに寄り添うアイテムを提供します。
-                        店舗やWebも含めたすべての体験を通じて、「エコを楽しむ」文化を広めていくことを目指しています。
-                      </p>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">サイト制作の目的</h3>
-                      <ul class="art__memo-list">
-                        <li>ブランドの理念や世界観を伝える、会社の“顔”となるWebサイトとして制作</li>
-                        <li>単なる中古品売買ではなく、洗練されたサステナブルなライフスタイルを提案する企業イメージを表現</li>
-                        <li>Webを通じて興味・関心を喚起し、新規来店や利用へとつなげる導線を構築</li>
-                      </ul>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">ターゲット層</h3>
-                      <ul class="art__memo-list">
-                        <li>お得にショッピングを楽しみたい方（家具・家電・ブランド品・服など）</li>
-                        <li>不用品を売りたい方（引越し・断捨離・買い替えなど）</li>
-                        <li>環境を考えたサステナブルな暮らしに関心がある方</li>
-                        <li>高品質なリユース品やアップサイクル品を好む層</li>
-                      </ul>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">デザインコンセプト</h3>
-                      <ul class="art__memo-list">
-                        <li>“サステナブルな未来を、洗練された体験として届ける” をコンセプトに、リサイクルショップの既存イメージを刷新し、上質で信頼感のあるブランド体験を設計。</li>
-                        <li>ただエコであるだけでなく、“選ぶ楽しさ”や“ライフスタイルの一部としてのサステナビリティ”を感じられるよう、ブランド性と機能性のバランスを重視しました。</li>
-                      </ul>
-                    </div>
+                  <h1 class="art__hed1">リサイクルショップの店舗サイト</h1>
+                  <ul class="art__cate">
+                    <li class="cate-item-01">Webサイト</li>
+                    <li class="cate-item-01">自主制作</li>
+                  </ul>
+                  <div class="art__eyecatch">
+                    <img src="../images/EcoHybe/EcoHybe_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="2800" height="1680" fetchpriority="high">
                   </div>
-                </div>
 
-                <h2 class="art__hed2">情報設計</h2>
-                <ul class="art__list">
-                  <li>多機能なサービス内容（販売・買取・リメイク）をユーザーが迷わず理解できるよう、トップページでは導入→概要→サービス紹介→行動誘導という流れを意識し、構造を整理しました。</li>
-                  <li>また、ファーストビューではブランドの世界観を強く印象づけ、その後のセクションで「EcoHybeとは何か」→「できること」→「想い」へと段階的に理解が深まる構成としています。ナビゲーションもPC/SPともに視認性と操作性を確保し、回遊性を損なわない設計としました。</li>
-                </ul>
+                  <p class="art__p">
+                    架空のリサイクルショップ「EcoHybe」の店舗サイトを制作しました。
+                    本サイトはポートフォリオ用に制作したもので、Webデザインのスキルやブランド表現力を伝えることを目的としています。
+                  </p>
+                  <ul class="art__list--blue mb40">
+                    <li>カテゴリー：店舗サイト</li>
+                    <li>制作種別：自主制作</li>
+                    <li>担当領域：企画、デザイン、コーディング</li>
+                    <li>使用ツール等：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
+                    <li>制作期間：3週間</li>
+                  </ul>
 
-                <h2 class="art__hed2">ビジュアル設計</h2>
-                <ul class="art__list">
-                  <li>
-                      <span class="marker">「エコ＝安っぽい」「中古＝雑多」という先入観を払拭し、高品質で洗練された体験を伝えるため、配色・余白・タイポグラフィ・レイアウトを厳選して設計しました。</span>
-                      配色は、サステナブルや自然なイメージを連想させるグリーンの系統をメインに設定し、ボタンはアクセントとして、グラデーションを使用することで、単調にならず洗練された印象を与えるようにしています。
-                      余白は基本的に広くとり、タイポグラフィーは可読性と視認性の確保を前提とした上で、洗練された印象となるように設計しています。
-                  </li>
-                  <li>ブランドロゴやメッセージの扱いにも注意し、世界観を壊さずに伝えるビジュアルトーンを意識しています。</li>
-                </ul>
-                <figure class="art__img"><img src="../images/EH_color.png" alt="EcoHybeカラーパレット" width="2373" height="789" loading="lazy" decoding="async"></figure>
-
-                <h2 class="art__hed2">Output</h2>
-                <h3 class="art__hed3">ロゴ</h3>
-                <p class="art__p">
-                  Eco Hybeのロゴは、サステナブルな価値循環と自然との調和を象徴しています。
-                  中央の「E」は“Eco”と“Exchange”の頭文字を表し、葉と矢印のモチーフは、リユース・リメイクを通じたモノの再生と、人から人へとつながる循環の概念を示しています。
-                  全体を円で構成することで、終わりのないサイクルと、持続可能な暮らしへの想いを表現しています。
-                  グリーンを基調とした配色は、環境への配慮と、明るく先進的なブランドイメージを補強しています。
-                </p>
-                <figure class="art__img"><img src="../images/EH_Logo.png" alt="EcoHybe ロゴ" width="1311" height="253" loading="lazy" decoding="async"></figure>
-                
-                <h3 class="art__hed3">Webデザイン</h3>
-                <figure class="art__img"><img src="../images/EH_Capture.webp" alt="EcoHybe Webデザインキャプチャー" width="2240" height="3090" loading="lazy" decoding="async"></figure>
-
-                
-
-                <a class="art__cv" href="https://benzy78.github.io/EcoHybe/"  target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/EcoHybe_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></div>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">Eco Hybeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" class="open-icon" width="24" height="24"></p>
-                    <p class="art__cv-desc">
-                      EcoHybe（エコハイブ）は、「今日の選択が、明日を作る」というコンセプトを掲げる、サステナブル志向のリユースショップです。
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec01">プロジェクト概要</h2>
+                    <p class="art__p">
+                      本プロジェクトは、架空のリサイクルショップ「EcoHybe」からの依頼を想定した、ブランドサイトの構築プロジェクトです。
+                      実務を想定し、店舗の理念を伝える「顔」としての役割と、実際の来店・利用へ繋げる「導線」の両立を目指しました。
                     </p>
-                  </div>
-                </a>
+                    <p class="art__p mb32">
+                      デザインのポイントとしては、従来のリサイクルショップが持つ「雑多」「安っぽい」といったイメージを覆し、洗練されており進歩的な印象を与えるビジュアルを構築。
+                      また、実際の来店・利用へ繋げる「導線」の役割を意識して、情報設計を徹底しました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/EcoHybe/EcoHybe_summary.webp" alt="プロジェクト概要" width="1920" height="999" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec02">最終成果物</h2>
+                    <figure class="art__img mb32">
+                      <img src="../images/EcoHybe/EcoHybe_capture.webp" alt="最終成果物UI" width="2240" height="3090" loading="lazy" decoding="async">
+                    </figure>
+                    <a class="art__cv" href="https://benzy78.github.io/EcoHybe/"  target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/EcoHybe/EcoHybe_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Eco Hybeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" class="open-icon" width="24" height="24"></p>
+                        <p class="art__cv-desc">
+                          EcoHybe（エコハイブ）は、「今日の選択が、明日を作る」というコンセプトを掲げる、サステナブル志向のリユースショップです。
+                        </p>
+                      </div>
+                    </a>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec03">デザインプロセス</h2>
+                    <p class="art__p">
+                      デザインプロセスは以下の手順で進めました。以下の章で詳細なプロセスを紹介します。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/EcoHybe/EcoHybe_DesignProcess.webp" alt="デザインプロセス" width="1920" height="1187" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+                  
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec04">1. 要件整理</h2>
+                    <p class="art__p mb32">
+                      本プロジェクトは、新規開業するリサイクルショップ「EcoHybe」からの依頼を想定した自主制作です。実務における要件を想定し、以下の設定を構築して制作を開始しました。
+                    </p>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-01">クライアント情報</h3>
+                      <p class="art__p">
+                        EcoHybe（エコハイブ）は、「今日の選択が、明日を作る」というコンセプトを掲げる、サステナブル志向のリユースショップです。 ただの中古品販売ではなく、価値あるプロダクトの“再流通”と“再発見”を目的とし、販売・買取・リメイクの3つのサービスを展開。
+                        環境への配慮はもちろん、デザイン性や品質にもこだわり、使う人の感性やライフスタイルに寄り添うアイテムを提供します。 店舗やWebも含めたすべての体験を通じて、「エコを楽しむ」文化を広めていくことを目指しています。
+                      </p>
+                      <p class="art__p">
+                        今回はこのお店の新規開業にあたり、Webサイトを制作したいという依頼を想定したプロジェクトです。
+                      </p>
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-02">サイト制作の目的</h3>
+                      <ul class="art__list--blue">
+                        <li><span class="bold">ブランドサイトの構築：</span> 新規開業に伴い、会社の顔となるWebサイトを作りたい</li>
+                        <li><span class="bold">ブランドイメージの体現：</span> 洗練されたサステナブルな企業イメージをWeb上で表現</li>
+                        <li><span class="bold">認知拡大と集客：</span> Webを通じて興味関心を喚起し、認知拡大や新規来店、サービスの利用へ繋げる</li>
+                      </ul>
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-03">ターゲット層</h3>
+                      <ul class="art__list--blue">
+                        <li><span class="bold">基本属性：</span> 20代〜40代の男女（大型店舗のため、幅広く設定）</li>
+                        <li>お得に買い物を楽しみたい人</li>
+                        <li>引越しや断捨離で不用品を売りたい人</li>
+                        <li>環境意識が高い層</li>
+                      </ul>
+                    </section>
+
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec05">2. リサーチ</h2>
+                    <p class="art__p">
+                      次に、リサーチとして、競合サイトの分析および、デザイントレンドの分析、参考となるサイトの収集を行いました。
+                    </p>
+                    <ul class="art__list--blue">
+                      <li><span class="bold">競合サイトの分析：</span> リサイクル業界や中古品買取サービスのWebサイトを広く調査し、掲載情報の優先順位と構成を比較しました。</li>
+                      <li><span class="bold">デザイントレンドの分析：</span> 現代のWebデザインにおけるトレンドを分析し、EcoHybeのブランドイメージに合致する手法を検討しました。</li>
+                      <li><span class="bold">ビジュアルリファレンスの収集：</span> 「リサイクルショップ」という既存の枠組みにとらわれず、ライフスタイルブランドやセレクトショップのWebサイトから、上質さを感じさせるトーン＆マナーを模索し、店舗のコンセプトを視覚的に裏付けるための参考資料を収集しました。</li>
+                    </ul>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec06">3. 情報設計</h2>
+                    <p class="art__p">
+                      リサーチ結果に基づき、ブランドの信頼性を伝えるコンセプト、利用ハードルを下げる買取フロー、取扱商品の3点を軸に情報の優先順位を整理しました。
+                      これらを基に、ユーザーが迷わず目的のページへ辿り着けるサイト構造を策定し、サイトマップとワイヤーフレームを作成。
+                      情報の配置をこの段階で徹底して検証することで、デザインの土台を構築しました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/EcoHybe/EcoHybe_sitemap.png" alt="サイトマップ" width="1036" height="552" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec07">4. ビジュアルデザイン</h2>
+                    <p class="art__p">
+                      「エコ＝安っぽい」「中古＝雑多」という先入観を払拭し、高品質で洗練された体験を伝えるため、配色・余白・タイポグラフィ等を設計しました。 
+                    </p>
+                    <p class="art__p">
+                      具体的には、配色はサステナブルや自然なイメージを連想させるグリーンの系統をメインに設定し、ボタンはアクセントとして、グラデーションを使用することで、単調にならず洗練された印象を与えるようにしています。
+                    </p>
+                    
+                    <figure class="art__img mb32"><img src="../images/EcoHybe/EcoHybe_color.png" alt="EcoHybeカラーパレット" width="2373" height="789" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                    Eco Hybeのロゴは、サステナブルな価値循環と自然との調和を象徴しています。
+                    中央の「E」は“Eco”と“Exchange”の頭文字を表し、葉と矢印のモチーフは、リユース・リメイクを通じたモノの再生と、人から人へとつながる循環の概念を示しています。
+                    全体を円で構成することで、終わりのないサイクルと、持続可能な暮らしへの想いを表現しています。
+                    グリーンを基調とした配色は、環境への配慮と、明るく先進的なブランドイメージを補強しています。
+                  </p>
+                    <figure class="art__img mb32"><img src="../images/EcoHybe/EcoHybe_logo.png" alt="EcoHybe ロゴ" width="1311" height="253" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      最終的に出来上がったデザインカンプは以下。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/EcoHybe/EcoHybe_capture.webp" alt="最終成果物UI" width="2240" height="3090" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec08">5. 実装・公開・検証改善</h2>
+                    <p class="art__p mb32">
+                      作成したデザインカンプを基に、HTML/CSS(Sass)およびJavaScriptを用いて実装しました。
+                      あらゆる閲覧環境で最適な体験を提供するため、モバイルファーストのレスポンシブ対応に加え、アクセシビリティや表示速度、視認性の多角的な検証を実施。
+                      特定デバイスでのレイアウト崩れや読み込み負荷などの課題を洗い出し、細部まで改善を繰り返すことで、実用性と品質を兼ね備えた状態で公開しました。
+                    </p>
+                    <a class="art__cv" href="https://benzy78.github.io/EcoHybe/"  target="_blank" rel="noopener noreferrer">
+                      <div class="art__cv-img"><img src="../images/EcoHybe/EcoHybe_eyecatch.webp" alt="" aria-hidden="true" width="2800" height="1680" loading="lazy" decoding="async"></div>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Eco Hybeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" class="open-icon" width="24" height="24"></p>
+                        <p class="art__cv-desc">
+                          EcoHybe（エコハイブ）は、「今日の選択が、明日を作る」というコンセプトを掲げる、サステナブル志向のリユースショップです。
+                        </p>
+                      </div>
+                    </a>
+                    
+                  </section>
+                  
               </article>
-            </div>
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
-         
-      </div><!-- layout -->
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">プロジェクト概要</a></li>
+                  <li><a href="#sec02" class="index__link">最終成果物</a></li>
+                  <li><a href="#sec03" class="index__link">詳細なデザインプロセス</a></li>
+                  <li><a href="#sec04" class="index__link">1. 要件整理</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec04-01" class="index__sub-link">1-1. クライアント情報</a></li>
+                    <li><a href="#sec04-02" class="index__sub-link">1-2. サイト制作の目的</a></li>
+                    <li><a href="#sec04-03" class="index__sub-link">1-3. ターゲット層</a></li>
+                  </ul>
+                  <li><a href="#sec05" class="index__link">2. リサーチ</a></li>
+                  <li><a href="#sec06" class="index__link">3. 情報設計</a></li>
+                  <li><a href="#sec07" class="index__link">4. ビジュアルデザイン</a></li>
+                  <li><a href="#sec08" class="index__link">5. 実装・公開・検証改善</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </div>
+        </div>
+      </div>
       
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
     </div>
     <!--wrapper end-->
 

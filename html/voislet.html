@@ -5,9 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Voislet | 音声SNSアプリのデザインプロセス</title>
+    <title>音声SNS | Portfolio</title>
     <meta name="description" content="音声SNSアプリ「Voislet」のデザインプロセスを紹介しています">
     <meta name="keywords" content="UIUX, Portfolio">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
     <!--font-awesome-->
@@ -25,412 +27,464 @@
 </head>
 
 <body>
-    <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
+  <div class="wrapper">
+      <header class="header fadein">
+        <div class="header__cont">
+            <div class="header__back-link">
+                <a href="../index.html#works" class="back-link">
+                  <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="17" y1="10" x2="3" y2="10"/>
+                      <polyline points="10 3 3 10 10 17"/>
+                  </svg>
+                  <span class="back-link__text">Homeに戻る</span>
+                </a>
             </div>
             <div class="header__nav">
-              <button class="menu-toggle" aria-label="Toggle navigation">
-                  <span class="menu-icon"></span>
-                  <span class="menu-icon"></span>
-                  <span class="menu-icon"></span>
-                  <!-- <span class="menu-label">Menu</span> -->
-              </button>
-              
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <!-- <span class="menu-label">Menu</span> -->
+                </button>
+                <ul class="header__nav-list">
+                    <li><a href="../index.html#works">作品一覧</a></li>
+                    <li><a href="./about.html">自己紹介</a></li>
+                    <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                 </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
-                  <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
             </div>
-          </div>
-        </header>
-         <main class="maincontents">
-            <div class="article__cont">
+        </div>
+      </header>
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
-                <h1 class="art__hed1">Voislet</h1>
-                <p class="art__p">
-                  「Voislet」は、“評価されるための発信”から人々を解放することをテーマにした音声SNSです。
-                  コンセプト設計から情報設計、トンマナ設計、UIデザイン、スタイルガイド作成までを一貫して担当しました。
-                  課題テーマをベースにしつつ、実際のプロダクト開発を想定した実践的なUI/UX設計を行なっています。
-                </p>
+                <h1 class="art__hed1">音声SNSのプロダクトデザイン</h1>
                 <ul class="art__cate">
                   <li class="cate-item-01">iOSアプリ</li>
-                  <li class="cate-item-01">リサーチ</li>
-                  <li class="cate-item-01">コンセプト定義</li>
-                  <li class="cate-item-01">情報設計</li>
-                  <li class="cate-item-01">ビジュアルデザイン</li>
+                  <li class="cate-item-01">自主制作</li>
                 </ul>
                 <div class="art__eyecatch">
-                  <a href="https://www.figma.com/design/GydE8GeAUZd1P6IAQktTxG/Voislet%EF%BC%88%E9%9F%B3%E5%A3%B0SNS%EF%BC%89--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=290-4567&t=b3ZPrSJwPRfDqPcG-1" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
-                    <p class="art__eyecatch-label"><span>VoisletのFigmaファイルはこちら</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
-                  </a>
+                  <img src="../images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
                 </div>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
-                  <li>カテゴリー：iOSアプリケーション</li>
+                
+                <p class="art__p">
+                  音声SNSアプリを自主制作しました。以下で、制作サマリーと制作プロセスを紹介します。
+                </p>
+                <p class="art__p">
+                  なお、この音声SNSというテーマ自体は、BONOというオンライン学習サービスの課題として取り組んだものです。課題の指示としては、新規登録画面・フィード画面・投稿作成画面といった主要画面のUIをデザインするという内容でした。
+                  しかし、より実践的なアウトプットにするため、本課題ではリサーチやユーザーモデリングから着手し、コンセプト策定、情報設計、そしてビジュアルデザインまで一連のデザインプロセスを通して制作を行いました。
+                </p>
+                <ul class="art__list--blue mb40">
+                  <li>カテゴリー：iOSアプリ</li>
                   <li>制作種別：自主制作</li>
-                  <li>担当領域：コンセプト設計、要件定義、情報設計、UI設計</li>
+                  <li>担当領域：リサーチ、モデリング、要件定義、情報設計、ビジュアルデザイン</li>
                   <li>使用ツール：Figma</li>
-                  <li>制作期間：3週間</li>
+                  <li>制作期間：1ヶ月</li>
                 </ul>
-                <h2 class="art__hed2">どんなアプリか？</h2>
-                <p class="art__p">
-                  Voisletは、「評価されるための発信」から人々を解放する音声SNSです。
-                  本アプリでは、日々の小さな気づきや思考を、文字より自然な“声”で気軽に残すことができます。
-                  また、いいねやフォロワーといった数値的な承認要素を排除し、誰かに見せるためではなく、自分のために話すという新しいSNS体験を提供しています。
-                </p>
-                <p class="art__p">
-                  このアプリの主なターゲットは、SNSの空気感や他者評価に疲れを感じている20〜30代の社会人層。
-                  特に「発信はしたいけれど、文章を書くのはハードルが高い」「誰かの反応を気にせず、自分の考えを整理したい」と感じる人たちを想定しています。
-                </p>
-                <div class="art__img mb32">
-                  <img src="../images/voislet/voislet_summary.webp" alt="Voisletの概略" width="1440" height="580" loading="lazy" decoding="async">
-                </div>
 
-                <h3 class="art__hed3">プロトタイプ</h3>
-                
-                <iframe class="figma-prototype mb32" src="https://embed.figma.com/proto/GydE8GeAUZd1P6IAQktTxG/Voislet%EF%BC%88%E9%9F%B3%E5%A3%B0SNS%EF%BC%89--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=124-1652&p=f&scaling=contain&content-scaling=fixed&page-id=290%3A4567&starting-point-node-id=124%3A1652&embed-host=share" allowfullscreen></iframe>
-
-                <a class="art__cv" href="https://www.figma.com/design/GydE8GeAUZd1P6IAQktTxG/Voislet%EF%BC%88%E9%9F%B3%E5%A3%B0SNS%EF%BC%89--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=290-4567&t=b3ZPrSJwPRfDqPcG-1"  target="_blank" rel="noopener noreferrer">
-                  <figure class="art__cv-img"><img src="../images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">VoisletのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
-                    <p class="art__cv-desc">コンセプト探索、情報設計、UI設計を公開しています</p>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec01">どんなアプリか</h2>
+                  <p class="art__p">
+                  本プロダクトは、<span class="marker">心理的に安全な環境で、思考途中のアイデアや感想を気軽に共有できる音声SNS</span>です。
+                  近年のSNSでは、批判やマウント、バズを前提とした過激な投稿が増えたことで、ユーザーにとって投稿の心理的ハードルが高くなっています。
+                  その結果、多くのユーザーは思ったことを投稿しなくなり、SNSを見るだけの存在になったり、あるいはSNSから離れてしまう状況が生まれています。
+                  そこで、本プロダクトではこの課題に対して「心理的安全性」と「低コスト投稿」を軸に設計することで、思ったことを気軽にアウトプットできる体験を提供することを目指しています。
+                  </p>
+                  <div class="art__img mb32">
+                    <img src="../images/voislet/voislet_summary.webp" alt="Tripliteの概要" width="1920" height="1352" loading="lazy" decoding="async">
                   </div>
-                </a>
 
-                <h2 class="art__hed2">設計プロセス</h2>
-                <p class="art__p">
-                  設計プロセスは以下の手順で進めました。
-                </p>
+                  <section class="art__section--h3">
+                    <h2 class="art__hed2" id="sec02">プロトタイプ/figmaファイル</h2>
+                    <iframe class="figma-prototype mb32" src="https://embed.figma.com/proto/hDyujvvpjCrh7V3iJEIVSF/%E9%9F%B3%E5%A3%B0SNS-Voislet--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=124-1652&p=f&scaling=scale-down&content-scaling=fixed&page-id=290%3A4567&starting-point-node-id=124%3A1652&embed-host=share" allowfullscreen></iframe>
 
-                <div class="art__img mb32"><img src="../images/voislet/voislet_design-process.webp" alt="設計プロセス" width="1536" height="1488" loading="lazy" decoding="async"></div>
+                    <a class="art__cv mb48" href="https://www.figma.com/design/hDyujvvpjCrh7V3iJEIVSF/%E9%9F%B3%E5%A3%B0SNS-Voislet--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=290-4567&t=RKM2kYvShUZZ77gd-1" target="_blank" rel="noopener noreferrer">
+                      <figure class="art__cv-img"><img src="../images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">音声SNSのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                        <p class="art__cv-desc">要件定義、情報設計、ビジュアルデザインのデータを公開しています</p>
+                      </div>
+                    </a>
+                  </section>
+                </section>
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec03">デザインのポイント</h2>
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec03-01">ポイント①：心理的安全性の確保と他ユーザーからの反応のバランス</h3>
+                    <p class="art__p">
+                      本プロダクトでは、ユーザーが安心して思ったことを共有できるよう、心理的安全性を重視した設計を行いました。
+                      まず、<span class="marker">フォロワー数の表示やコメント、拡散といった評価や対立が生まれやすい機能はあえて排除</span>することで心理的な安全性を確保。
+                      一方で、完全に他ユーザーからの反応がないと、日記と変わらず、投稿モチベーションの維持も困難になるため、<span class="marker">誰が反応したかや反応数が分からないリアクションのみを受け取れる仕組みに</span>することで、完全な独り言にはならず、軽い共感だけを感じられる体験を目指しています。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_point1.webp" alt="プロダクトのポイント1" width="1440" height="776" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec03-02">ポイント②：低コストでの投稿</h3>
+                    <p class="art__p">
+                      思いついた瞬間に投稿できるよう、投稿フローもできるだけシンプルに設計しました。
+                      投稿は「録音 → タイトル・タグ入力 → 投稿」の最小ステップで完了できるようにし、不要な情報や設定項目を削減しています。
+                      さらに確認画面などの余計な操作も極力省くことで、アプリを開いてから短時間で投稿できる、低コストな投稿体験を実現しています。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_point2.webp" alt="プロダクトのポイント2" width="1440" height="1014" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                </section>
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec04">デザインプロセス</h2>
+                  <p class="art__p">
+                     以降のセクションでは、本プロダクトの詳細なデザインプロセスを紹介したいと思います。
+                  </p>
+                  <figure class="art__img mb48"><img src="../images/voislet/voislet_designProcess.webp" alt="デザインプロセス" width="1920" height="1091" loading="lazy" decoding="async"></figure>
+                </section>
                 
 
-                <h2 class="art__hed2">1. コンセプト探索フェーズ</h2>
-                <h3 class="art__hed3">1-1. 課題仮説</h3>
-                <p class="art__p">
-                  出発点は、「日々の小さな気づきを、もっと気軽に声で残せたら」という直感でした。文字中心のSNS（Xやnote）では整った発信が求められがちで、思考の断片を気軽にアウトプットする場がない。一方で、音声での投稿なら、誰かと喋る感覚で気軽に日々の体験などをアウトプットできるのではないか。また、いいねやフォロワーなどの評価、攻撃的なコメントなどを気にして、気軽に発信できないという課題があるのでは？と考えました。
-                  したがって、<span class="marker">「気づきや考えを声で気軽に残せる場所がないことが、人々の“発信したい”という自然な衝動を抑えている」</span>という課題仮説を立てました。
-                </p>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec05">1. 仮説立案</h2>
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec05-01">1-1. アイデアのブレスト</h3>
+                    <p class="art__p">
+                      まず、「音声SNS」というテーマからブレインストーミングを行い、サービスの方向性を模索しました。
+                      検討の結果、「日々の学びや体験を気軽に投稿できる音声SNS」という大まかなコンセプトの方向性を策定し、詳細な設計へと進めました。
+                    </p>
+                  </section>
 
-                <h3 class="art__hed3">1-2. 競合リサーチ</h3>
-                <p class="art__p">
-                  既存の音声サービス（Voicy、stand.fm、Radiotalkなど）を分析すると、どれも“番組配信型”や“ライブ会話型”に寄っており、「評価されることを前提としない、短い音声のアウトプット体験」が存在しないことが分かりました。
-                  そこでVoisletでは、評価から解放された自由な発信を軸に、「自分のために話すSNS」という新しい方向性を定義しました。
-                </p>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_comp-research.webp" alt="競合リサーチの結果" width="1200" height="693" loading="lazy" decoding="async"></figure>
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec05-02">1-2. 課題仮説とプロダクトの方向性決め</h3>
+                    <p class="art__p">
+                      近年の主要なSNSでは、インプレッション目的の過激な投稿やネガティブな情報が溢れ、ユーザーの「SNS離れ」が加速しています。
+                      発信側は批判や揚げ足取りを恐れて投稿を躊躇し、閲覧側も殺伐とした空間に疲れを感じているのが現状です。
+                    </p>
+                    <p class="art__p">
+                      かつてのSNSが持っていた「何気ない日常を共有し、穏やかな反応を楽しむ居心地の良さ」が失われつつある中で、
+                      <span class="marker">「批判や過度な評価から守られ、心理的安全性が確保されたプラットフォーム」には需要があるのではないか</span>と考えました。
+                    </p>
+                    <p class="art__p">
+                      そこで、<span class="marker">「批判や過度な評価から守られ、心理的安全性が確保されたプラットフォーム」で「日々の学びや体験を気軽に投稿できる音声SNS」をサービスの方向性として定め</span>、以降のリサーチに進みました。
+                    </p>
+                  </section>
+                </section>
 
-                <h3 class="art__hed3">1-3. コアコンセプトの定義</h3>
-                <p class="art__p">
-                  次に、サービスの大まかな方向性を定めるため、暫定的なコアコンセプトを定義しました。
-                  <br>＊ペルソナ設計やユーザーリサーチが終わった段階でさらに具体化する。
-                </p>
-                <p class="art__p">
-                  <span class="bold">誰のため？(Who)</span>：日々の学びや気づきを気軽にアウトプットしたい人。SNSでの反応や評価に疲れている人。文字での発信はハードルが高いと感じる人。
-                </p>
-                <p class="art__p">
-                  <span class="bold">何を提供する？(What)</span>：「短い音声を残す」という新しいアウトプット手段。誰にも評価されずに、自分の声を記録・共有できる場所。
-                </p>
-                <p class="art__p">
-                  <span class="bold">なぜ必要？(Why)</span>：既存のSNSは評価や比較が強く、自由な発信を妨げている。文字や記事はハードルが高く、気軽さが失われている。声なら自然で、思考の整理にもつながる。
-                </p>
-                <p class="art__p">
-                  <span class="bold">いつ使う？(When)</span>：読んだ本の感想や、日々の学びや体験を残したいとき。思考を整理したい時。
-                </p>
-                <p class="art__p mb32">
-                  <span class="bold">どう実現する？(How)</span>：短い音声投稿、タイトル＋タグによる投稿。いいね、フォロワー、コメントを排除して、心理的安全性を確保。
-                </p>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec06">2. リサーチ＆モデリング</h2>
+                  <p class="art__p mb32">
+                    プロダクトの詳細を詰めていくため、競合サービスのリサーチとユーザーインタビューを行いました。
+                  </p>
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec06-01">2-1. ユーザーインタビュー</h3>
+                    <p class="art__p">
+                     20〜30代の男女6名を対象に、既存SNSの利用実態と、音声による発信への抵抗感・期待値について調査を実施しました。以下がインタビュー結果の要約です。
+                    </p>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">1. 既存SNSの課題</h4>
+                      <ul class="art__list">
+                        <li>
+                          <span class="bold">心理的安全性の欠如：</span>
+                          現在のSNS環境（特にXやThreads）は、高い拡散性を持つ一方で、批判や揚げ足取り、インプレッションを目的とした過激な投稿が溢れかえっている。
+                          その結果、ユーザーが心理的な攻撃を受けるリスクが増大しており、多くの人々が自己防衛のために発信を控え、SNS離れを加速させている
+                        </li>
+                        <li>
+                          <span class="bold">投稿へのプレッシャー：</span>
+                          note等のコンテンツ系SNSでは「作り込まれた有益な内容」という暗黙のクオリティ期待があり、日常的な投稿には向かない 
+                        </li>
+                        <li>
+                          <span class="bold">コミュニティ内での自意識：</span>
+                          閉鎖的な環境（Slack等）でも、「無知だと思われたくない」「間違ったことを言えない」「反応がないと気まずい」といった心理的ハードルが依然として存在し、結局はごく一部の親しい知人同士の交流に留まり、広がりが生まれにくい
+                        </li>
+                      </ul>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">2. ユーザー行動のジレンマ</h4>
+                      <p class="art__p">
+                        インタビューの結果、ユーザーは次のような矛盾した欲求を持っていることがわかった。<br>
+                        ・批判や評価は怖いので投稿したくない<br>
+                        ・しかし誰にも見られない発信では意味を感じない<br>
+                        ・誰かに聞いてもらいたい<br>
+                        ・でも評価されたくない<br>
+                        つまり、<span class="marker">「評価や批判は怖いが、共感は欲しい」</span>という状態。
+                      </p>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">3. 音声SNSという仮説に対するユーザーの反応</h4>
+                      <p class="art__p">
+                        「心理的安全性が確保されたプラットフォームで日々の学びや体験を気軽に投稿できる音声投稿SNS」というプロダクトの仮説に対しては、
+                        まずポジティブな意見として、話すという行為が思考の整理に繋がると期待する声や、声によるアウトプットするなら文字入力よりも労力的には楽であるといった、気軽な発信手段としての可能性を感じる声が挙がりました。
+                      </p>
+                      <p class="art__p">
+                        一方で、自分の声を世に公開することへの抵抗感や、既存のサービスとは異なる体験ゆえに実際の利用イメージが湧きにくいといった懸念も示されています。
+                        さらに継続性の観点からは、<span class="marker">他者からの評価は避けたいものの、反応が一切得られない環境では単なるボイスメモと変わらず、発信し続ける動機が保てない</span>のではないかという課題も浮き彫りになりました。
+                      </p>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">4. ユーザーのニーズ</h4>
+                      <p class="art__p">
+                        ユーザーインタビューから得られたニーズを分析すると、多くのユーザーは自分の思考や感情を誰かに受け止めてほしいという根源的な欲求を抱いていることがわかりました。
+                        その一方で、投稿においては徹底した負担の軽減が求められており、労力をかけず、作り込む必要のない気軽な仕組みが重要視されていることが分かりました。
+                      </p>
+                      <p class="art__p">
+                        また、心理的な安全性の確保も不可欠であり、批判やマウント、過度な評価競争に晒されない環境が強く望まれていることがわかりました。
+                        しかし、単に反応を遮断するだけでは既存のメモ帳や日記と変わらなくなってしまうため、孤独感を解消し、発信を継続する動機となるような「最低限の共感や反応」を得られる絶妙な距離感が必要とされています。
+                      </p>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">5. インサイト</h4>
+                      <p class="art__p">
+                        ユーザーへの調査を通じて得られた深い洞察として、現代のユーザーは「評価を伴わない、純粋な共感」を強く求めていることが明らかになりました。
+                        具体的には、数値や拡散によって評価に晒される既存のSNSでは発信を躊躇してしまい、かといって全く反応が得られない環境では、あえて発信する意義を見出せなくなっています。この「評価のプレッシャー」と「無反応による孤独感」という二極化された現状の狭間に、心理的な安全が守られつつも、穏やかな共感が返ってくる場所が決定的に不足しているという結論に至りました。
+                      </p>
+                      <p class="art__p">
+                        つまり、ユーザーの本音は<span class="marker">「批判や評価の恐怖から解放され、思ったことをありのままに発信しながらも、最低限の温かな共感だけは受け取れる場所」を求めている</span>のだと言えます。
+                      </p>
+                    </section>
+                  </section>
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec06-02">2-2. ペルソナモデリング</h3>
+                    <p class="art__p">
+                      実施したユーザーインタビューから得られた、発信に対する心理的障壁や行動特性を分析し、本サービスの核となるペルソナを定義しました。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_persona.webp" alt="ペルソナ" width="1440" height="2657" loading="lazy" decoding="async"></figure>
+                  </section>
+                </section>
+
+
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec07">3. 要件定義</h2>
+                  <p class="art__p mb40">
+                    まず、これまでの競合リサーチ、ペルソナ、ユーザーゴール等を踏まえ、本プロダクトが提供するソリューションとコンセプトおよび提供価値を定めました。
+                  </p>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec07-01">3-1. ソリューションの定義</h3>
+                    <p class="art__p">
+                      これまでのリサーチから得られた「評価への恐怖」と「無反応への孤独感」というジレンマを解消するため、本プロダクトのコンセプトを<span class="marker">「心理的に安全な環境で、思考途中のアイデアや感想を気軽に共有できる音声SNS」</span>と定義しました。
+                    </p>
+                    <p class="art__p mb32">
+                      既存のSNS環境では、過度な拡散性や数値化された評価が、ユーザーの発信意欲を削ぐ大きな要因となっています。
+                      本プロダクトは、この課題を解決するために、以下の3つのアプローチを具体的なソリューションとして提供します。
+                    </p>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">① 徹底した心理的安全性の設計</h4>
+                      <p class="art__p">
+                        批判や攻撃的なコミュニケーションを構造から排除するため、コメント機能や拡散機能、さらには「フォロワー」という概念そのものを撤廃します。
+                        他者の目を気にすることなく、純粋に自分の思考に向き合える「静かな発信環境」を構築します。
+                      </p>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">② 思考を妨げないアウトプットの低コスト化</h4>
+                      <p class="art__p">
+                        「書く」という作業に伴う心理的・作業的負担を最小化するため、1分程度の短尺音声投稿に特化します。
+                        テキストを推敲する手間を省くことで、思考がまとまりきる前の断片的な気づきを、熱量を保ったまま即座に共有することを可能にします。
+                      </p>
+                    </section>
+                    <section class="art__section--h4">
+                      <h4 class="art__hed4">③数値化されない「最小限の共感」の提供</h4>
+                      <p class="art__p">
+                        完全な独り言で終わらせないためにリアクション機能は維持しつつも、リアクション数は非表示とします。
+                        誰が反応したか、何回反応されたかといった「評価」の側面を削ぎ落とし、ポジティブで穏やかな共感だけが伝わる、依存性の低い心地よい繋がりをデザインします。
+                      </p>
+                    </section>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec07-02">3-2. ユースケースの洗い出し</h3>
+                    <p class="art__p">
+                      定義したソリューションを実際のユーザー体験に落とし込むため、主要な利用シーンに基づいたユースケースを洗い出しました。
+                      単に機能を羅列するのではなく、「どのような状況で、どのような心理的変化を期待してそのアクションを行うのか」というユーザーの行動文脈を重視して整理しています。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_requirements.webp" alt="ユースケース" width="1440" height="1002" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec07-03">3-3. データ要素・機能要素の洗い出し</h3>
+                    <p class="art__p">
+                      ユースケースからUI上で必要なデータ要素と機能要素を洗い出しました。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_data.webp" alt="データ要素・機能要素" width="1440" height="902" loading="lazy" decoding="async"></figure>
+                  </section>
+                </section>
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec08">4. 情報設計</h2>
+                  <p class="art__p mb32">
+                    要件定義をもとに具体的な情報設計に進みました。
+                  </p>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec08-01">4-1. インタラクション構造の設計</h3>
+                    <p class="art__p">
+                      定義したユースケースや各機能、データ要素に基づき、プロダクト全体のインタラクション構造を整理しました。
+                      ユーザーの主要な行動動線に合わせて各画面の遷移関係を定義し、情報や機能のグルーピングを行うことで、階層構造を明確にしています。
+                    </p>
+                    <p class="art__p">
+                      具体的には、主要な機能を集約したボトムナビゲーションを起点に、フィード、通知、投稿、マイページの4つのメインセクションを配置しました。
+                      投稿画面はモーダル形式を採用することで、どの画面からでも即座に録音を開始できる設計にしています。
+                      また、マイページ配下にはフォロー一覧やプロフィール編集といった設定関連の機能を階層的に整理し、ユーザーが迷うことなく情報を管理・カスタマイズできる構造を構築しました。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_interaction.webp" alt="インタラクション" width="1705" height="1444" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec08-02">4-2. レイアウト設計</h3>
+                    <p class="art__p mb32">
+                      設計したインタラクション構造に基づき、具体的な情報レイアウトや画面遷移のパターンをワイヤーフレームとして形にしました。
+                      各画面の役割を明確にしながら、ユーザーが迷わずに操作できるよう、主要な機能の配置や情報の優先順位を整理しています。
+                      特にホーム画面では、フィードの閲覧から再生、詳細検索、そして他ユーザーのプロフィール確認までをスムーズに繋ぐUIパターンを検討し、操作の心地よさと使い勝手の検証を行いました。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_home-interaction.webp" alt="HOME画面インタラクション" width="1860" height="2008" loading="lazy" decoding="async"></figure>
+                    <figure class="art__img"><img src="../images/voislet/voislet_post-interaction.webp" alt="POST画面インタラクション" width="1860" height="1116" loading="lazy" decoding="async"></figure>
+                  </section>
+                </section>
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec09">5. ビジュアルデザイン</h2>
+                  <p class="art__p mb32">
+                    次に、ビジュアルデザインのフェーズでは、単に見た目を整えるだけでなく、プロダクトの核である「心理的安全性」と「内省」を直感的に感じられる空気感の構築を目指しました。
+                  </p>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec09-01">5-1. トンマナ設計</h3>
+                    <p class="art__p">
+                      ビジュアルデザインの構築にあたっては、単なる装飾ではなく、ユーザーが直感的に感じる「情緒的な心地よさ」の軸を明確にすることから始めました。
+                      プロダクトの立ち位置を「評価されるための発信から解放する場所」と定義し、そこから導き出した<span class="marker">「静けさ」「解放」「思考」「内省」というキーワードを軸に、視覚的な方向性を精査しています。</span>
+                    </p>
+                    <p class="art__p">
+                      このプロセスを経て、配色や形状、余白、動きといった各要素の具体的な方向性を体系化しました。
+                      特に配色の選定においては、複数のカラーパターンを実画面に適用して比較検証を重ねています。
+                      単なる色の好みではなく、どの案が最もコンセプトに深く合致し、かつUI全体の調和やユーザーに与える印象が優れているかを客観的に評価しました。
+                    </p>
+                    <ul class="art__list--blue">
+                      <li>色相：青、静けさや落ち着きを感じさせるトーン。</li>
+                      <li>彩度・コントラスト：低めに設定し、情報過多にならない落ち着いた印象に</li>
+                      <li>形状：角を削った曲線や角丸を多用し、安心感を演出</li>
+                      <li>質感：透明感や水面のような質感で、“声の波紋”を暗示</li>
+                      <li>余白：圧迫感をなくし、呼吸できるレイアウト</li>
+                      <li>動き：緩やかで静かなアニメーション。時間の流れを感じさせない滑らかさを意識</li>
+                    </ul>
+                    <figure class="art__img"><img src="../images/voislet/voislet_tone.webp" alt="配色の比較" width="3135" height="1536" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec09-02">5-2. デザインの精緻化</h3>
+                    <p class="art__p mb32">
+                      ビジュアルの方向性を定めた後は、先行して作成していたワイヤーフレームにトンマナを適用し、デザインの精緻化を進めました。
+                      単に色や形を流し込むだけでなく、実際の利用シーンを想定しながら、文字のウェイトや余白の数ピクセル単位のバランス、要素の重なりによる奥行き感などを繰り返し微調整しています。
+                    </p>
+                    <p class="art__p">
+                      特に、音声という抽象的な要素を扱うプロダクトであるため、視覚的なノイズを徹底的に削ぎ落としながらも、操作に必要な手がかりが直感的に伝わるようブラッシュアップを重ねました。
+                      プロトタイプ上で実際の画面遷移や操作感を検証し、視覚的なリズムや手触り感を整えることで、当初定義した「心理的な安全性」と「内省的な心地よさ」を、具体的なUIデザインとして高い解像度で実現しています。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_primaryUI.webp" alt="主要画面のUI" width="1860" height="2053" loading="lazy" decoding="async"></figure>
+                  </section>
+
+                  <section class="art__section--h3">
+                    <h3 class="art__hed3" id="sec09-03">5-3. スタイルガイドの整理</h3>
+                    <p class="art__p mb32">
+                      ビジュアルデザインの作成と並行してデザインの一貫性と保守性を高めるためのスタイルガイドを整備しました。
+                      具体的には、スペーシング（余白ルール）、配色、タイポグラフィー、コンポーネント構造、エレベーション、角丸などを体系的に整理し、どの画面でも同じトーン＆マナーでデザインを展開できるように設計しています。
+                      また、各UIパーツをFigmaコンポーネント化し、再利用やバリエーション管理がしやすい設計にすることで、将来的に画面が増えた場合でも、スムーズに拡張・修正できるよう配慮しています。
+                    </p>
+                    <figure class="art__img"><img src="../images/voislet/voislet_color.png" alt="カラー一覧" width="1440" height="768" loading="lazy" decoding="async"></figure>
+                    <figure class="art__img"><img src="../images/voislet/voislet_styleguide.webp" alt="スタイルガイド" width="1440" height="802" loading="lazy" decoding="async"></figure>
+                  </section>
+                </section>
+
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec10">6. 検証改善</h2>
+                  <p class="art__p">
+                    制作の最終段階では、設計の妥当性を確認するため、多角的な検証と改善を行いました。
+                    まず、セルフチェックとして簡易的なヒューリスティック評価とアクセシビリティテストを実施し、視認性や操作の整合性における細かな不備を徹底的に洗い出し、ブラッシュアップを重ねています。
+                    さらに、Figmaによるプロトタイプを用いたユーザーテストを行い、具体的な操作感や「心理的安全性」という解決策そのものの妥当性を検証しました。
+                  </p>
+                  <p class="art__p">
+                    検証の結果、操作性における課題は微細な調整で解消できたほか、拡散や通知を制限する設計による<span class="marker">「心理的安全性」と「共感」のバランスについては、当初の狙い通り高い評価を得ることができました。</span>
+                    一方で、音声投稿という形式特有の課題も浮き彫りになりました。
+                    デザインツール上の検証では限界があるものの、やはり<span class="marker">「自分の声を公開すること」自体に根源的な抵抗を感じる層が一定数存在し、それが新たな投稿ハードルになり得る</span>というインサイトを得ました。
+                  </p>
+                  <p class="art__p">
+                    この課題を解決するためには、投稿時に音声を加工・エフェクト処理できる機能を追加し、より匿名性を高めるアプローチが有効であると考えています。
+                    また、本制作のテーマである「音声」という前提を一度柔軟に捉え直すならば、今回定義したソリューションを維持しつつ、より心理的負担の少ないテキスト投稿をベースにした形へと展開させることも、ユーザーのニーズを追求する上での有力な選択肢になると捉えています。
+                  </p>
+                </section>
                 
-                <h3 class="art__hed3">1-4. ペルソナ設計</h3>
-                <p class="art__p">
-                  次に、ユーザー理解と課題の深掘りを行うため、ペルソナ設計を行いました。
-                </p>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_persona.webp" alt="ペルソナ情報" width="1440" height="2276" loading="lazy" decoding="async"></figure>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec11">終わりに</h2>
+                  <p class="art__p">
+                    本プロダクトの設計を通じて、SNSにおける「評価」という概念がユーザーの心理的負担に与える影響を深く考察し、その対極にある「心理的安全性の高い場所」のあり方を模索してきました。
+                  </p>
+                  <p class="art__p">
+                    検証の過程では、インターフェースの使い勝手といった表層的な課題だけでなく、解決策の根幹に関わる重要なインサイトを得ることができました。
+                    特に、自分の声を公開することへの根源的な抵抗感については、音声投稿をベースにする上での大きなハードルであり、今後の検討課題として認識しています。
+                    この点については、上述の通り、音声を加工して匿名性を高める機能の追加や、あるいは今回定義したソリューションを横展開し、より心理的負担の低いテキストベースの仕組みへ再適応させるといった、多角的なアプローチによってさらに改善の余地があると考えています。
+                  </p>
+                  <p class="art__p">
+                    今回の制作プロセス全体を通じ、特定の手段に固執するのではなく、ユーザーの抱える抵抗感や心理的状況に合わせて、解決策そのものを柔軟に再定義していくことの重要性を学びました。
+                    この経験を、今後のより複雑な課題解決においても活かしていきたいと考えています。
+                  </p>
+                </section>
 
-                <h3 class="art__hed3">1-5. ユーザーインタビュー</h3>
-                <p class="art__p">
-                  ユーザーインタビューでは、SNSにおける発信行動と心理的ハードルを中心に調査を行いました。
-                </p>
-
-                <ul class="art__list">
-                  <li><span class="bold">目的</span>：SNSでの発信行動における心理的課題と、音声発信に対する印象・モチベーションを把握する</li>
-                  <li><span class="bold">対象者</span>：20~30代の社会人6名(男女比3:3)、うち3名はnote, Xなどで情報発信経験あり、3名は閲覧専用または低頻度投稿者</li>
-                  <li><span class="bold">手法</span>：インタビューおよび行動観察</li>
-                  <li><span class="bold">調査期間</span>：2025年9月</li>
-                </ul>
-
-                <p class="art__p">
-                  主な質問項目は以下。
-                </p>
-                <ul class="art__list">
-                  <li>普段どんな時にSNSを使うか</li>
-                  <li>投稿したいと思う瞬間はどんな時？逆にしたくない時は？</li>
-                  <li>SNSを使っていて疲れた、気を遣った経験はあるか</li>
-                  <li>声で話すのと文字で書くのでは、どんな気持ちの違いがあるか</li>
-                  <li>SNSでのいいね数やフォロワー数は気になるか</li>
-                  <li>誰かに自分の考えを共有したいと思うのはどんな時か</li>
-                  <li>投稿した後にどんな反応があると嬉しいか</li>
-                  <li>音声で投稿できるSNSがあったら使いたいと思うか、その理由は</li>
-                </ul>
-                <p class="art__p">
-                  インタビューの結果をまとめたものが以下。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_pattern.webp" alt="行動観察・発言から見えたパターン" width="1200" height="814" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_action-pattern.webp" alt="ユーザーのカテゴリーと行動" width="1200" height="262" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_insight.webp" alt="ユーザー行動とインサイト" width="1200" height="356" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_issue.webp" alt="抽出された課題とモチベーション" width="1200" height="392" loading="lazy" decoding="async"></figure>
-
-                <h3 class="art__hed3">1-6. 価値命題の定義</h3>
-                <p class="art__p">
-                  以上の内容から、本サービスが提供する価値について整理しました。まず、Voisletが提供する価値は、機能的・情緒的・社会的の3つの観点から整理できます。
-                </p>
-
-                <p class="art__p"><span class="bold">機能的価値</span></p>
-                <ul class="art__list">
-                  <li>短い音声（30〜90秒）で日常の気づきや学び、思考を簡単に記録・共有できる</li>
-                  <li>フォロワー、いいね、コメントのない環境で、気軽にアウトプットが可能</li>
-                </ul>
-
-                <p class="art__p"><span class="bold">情緒的価値</span></p>
-                <ul class="art__list">
-                  <li>「誰かに見せるためではなく、自分のために話す」という安心感を得られる</li>
-                  <li>発信が“プレッシャー”ではなく、“癒し”や“自己整理”の時間になる</li>
-                </ul>
-
-                <p class="art__p"><span class="bold">社会的価値</span></p>
-                <ul class="art__list">
-                  <li>批判・比較・競争に支配されたSNS文化からの脱却</li>
-                  <li>「発信＝競争」ではなく、「発信＝共鳴・内省」という新しい発信文化を生み出す</li>
-                </ul>
-
-                <p class="art__p">また、独自の価値構造とペイン・ゲインを整理したものが以下。</p>
-                <figure class="art__img"><img src="../images/voislet/voislet_value.png" alt="従来のSNSとの比較" width="1200" height="439" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_pain-gain.png" alt="ペインとゲインの整理" width="1200" height="392" loading="lazy" decoding="async"></figure>
-
-
-
-                <h2 class="art__hed2">解決策と体験設計</h2>
-                <p class="art__p mb32">
-                  ここまでで課題と方向性が定まったので、具体的な提供機能について検討しました。
-                </p>
-
-                <h3 class="art__hed3">2-1. ユーザーフロー</h3>
-                <p class="art__p">
-                  まず、ユーザー体験の流れを検討し、フローと必要な機能について整理しました。
-                </p>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_userflow.webp" alt="ユーザーフロー" width="1200" height="966" loading="lazy" decoding="async"></figure>
-
-
-
-                <h3 class="art__hed3">2-2. 必要機能の洗い出し</h3>
-                <p class="art__p">
-                  作成したユーザーフローを参考に、フェーズを以下の5段階に整理し、必要な機能等を洗い出しました。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_core-feature1.png" alt="必要機能：話したくなる瞬間" width="1200" height="373" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_core-feature2.png" alt="必要機能：話すフェーズ" width="1200" height="366" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_core-feature3.png" alt="必要機能：投稿フェーズ" width="1200" height="346" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_core-feature4.png" alt="必要機能：他者の投稿をきくフェーズ" width="1200" height="447" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_core-feature5.png" alt="必要機能：振り返るフェーズ" width="1200" height="393" loading="lazy" decoding="async"></figure>
-                
-                
-                <h3 class="art__hed3">2-3. 情報設計・要件定義</h3>
-                <p class="art__p">
-                  アプリは「ホーム」「見つける」「投稿」「マイページ」の4セクションで構成。録音・投稿体験を最短フローにしつつ、思考ログとしての“声のジャーナル”機能を備えています。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_layerd-structure.png" alt="階層図" width="1200" height="680" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_requirements.webp" alt="要件定義" width="1440" height="1483" loading="lazy" decoding="async"></figure>
-
-
-                <h3 class="art__hed3">2-4. ワイヤーフレーム作成</h3>
-                <p class="art__p">
-                  ワイヤーフレームでは、UIの見た目よりも「情報の構造」と「ユーザーフロー」を整理することに重点を置きました。
-                  今回は、細かなボタン配置や配色といったビジュアル要素は意識せず、「どの画面にどんな情報を置くか」「ユーザーがどの順序で行動するか」という体験設計の骨格を明確にすることを目的としています。
-                </p>
-                <p class="art__p">
-                  設計のベースには、前段で作成した階層図と要件定義を置き、そこに競合サービス（stand.fmやVoicyなど）の画面遷移を参考にしながら、
-                  ユーザーが“話す→投稿する→聴く→振り返る”という一連の流れをできるだけ少ない操作で完結できる構成を検討しました。
-                </p>
-                <p class="art__p">
-                  特に意識したのは、インタラクションコストの最小化です。録音や投稿、再生といった主要行動をワンタップで行えるよう、情報量を必要最小限に絞り込み、ユーザーが迷わず目的の操作に辿り着ける動線を意識しています。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_wf-signup.webp" alt="登録・ログインのワイヤーフレーム" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_wf-home.webp" alt="ホーム・見つけるのワイヤーフレーム" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_wf-post.webp" alt="投稿・録音のワイヤーフレーム" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-
-
-                <h2 class="art__hed2">3. UIデザイン</h2>
-                <h3 class="art__hed3">3-1. トンマナ設計</h3>
-                <p class="art__p">
-                  トンマナ設計では、まずサービス全体のブランドコンセプトを言語的に整理するところから始めました。目的は「見た目の統一」ではなく、ユーザーが感じる空気感や情緒の軸を明確にすることです。
-                  初期段階では、Voisletというサービスが「どんな文脈で」「どんな感情を生み出す存在であるか」を言葉で定義しました。
-                  サービスの立ち位置は「評価されるための発信から解放する音声SNS」。そこから導いたキーワードは「静けさ」「解放」「思考」「内省」等。
-                </p>
-                <p class="art__p">
-                  次に、この方向性を視覚的に検証するため、ムードボードを作成しました。
-                  言語で定義した感情キーワードをもとに、色・形・質感・動きに関するイメージを大量に収集し、感情面・印象面に整理していきました。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_moodboard.webp" alt="ムードボード" width="2280" height="1602" loading="lazy" decoding="async"></figure>
-                <p class="art__p">
-                  その過程で大まかなビジュアルの方向性を以下の通りに定めました。
-                </p>
-                <ul class="art__list">
-                  <li><span class="bold">色相</span>：青、または緑系統で、静けさを感じさせるトーン</li>
-                  <li><span class="bold">彩度・コントラスト</span>：低めに設定し、情報過多にならない落ち着いた印象に</li>
-                  <li><span class="bold">形状</span>：角を削った曲線や角丸を使用</li>
-                  <li><span class="bold">質感</span>：透明感や水面のような質感で、声の波紋を暗示</li>
-                  <li><span class="bold">余白</span>：圧迫感をなくすため、広くとる</li>
-                  <li><span class="bold">動き</span>：緩やかで静かなアニメーション</li>
-                </ul>
-                <p class="art__p">
-                  最終的に、定義した方向性を検証するため、複数のUI例を収集して比較。
-                  ワイヤーフレームで設計した主要画面に対して、各トンマナ（主に配色や質感）を当てはめ、“どのデザインがもっともコンセプトに沿うか”を検証しました。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_tone.webp" alt="トンマナの比較" width="3135" height="1536" loading="lazy" decoding="async"></figure>
-                <p class="art__p">
-                  比較の結果、青系を基調にした低コントラストな配色を採用。そこに合わせて、タイポグラフィー・エレベーション・余白バランスを決定しました。
-                </p>
-                <p class="art__p mb32">
-                  なお、これらはこの段階で決め切るのではなく、ビジュアルデザインを進めながら何度も改良を重ね、余白や文字サイズ、影の深さなどをプロトタイプ上で検証しながらブラッシュアップしています。
-                </p>
-
-
-                <h3 class="art__hed3">3-2. ビジュアルデザイン</h3>
-                <p class="art__p">
-                  定義したトンマナをもとに、ワイヤーフレームで設計した構造をハイファイなUIへと落とし込みました。
-                  この段階では、色・余白・タイポグラフィー・エレベーションといったビジュアル要素を具体化し、「静けさ」「透明感」「穏やかさ」というブランドトーンをUI全体で再現することを目指しました。
-                </p>
-                <p class="art__p">
-                  ワイヤーフレームでは情報構造の整理を優先していたため、ビジュアル段階では、要素同士の間隔やサイズ感、影の深さ、文字のウェイトなどを一つひとつ見直し、ユーザーが無意識に“落ち着き”を感じられる視覚的リズムを意識してブラッシュアップしています。
-                </p>
-                <p class="art__p">
-                  細部のUI表現に関しては、stand.fmやVoicyなどの既存サービスのUIを参照し、音声メディアとしての使いやすさや操作感を学びつつ、Voislet独自の世界観（評価のないSNSとしての“静的な安心感”）に合わせて調整しました。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_ui-singup.webp" alt="登録画面のUI" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_ui-home.webp" alt="ホーム・投稿画面のUI" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_ui-search.webp" alt="見つける・マイページのUI" width="1860" height="2000" loading="lazy" decoding="async"></figure>
-
-
-
-                <h3 class="art__hed3">3-3. スタイルガイド作成</h3>
-                <p class="art__p">
-                  ハイファイなUIが完成した段階で（正確には、UI作成と並行して）、デザインの一貫性と保守性を高めるためのスタイルガイドを整備しました。
-                  具体的には、スペーシング（余白ルール）、配色、タイポグラフィー、コンポーネント構造、エレベーション、角丸などを体系的に整理し、どの画面でも同じトーン＆マナーでデザインを展開できるように設計しています。
-                </p>
-                <p class="art__p">
-                  また、各UIパーツをFigmaコンポーネント化し、再利用やバリエーション管理がしやすい設計にすることで、将来的に画面が増えた場合でも、スムーズに拡張・修正できるよう配慮しています。
-                  この工程を通じて、単なるUIデザインではなく、「体験の一貫性を支えるデザインシステム」としてVoisletのデザインを体系化しました。
-                </p>
-                <figure class="art__img"><img src="../images/voislet/voislet_color.png" alt="カラーパレット" width="1440" height="768" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_typography.webp" alt="タイポグラフィー" width="1440" height="1625" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/voislet/voislet_spacing.png" alt="スペーシング" width="1440" height="804" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/voislet/voislet_elevation-corner-icon.png" alt="エレベーション、コーナー、アイコン" width="1440" height="1140" loading="lazy" decoding="async"></figure>
-
-
-                <h2 class="art__hed2">まとめ</h2>
-                <p class="art__p">
-                  今回のVoisletの制作では、「音声SNS」というテーマを通じて、UI設計の枠を超えた体験設計の重要性を改めて実感しました。
-                  単に画面を作るのではなく、ユーザーがどんな気持ちでアプリを開き、どういう心理変化を経て離脱・再訪するのかを想像しながら、一つひとつのデザイン判断を積み上げていくプロセスは非常に学びが多いものでした。
-                </p>
-
-                <h3 class="art__hed3">反省点と今後の課題</h3>
-                <p class="art__p">
-                  一方で、リサーチ面に関しては課題が残りました。今回のユーザーインタビューはサンプル数や抽出条件が限られており、得られたインサイトに偏りや主観性が残る可能性があります。
-                  より信頼性の高い調査を行うには、属性の異なるユーザー層を幅広く抽出し、行動観察や定量的データを組み合わせるなど、リサーチ手法の精度を高める必要があると感じています。
-                </p>
-                <p class="art__p">
-                  また、今回はプロトタイプの検証をUIレベルで留めており、実際のプロダクトに近い再現度でユーザーテストを行えていない点も課題です。
-                  より完成度の高いインタラクションを含むプロトタイプを制作し、それを用いて実際のユーザーに触ってもらうことで、設計意図と実際の使用感のギャップを可視化できたはずだと感じています。
-                </p>
-                <p class="art__p mb32">
-                  さらに、今回はSNSとしては比較的シンプルな構造を扱ったため、複雑なフローや多機能な情報設計を要するプロダクトにおいて、同様に“ストレスのない体験”を提供できるかは、今後の大きなテーマです。
-                  今後は、より多層的な情報構造を持つアプリを題材に、UXリサーチと情報設計の両面で精度を高めていきたいと考えています。
-                </p>
-
-
-
-                <a class="art__cv" href="https://www.figma.com/design/GydE8GeAUZd1P6IAQktTxG/Voislet%EF%BC%88%E9%9F%B3%E5%A3%B0SNS%EF%BC%89--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=290-4567&t=b3ZPrSJwPRfDqPcG-1"  target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/voislet/voislet_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></div>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">VoisletのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
-                    <p class="art__cv-desc">「Voislet」は、“評価されるための発信”から人々を解放することをテーマにした音声SNSです。</p>
-                  </div>
-                </a>
               </article>
-            </div>
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
-         
-      </div>
-    </div>
-    <!--wrapper end-->
+            </main>
 
-    <!-- script js-->
-    <script src="../js/script.js"></script>
-    <!-- wow -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">どんなアプリか</a></li>
+                  <li><a href="#sec02" class="index__link">プロトタイプ/figmaファイル</a></li>
+                  <li><a href="#sec03" class="index__link">デザインのポイント</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec03-01" class="index__sub-link">①心理的安全性と共感のバランス</a></li>
+                    <li><a href="#sec03-02" class="index__sub-link">②低コストでの投稿</a></li>
+                  </ul>
+                  <li><a href="#sec04" class="index__link">デザインプロセス</a></li>
+                  <li><a href="#sec05" class="index__link">1. 仮説立案</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec05-01" class="index__sub-link">1-1. アイデアのブレスト</a></li>
+                    <li><a href="#sec05-02" class="index__sub-link">1-2. 課題仮説とプロダクトの方向性</a></li>
+                  </ul>
+                  <li><a href="#sec06" class="index__link">2. リサーチ＆モデリング</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec06-01" class="index__sub-link">2-1. ユーザーインタビュー</a></li>
+                    <li><a href="#sec06-02" class="index__sub-link">2-2. ペルソナモデリング</a></li>
+                  </ul>
+                  <li><a href="#sec07" class="index__link">3. 要件定義</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec07-01" class="index__sub-link">3-1. ソリューションの定義</a></li>
+                    <li><a href="#sec07-02" class="index__sub-link">3-2. ユースケース洗い出し</a></li>
+                    <li><a href="#sec07-03" class="index__sub-link">3-3. データ要素・機能要素洗い出し</a></li>
+                  </ul>
+                  <li><a href="#sec08" class="index__link">4. 情報設計</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec08-01" class="index__sub-link">4-1. インタラクション構造</a></li>
+                    <li><a href="#sec08-02" class="index__sub-link">4-2. レイアウト設計</a></li>
+                  </ul>
+                  <li><a href="#sec09" class="index__link">5. ビジュアルデザイン</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec09-01" class="index__sub-link">5-1. トンマナ設計</a></li>
+                    <li><a href="#sec09-02" class="index__sub-link">5-2. デザインの精緻化</a></li>
+                    <li><a href="#sec09-03" class="index__sub-link">5-3. スタイルガイドの整理</a></li>
+                  </ul>
+                  <li><a href="#sec10" class="index__link">6. 検証・改善</a></li>
+                  <li><a href="#sec11" class="index__link">終わりに</a></li>
+                </ul>
+              </nav>
+            </aside>
+          </div><!-- l-article -->
+        </div><!-- container -->
+      </div><!-- maincontents -->
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
+    </div><!--wrapper end-->
+
+  <!-- script js-->
+  <script src="../js/script.js"></script>
+  <!-- wow -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 </body>
 

@@ -5,11 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>SmartOrdee | 飲食店向けQRコードオーダーのデザインプロセス</title>
+    <title>飲食店向けQRコードオーダー | Portfolio</title>
     <meta name="description" content="SmartOrdeeは、自主制作の架空サービスとして「飲食店のQR注文体験をよりスムーズにする」UI設計プロジェクトです。UX課題の抽出から業界理解、情報設計、OOUIに基づく画面構造、プロトタイプ検証まで、一貫した設計プロセスを実践。Figmaファイルも公開中。">
     <meta name="keywords" content="UIUX, Portfolio">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!-- OGP -->
     <meta property="og:title" content="SmartOrdee | 飲食店向けQRコードオーダーのデザインプロセス" />
     <meta property="og:description" content="SmartOrdeeは、自主制作の架空サービスとして「飲食店のQR注文体験をよりスムーズにする」UI設計プロジェクトです。UX課題の抽出から業界理解、情報設計、OOUIに基づく画面構造、プロトタイプ検証まで、一貫した設計プロセスを実践。Figmaファイルも公開中。" />
@@ -33,519 +35,571 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
-            </div>
-            <div class="header__nav">
+      <header class="header fadein">
+        <div class="header__cont">
+          <div class="header__back-link">
+              <a href="../index.html#works" class="back-link">
+                <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="17" y1="10" x2="3" y2="10"/>
+                    <polyline points="10 3 3 10 10 17"/>
+                </svg>
+                <span class="back-link__text">Homeに戻る</span>
+              </a>
+          </div>
+          <div class="header__nav">
               <button class="menu-toggle" aria-label="Toggle navigation">
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
-              
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
+              <ul class="header__nav-list">
+                  <li><a href="../index.html#works">作品一覧</a></li>
+                  <li><a href="./about.html">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-              
-            </div>
+              </ul>
           </div>
-        </header>
-         <main class="maincontents">
-            <div class="article__cont">
-              <article class="article">
-                <h1 class="art__hed1">SmartOrdee</h1>
-                <p class="art__p">
-                  SmartOrdee（スマートオーディー）は、飲食店の注文体験をスムーズにするQRコードオーダーシステムです。
-                  本プロジェクトはポートフォリオ用に制作した架空のサービスを想定したものであり、実際の提供サービスではありません。
-                  ただし、飲食店での実体験をベースにUX課題を洗い出し、実運用を想定したユーザー導線・機能設計、デバイスごとのUI最適化、視認性や操作性の検証などを通じて、実際のリリースにも耐えうる品質を目指して制作しました。
-                </p>
-                <ul class="art__cate">
-                  <li class="cate-item-01">Webアプリケーション</li>
-                  <li class="cate-item-01">リサーチ</li>
-                  <li class="cate-item-01">コンセプト定義</li>
-                  <li class="cate-item-01">情報設計</li>
-                  <li class="cate-item-01">ビジュアルデザイン</li>
-                  <li class="cate-item-01">デザインシステム</li>
-                </ul>
-                <div class="art__eyecatch">
-                  <a href="https://www.figma.com/design/8cbbDTzGT5EszZkhRUCzjf/SmartOrdee-APP-%E3%80%90%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91?node-id=25-95&t=qa4iwpWvNQuJIqwv-1" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/SmartOrdee_UI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
-                    <p class="art__eyecatch-label"><span>SmartOrdeeのFigmaファイルはこちら</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
-                  </a>
-                </div>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
-                  <li>カテゴリー：Webアプリケーション</li>
-                  <li>制作種別：自主制作</li>
-                  <li>担当領域：リサーチ、ヒアリング、要件定義、情報設計、UI設計、デザインシステム構築</li>
-                  <li>使用ツール：Figma</li>
-                  <li>制作期間：3ヶ月</li>
-                </ul>
-                <h2 class="art__hed2">どんなアプリか？</h2>
-                <p class="art__p">
-                  SmartOrdeeは、来店客が自身のスマートフォンでQRコードを読み取り、直接注文できるシステムです。
-                  従来の口頭注文や紙の伝票を使わず、スムーズでストレスのない注文体験を提供します。
-                  また、<span class="marker">QRコードオーダーを主軸に、注文、キッチン、提供、会計など飲食店のオペレーション全体を効率化・自動化し、誰にとってもスムーズでストレスのない体験を実現する</span>サービスとなっています。
-                </p>
-                <p class="art__p">
-                  加えて、SmartOrdeeは、単なるUI改修にとどまらず、業界構造の分析や競合リサーチ、ユーザー調査を徹底的に行い、現場の課題と利用者のニーズを深く掘り下げました。
-                  その上で、操作の煩雑さやメニューの探しにくさなど表層的な問題だけでなく、<span class="marker">飲食店オペレーション全体の効率化と直感的で迷わない体験を目指した根本的な設計改善</span>を行っています。
-                </p>
+        </div>
+      </header>
 
-                <h3 class="art__hed3">プロトタイプ</h3>
-                <p class="art__p anno">来店客向けUI</p>
-                <iframe class="figma-prototype" src="https://embed.figma.com/proto/8cbbDTzGT5EszZkhRUCzjf/SmartOrdee-APP-%E3%80%90%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91?node-id=1726-48015&p=f&scaling=contain&content-scaling=fixed&page-id=25%3A95&starting-point-node-id=1726%3A48015&embed-host=share" allowfullscreen></iframe>
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
+                <article class="article">
+                  <h1 class="art__hed1">飲食店向けモバイルオーダー</h1>
+                  <ul class="art__cate">
+                    <li class="cate-item-01">Webアプリ</li>
+                    <li class="cate-item-01">自主制作</li>
+                  </ul>
+                  <div class="art__eyecatch">
+                    <img src="../images/SmartOrdee/SmartOrdee_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="2500" height="1500" fetchpriority="high">
+                  </div>
 
-                <p class="art__p anno">管理画面 ＊拡大推奨</p>
-                <iframe class="figma-prototype" src="https://embed.figma.com/proto/8cbbDTzGT5EszZkhRUCzjf/SmartOrdee-APP-%E3%80%90%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91?node-id=1931-51967&p=f&scaling=contain&content-scaling=fixed&page-id=25%3A95&starting-point-node-id=1772%3A47348&embed-host=share" allowfullscreen></iframe>
-                <a class="art__cv" href="https://www.figma.com/design/8cbbDTzGT5EszZkhRUCzjf/SmartOrdee-APP-%E3%80%90%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91?node-id=25-95&t=qa4iwpWvNQuJIqwv-1"  target="_blank" rel="noopener noreferrer">
-                  <figure class="art__cv-img"><img src="../images/SmartOrdee_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">SmartOrdeeのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
-                    <p class="art__cv-desc">飲食店向けSass型オーダー管理システム「SmartOrdee」</p>
-                  </div>
-                </a>
+                  <p class="art__p">
+                    飲食店の食事体験を最適化するQRコードオーダーのデザインを自主制作しました。制作したプロダクトの概要とその設計過程を紹介したいと思います。
+                  </p>
+                  <ul class="art__list--blue mb40">
+                    <li>カテゴリー：Webアプリケーション</li>
+                    <li>制作種別：自主制作</li>
+                    <li>担当領域：リサーチ、ヒアリング、要件定義、情報設計、UI設計、デザインシステム構築</li>
+                    <li>使用ツール：Figma</li>
+                    <li>制作期間：2ヶ月</li>
+                  </ul>
 
-                <h2 class="art__hed2">制作の背景</h2>
-                <p class="art__p">
-                  日常的に飲食店で利用するQRコードオーダーシステムに対して、「UIが直感的でない」「情報が見づらい」「操作のフィードバックが曖昧」「誤操作しやすい」といった課題を感じたことが、
-                  本アプリをデザインするきっかけとなりました。
-                </p>
-                <h2 class="art__hed2">設計プロセス</h2>
-                <p class="art__p">
-                  設計プロセスは以下の手順で進めました。
-                </p>
-                <ol class="art__orderlist mb32">
-                  <li>課題仮説</li>
-                  <li>前提知識の強化</li>
-                  <li>競合リサーチ：競合サービスの強み、弱み、差別化ポイントを明確化</li>
-                  <li>ユーザーリサーチ：探索型の定性調査でユーザーの課題やニーズを把握</li>
-                  <li>コア価値の定義</li>
-                  <li>ペルソナ設計：課題やニーズを深掘り</li>
-                  <li>カスタマージャーニー作成：具体的な操作フローの中での課題を明確化</li>
-                  <li>要件定義・情報設計：OOUIの手法を用いて整理</li>
-                  <li>ワイヤフレーム・プロトタイプ制作</li>
-                  <li>検証と改善：タスク達成性、情報構造、導線の観点で</li>
-                  <li>ビジュアルデザイン：配色、詳細なレイアウト、タイポグラフィー等</li>
-                  <li>検証と改善：ユーザビリティ、アクセシビリティ等</li>
-                </ol>
-
-                <h2 class="art__hed2">背景・課題仮説</h2>
-                <p class="art__p">
-                  まずは、仮説として「このような課題があるのではないか？」というものを整理し、以降のリサーチ等の方向性を定めました。
-                </p>
-                <ul class="art__list mb32">
-                  <li>スタッフの募集が追いつかず常に人手不足になりがち</li>
-                  <li>飲食店における注文業務には、スタッフの負担増大やオーダーミス、待ち時間の長期化といった課題がある</li>
-                  <li>非接触型注文のニーズが高まっている中で、誰でも直感的に使えるデジタル注文体験の重要性が増している</li>
-                  <li>近年、QRコードオーダーシステムは普及しつつあるが、実際に利用してみて「UIが直感的でない」、「情報が見づらい」、「操作のフィードバックが曖昧」、「誤操作しやすい」といった課題を感じるサービスが多い</li>
-                </ul>
-
-                <h2 class="art__hed2">前提知識の強化</h2>
-                <p class="art__p">
-                  リサーチや設計に入る前に、飲食店業界の構造等についてデスクリサーチを行いました。
-                  これは、ユーザーの行動や課題が、業界固有の制約や文脈に強く依存するため、的外れな設計を避け、実効性のある体験設計を行うには、業界や業務の構造的理解が不可欠であるため。
-                </p>
-                
-                <div class="column2 mb32">
-                  <div class="box">
-                    <h3 class="box-hed">業界固有の課題</h3>
-                    <ul class="box-list">
-                      <li><span class="bold">人手不足</span>：慢性的なスタッフ不足で、注文〜配膳の省人化ニーズが強い</li>
-                      <li><span class="bold">ピーク時の業務集中</span>：ランチ・ディナーの時間帯に注文が集中し、処理遅延が起きやすい</li>
-                      <li><span class="bold">注文ミスや聞き間違い</span>：ホール注文はミスが起きやすく、自動化による削減が求められる</li>
-                      <li><span class="bold">回転率が重視</span>：注文の速さや会計のスムーズさが売上に直結</li>
-                      <li><span class="bold">厨房との連携</span>：注文情報はリアルタイムでキッチンに連携する必要がある</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">慣行・現場運用上の注意点</h3>
-                    <ul class="box-list">
-                      <li>オーダー入力はスタッフが行うのが前提の店も多い（特に高級店、個人店）</li>
-                      <li>紙伝票や厨房プリンターとの連携が残っている現場もある</li>
-                      <li>テーブル番号や会計処理の運用は店舗ごとにバラバラ（連番、物理札、POS連携有/無）</li>
-                      <li>注文後の変更や注文キャンセルも現場でよく発生</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">関連する法規制・制度</h3>
-                    <ul class="box-list">
-                      <li><span class="bold">軽減税率対応</span>：イートインとテイクアウトで税率が異なる</li>
-                      <li><span class="bold">インボイス制度</span>：消費税額や事業者番号の明記が必要（会計処理との連携に関わる）</li>
-                      <li><span class="bold">アレルゲン表示義務/食品表示法</span>：メニュー表示における注意点</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">その他設計時の注意点</h3>
-                    <ul class="box-list">
-                      <li><span class="bold">オフライン対応</span>：回線が不安定な環境を想定した設計</li>
-                      <li><span class="bold">多言語対応</span>：訪日外国人向けに言語切り替え機能</li>
-                      <li><span class="bold">会計連携（POS、キャッシュレス）</span>：注文情報と決済の統合の要望が高い</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <h2 class="art__hed2">競合リサーチ</h2>
-                <p class="art__p">
-                  同じ課題に対して他社がどのように解決しているかを把握し、業界内で一般的とされるUIパターンやユーザーの期待値を理解した上で、
-                  自社プロダクトの改善点や差別化の方向性を見出すために競合リサーチを行いました。
-                  調査対象は、Squareセルフオーダー、食べログオーダー、QR food、簡単注文、Aire REGIオーダーの5社。リサーチの結果をまとめたものが以下。
-
-                <div class="column2 mb32">
-                  <div class="box">
-                    <h3 class="box-hed">競合の強み</h3>
-                    <ul class="box-list">
-                      <li>サポート体制の充実</li>
-                      <li>大手企業の営業力や資本力によるシェア率の高さ</li>
-                      <li>POSレジとの連携が容易</li>
-                      <li>決済機能つき</li>
-                      <li>月額費用が安い（大企業は利益率よりシェア拡大を狙って低価格でのサービス提供をしている）</li>
-                      <li>オーダーシステムは安く提供し、POS連携や決済端末との連携で利益を得ている</li>
-                      <li>多言語対応でインバウンド需要にも対応</li>
-                      <li>多機能で拡張性が高い</li>
-                      <li>専用端末（タブレット）を提供している会社のサービスのUIUXは優れている</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">競合の弱み</h3>
-                    <ul class="box-list">
-                      <li>お客さんがQRコードを読み取り自身のスマホから注文するスタイルの会社は、UIUXが考え抜かれていない。一覧性や視認性、操作性の観点で問題が散見される。具体的には、カテゴリの階層が深すぎる、表品名が見切れる、インタラクション不足など。</li>
-                      <li>デジタル機器に慣れていないお客さん（特に高齢世代）への対策が薄い</li>
-                      <li>カスタマイズ性が低い</li>
-                      <li>初期費用が高く、小~中規模店舗では導入にハードルがある（専用端末を用意しているタイプのサービス）</li>
-                      <li>初期設定が複雑で、導入のハードルが高い</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">差別化ポイント</h3>
-                    <p class="box-p">
-                      基本的な、注文、キッチンとの連動、決済といった飲食店のオペレーション全体をカバーできることを前提に、
-                      ユーザー体験を徹底的に追求し、インタラクションコストを最小化した設計を行うこと。具体的には以下。
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec01">どんなアプリか</h2>
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_summary.webp" alt="SmartOrdeeのデザイン要点" width="1920" height="1027" loading="lazy" decoding="async">
+                    </figure>
+                    <p class="art__p">
+                      既存のモバイルオーダーの多くは、メニュー一覧から注文したい商品を見つけるのに時間がかかるという課題や、注文以外の機能への導線が不透明であるという課題を抱えています。
+                      本プロジェクトではこれらに対し、<span class="marker">ユーザー（来店客）の本来の目的である「食事や同行者との会話」に集中できるよう、「必要な操作を即座に終えられること」をゴールに据えて設計しました。</span>
+                      具体的には、大きく以下の二つのアプローチを行いました。
                     </p>
-                    <ul class="box-list">
-                      <li>初めて使う人でも迷わないシンプルな導線設計</li>
-                      <li>十分なタップエリアの確保やタップエリア間に十分な余白確保</li>
-                      <li>最小ステップで注文完了できる構成にする</li>
-                      <li>重要な操作に対してインタラクションを入れる</li>
-                      <li>余計な情報を削り、情報の一覧性、視認性の向上</li>
-                      <li>アイコンボタンには必ずラベルを付与する</li>
-                      <li>初期設定のハードルが下げられるように、利用ガイドを用意するとともに、管理画面も直感的に使えるような設計に</li>
-                    </ul>
-                  </div>
-                </div>
+                    <p class="art__p">
+                      一つ目は、<span class="marker">「メニュー探索と注文操作の分離」</span>です。
+                      アプリ内でのメニュー一覧をあえて廃止し、メニュー名検索による注文操作に特化させました。
+                      これにより、紙のメニューで決めた商品をデジタルで即座に入力するという実際の振る舞いに最適化し、注文完了までの時間を大幅に短縮することが期待できます。
+                    </p>
+                    <p class="art__p">
+                      二つ目は、<span class="marker">「利用シーンに最適化した情報設計」</span>です。
+                      ユースケースに基づき、真に必要な機能のみを厳選した上で、常に視認可能なボトムナビゲーションへ集約しました。
+                      これにより、店員呼び出しや会計といった副次的な操作も迷わずスムーズに行える導線を構築しています。
+                    </p>
+                    <p class="art__p mb32">
+                      このようにアプリとの接触時間を最小限に抑える設計により、デジタルリテラシーを問わず、誰もが速やかに必要な操作を完了でき、「食事や同行者との会話」という本来の目的に集中できる。
+                      そんな体験の実現を目指して設計しました。
+                    </p>
+                    
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_point1.webp" alt="SmartOrdeeのデザインポイント①" width="1920" height="1132" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_point2.webp" alt="SmartOrdeeのデザインポイント②" width="1920" height="1080" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
 
-                <h2 class="art__hed2">ユーザーリサーチ</h2>
-                <p class="art__p">
-                  次に、現状のQRコードオーダーシステムの問題や、飲食店内のオペレーションに関するペインや潜在的なニーズを把握するため、探索型の定性調査としてユーザーインタビューを行いました。
-                  まずは、利用客と店舗運営者に分け、それぞれのペインを整理。
-                </p>
-                <figure class="art__img"><img src="../images/SO_pain.png" alt="QRオーダーに関するペインの一覧（一覧性・視認性・フィードバック・誤操作など）" width="2360" height="1222" loading="lazy" decoding="async"></figure>
-                <p class="art__p">
-                  次に、ペインをグループ分けし、それぞれのペインをゲインに変換。
-                </p>
-                <figure class="art__img mb32"><img src="../images/SO_PainToGain.png" alt="ペインをゲインへ置き換えたマッピング図" width="3700" height="1329" loading="lazy" decoding="async"></figure>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec01-02">プロトタイプ/figmaファイル</h2>
+                    <iframe class="figma-prototype" src="https://embed.figma.com/proto/bkmSsy5N7kiJjeR1PdSMo9/SmartOrdee-ver2.0--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=4070-29486&p=f&scaling=scale-down&content-scaling=fixed&page-id=3897%3A28310&starting-point-node-id=4070%3A29486&embed-host=share" allowfullscreen></iframe>
+                    <a class="art__cv" href="https://www.figma.com/design/bkmSsy5N7kiJjeR1PdSMo9/SmartOrdee-ver2.0--%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8-?node-id=3897-28310&t=SWXAlrc62mHfA1JM-1"  target="_blank" rel="noopener noreferrer">
+                      <figure class="art__cv-img"><img src="../images/SmartOrdee/SmartOrdee_eyecatch.webp" alt="" aria-hidden="true" width="2500" height="1500" loading="lazy" decoding="async"></figure>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">SmartOrdeeのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
+                        <p class="art__cv-desc">飲食店向けモバイルオーダーシステム「SmartOrdee」</p>
+                      </div>
+                    </a>
+                  </section>
+                  
 
-                <h2 class="art__hed2">コア価値の定義</h2>
-                <p class="art__p">
-                  ここまでのリサーチをもとに、サービスの方向性を定めるため、このサービスが実現するコア価値を定めました。
-                  コア価値は、<span class="marker">QRコードオーダーを主軸に、注文、キッチン、提供、会計など飲食店のオペレーション全体を効率化・自動化し、誰にとってもスムーズでストレスのない体験を実現する</span>ことです。
-                </p>
-                <figure class="art__img mb32"><img src="../images/SO_CoreValue.png" alt="SmartOrdee のコア価値：注文〜提供〜会計までの効率化とストレスのない体験" width="2680" height="1669" loading="lazy" decoding="async"></figure>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec02">結論に至ったプロセス</h2>
+                    <p class="art__p mb32">
+                      本プロジェクトにおいて、日常的な使いづらさの正体をどのように特定し、それを解消するためにどのような設計判断を行ったのか。
+                      制作のスタートから最終的な解決策を導き出すまでの一連の思考過程を整理しました。
+                    </p>
+                    
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec02-01">なぜこれをデザインしたか</h3>
+                      <p class="art__p">
+                       まず、結論に至ったプロセスを説明するにあたり、私がこのプロダクトをデザインしようと考えた背景について触れておきたいと思います。
+                      </p>
+                      <p class="art__p">
+                        日常的に飲食店でモバイルオーダーを利用する中で、「注文したい商品が見つからない」「店員さんの呼び出しや会計への導線がわかりづらい」といった、
+                        不便さを感じていました。こうした違和感は自分だけではなく、同行している知人が操作に迷っている姿を何度も目にしたり、
+                        ネット上でモバイルオーダーに対する不満の声が多く上がっているのを知るうちに、「やはり多くの人が共通して感じている課題なんだ」と捉えるようになりました。
+                      </p>
+                      <p class="art__p">
+                        そこで、多くの飲食店で導入されているこの仕組みに対して、自分なりに設計し直すことで、既存のプロダクトでは解消しきれていない不便さを解決できるのではないか。
+                        このような課題解決への関心が、本プロジェクトをスタートさせたきっかけです。
+                      </p>
+                    </section>
+                    
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec02-02">課題の特定とインサイト</h3>
+                      <p class="art__p">
+                        設計にあたりまず着目したのは、ユーザー（来店客）の本来の目的です。
+                        ユーザーリサーチの結果、<span class="marker">来店客の目的は「食事そのもの」や「同行者との会話」にあり</span>、オーダーシステムを使いこなすことや、アプリそのものを楽しむことではないことがわかりました。
+                        また、プロダクトは店側から指定されたから使わざるを得ないものであり、必要な時に短時間かつ断続的に利用されるものであるという性質が浮き彫りになりました。
+                      </p>
+                      <p class="art__p">
+                        この前提に立つと、既存プロダクトには大きく2つの構造的な課題が見えてきました。一つ目は<span class="marker">「注文操作に時間がかかること」</span>です。
+                        スマートフォンの画面制約上、どれほどUIを工夫してもメニューの一覧性には限界があります。
+                        また、メニューのカテゴリー構造の設計が導入店舗側に委ねられているため、導入店舗の数やメニューの更新頻度を考えると、ユーザーにとって最適なメニューカテゴリーの構造を維持し続けることには限界がありました。
+                        加えて、行動観察においても、多くのユーザーは「まず紙のメニューで注文したい商品を決め、その後にアプリを起動する」という振る舞いをしており、アプリ上でのメニュー探索が実際の行動と乖離している実態が明らかになりました。
+                      </p>
+                      <p class="art__p">
+                        二つ目は<span class="marker">「注文以外の操作への導線が曖昧であること」</span>です。
+                        これは単なる情報設計の不徹底によるものではなく、要件定義や戦略の段階において、ビジネス都合を優先した多機能化や実装のしやすさが優先され、エンドユーザーを中心に据えた設計思想が十分に反映されていないと推察されます。
+                        こうした背景から、作り手側の都合による不要な機能が目立つ一方で、肝心の重要な機能が埋没してしまい、来店客が操作に迷う状況を招いています。
+                      </p>
+                    </section>
+                    
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec02-03">解決策とその根拠</h3>
+                      <h4 class="art__hed4">メニュー一覧の廃止とメニュー名検索への特化</h4>
+                      <p class="art__p mb32">
+                        「注文操作に時間がかかる」という課題に対し、本プロダクトでは<span class="marker">メニュー一覧を介した探索プロセスをあえて廃止し、メニュー名による検索注文に特化させる解決策を採用</span>しました。
+                        この設計のヒントとなったのは、サイゼリヤの注文システムです。
+                        同システムはUIの古さや番号入力という点では賛否がありますが、メニュー探索の役割を紙のメニュー表に一任することで、アプリ上で「商品が見つからない」という課題自体を発生させない構造を持っています。
+                        そこで本プロダクトでは、サイゼリヤのシステムの利点を踏襲しつつ、デメリットである入力の煩雑さを「メニュー名の検索」に置き換える形でブラッシュアップしました。
+                        従来の、写真と商品名が並ぶ一覧をスクロールして目的の品を探すUIに対し、メニュー名を直接入力し検索することで、店舗側の設定状況に左右されない一貫した操作性を実現できます。
+                        これにより、商品発見からオーダーまでの所要時間が大幅に短縮されることが期待できます。
+                      </p>
+                      <h4 class="art__hed4">機能の厳選とボトムナビゲーションへの集約</h4>
+                      <p class="art__p">
+                        「導線の曖昧さ」を解消するため、<span class="marker">エンドユーザーのゴールに不要な機能を徹底的に排除し、真に必要な機能のみを常に視認可能なボトムナビゲーションへ集約</span>しました。
+                        学習コストの低い一貫した骨格を設計することで、デジタルリテラシーを問わず、初見のユーザーでも迷わず操作を完了できる導線を構築しています。
+                      </p>
+                      <p class="art__p">
+                        これらは、モバイルオーダーはあくまで食事体験を支える「黒子」であり、必要な時に短時間で断続的に利用されるものである、というゴールダイレクテッドデザインのプロセスから導き出したインサイトに基づいています。
+                        作り手や店舗側の都合ではなく、ユーザーの「食事を楽しみ、必要な操作を即座に終える」という本来の目的に最適化することで、構造的な使いづらさの解消を目指しました。
+                      </p>
+                    </section>
+                    
+                  </section>
 
-                <h2 class="art__hed2">ペルソナ設計</h2>
-                <p class="art__p">
-                  次に、ユーザーの解像度深め、必要な機能の優先度やユーザー体験のシナリオを作成するため、ペルソナの設計を行いました。
-                </p>
-                <figure class="art__img"><img src="../images/SO_UserPersona.png" alt="来店客のペルソナ（ニーズ・行動特性の要約）" width="1800" height="776" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/SO_AdminPersona.png" alt="店舗運営者のペルソナ（業務課題・要望の要約）" width="1722" height="636" loading="lazy" decoding="async"></figure>
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec03">詳細なデザインプロセス</h2>
+                    <p class="art__p">
+                      デザインプロセスはゴールダイレクテッドデザインのプロセスを軸に、以下の手順で進めました。
+                      以降のセクションでは、本プロダクトの詳細なデザインプロセスを紹介したいと思います。
+                    </p>
+                    <figure class="art__img"><img src="../images/SmartOrdee/SmartOrdee_process.webp" alt="デザインプロセス" width="1920" height="1091" loading="lazy" decoding="async"></figure>
+                  </section>
+                  
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec04">1. リサーチ</h2>
+                    <p class="art__p">
+                      リサーチに先立って、本プロダクトで扱うスコープを設定しました。導入店舗側の管理画面やキッチンモニター、会計連動などを含めるとスコープが広がりすぎて個人制作で扱える範囲を超えるので、エンドユーザー、つまり<span class="marker">飲食店の来店客向けに提供するサービスに絞ってプロダクトを考える</span>こととしました。
+                    </p>
+                    <p class="art__p mb32">
+                      また、この時点ではQRコードオーダーというソリューションに縛られず、フラットな状態で顧客（導入店舗）とユーザー（来店客）にとって本当に最適なソリューションは何か？というところを出発点にしました。
+                    </p>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-01">1-1. 文献調査</h3>
+                      <p class="art__p">
+                        まず、QRコードオーダーをはじめ、タブレット注文を含めた飲食店のオーダーシステムや、飲食店そのものに関する文献をデスクリサーチし、飲食店や来店客に関する課題やニーズ、業界固有の問題などの概略を知ることから始めました。
+                      </p>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-02">1-2. 競合リサーチ</h3>
+                      <p class="art__p">
+                        文献調査によって業界内でもシェアや評価の高い競合サービスを特定しました。そして、それらのサービスに関してデスクリサーチを行うとともに、実際にサービスを利用して、競合のメリット・デメリットを整理しました。
+                      </p>
+                      <p class="art__p">
+                        競合サービスとしてピックアップしたものが以下：<br>
+                        ・Airレジオーダー<br>
+                        ・食べログオーダー<br>
+                        ・ダイニー<br>
+                        ・サイゼリヤの注文システム
+                      </p>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-03">1-3. 顧客リサーチ</h3>
+                      <p class="art__p">
+                        次に、顧客リサーチということで、オーダーシステムを導入する飲食店舗側に関するリサーチを行いました。
+                        リサーチの結果、飲食店が新しいオーダーシステムに求めている最上位のゴールは、「利益の最大化」と「現場負担の最小化」を同時に実現することにあるとわかりました。
+                        しかし、既存のモバイルオーダーやPOSシステムは、業務効率化という利点を持ちながらも、導入コストや決済手数料による利益圧迫、端末管理やトラブル対応といった運用負担といった課題を抱えています。
+                        特に、タブレットなどの店舗専用端末を保有するモデルは、固定費の増大と日常的なメンテナンス負荷を生むことがボトルネックになっています。
+                      </p>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_CustomerResearch.webp" alt="顧客リサーチ結果要約" width="1920" height="829" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-04">1-4. ユーザーインタビューと行動観察</h3>
+                      <p class="art__p mb32">
+                        次に、来店客の実際の利用状況を把握するため、実店舗での行動観察とインタビューを実施しました。<br>
+                        調査対象は、月に1回以上飲食店を利用する20代〜50代の計12名です。内訳として、QRコードオーダー、対面注文、タブレットオーダーの各形式を利用するユーザーを対象とし、実際の利用状況下での観察を行いました。<br>
+                        分析にあたっては、操作中の迷いや躊躇、確認行為といった具体的な行動をトリガーに深掘りした質問を重ね、ユーザーの潜在的な不便さや行動の背景を明らかにしました。
+                      </p>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">主要なインサイト</h4>
+                        <p class="art__p">
+                          インタビューと行動観察の結果、ユーザーの行動の裏側にある本質的な課題として、主に以下の点が浮き彫りになりました。
+                        </p>
+                        <p class="art__p">
+                          第一に、<span class="marker">オーダーシステムは主役ではない</span>ということです。
+                          インタビューと観察の結果、飲食店の来店客の一番の目的は「食事」や「同行者との会話」を楽しむことにあることがわかりました。
+                          オーダーシステムはその体験を補助する存在であり、用があるときに短時間だけ利用され、アプリ自体を楽しむ性質のものではありません。
+                        </p>
+                        <p class="art__p">
+                          第二に、<span class="marker">ユーザーが求めているのは「利便性の享受」であり「システムの操作」ではない</span>ということです。
+                          インタビューと観察の結果、ユーザーがオーダーシステムに価値を感じるのは、「大声で店員を呼ぶ必要がない」「自分のタイミングで追加注文ができる」「混雑時でも待たされない」といった、具体的な利用メリットを享受できる時のみであることが分かりました。
+                          一方で、店側の管理都合を優先した「専用アプリのダウンロード」や「LINEの友だち登録」の強制、さらには操作の分かりづらい不親切なUIに対しては、強い不満や心理的な反発が見られました。
+                          つまり、ユーザーはオーダーシステムそのものを求めているのではなく、あくまで「注文がストレスなく即座に完了すること」を評価の軸に置いています。
+                          店側の都合で課される不便なプロセスは、本来の目的である食事体験を損なうノイズとして捉えられていました。
+                        </p>
+                        <p class="art__p">
+                          第三に、<span class="marker">既存プロダクトの最大の課題は設計の不備が生む「迷い」である</span>ということです。
+                          インタビューと観察の結果、多くのユーザーが目的の商品に辿り着けず、操作のたびに思考を中断させられている実態が分かりました。
+                          これは検索機能の欠如に加え、店舗ごとに異なる不規則なカテゴリー分けや階層構造が、発見を困難にしているためです。
+                          また、注文確定時のフィードバックが曖昧なため、「本当に注文できたか」という不安から履歴を探し回る行動も目立ちました。
+                          しかし、その履歴自体が見つけにくかったり、時系列が不明確で現在の状況が把握しづらいといった不備も重なっています。
+                          こうした注文完了や会計への導線の不透明さが、本来意識する必要のない「操作そのもの」へのストレスを生み、食事体験を繰り返し阻害する要因となっていました。
+                        </p>
+                      </section>
 
-                <h2 class="art__hed2">カスタマージャーニー（CJ）の作成</h2>
-                <p class="art__p">
-                  次に、ユーザーの行動や感情を時系列で整理し、どの場面に課題や改善の余地があるかを可視化するためにCJを作成しました。
-                  これは、全体の体験を俯瞰することで、どのポイントに注力すべきかを判断し、より効果的な設計や改善に活かすことを目的としています。
-                </p>
-                <figure class="art__img"><img src="../images/SO_UserCJ.png" alt="来店客のカスタマージャーニーマップ（来店〜注文〜会計の時系列）" width="3740" height="1498" loading="lazy" decoding="async"></figure>
-                <figure class="art__img mb32"><img src="../images/SO_AdminCJ.png" alt="店舗運営者のカスタマージャーニーマップ（受注〜調理〜提供の時系列）" width="3060" height="1544" loading="lazy" decoding="async"></figure>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">導き出したユーザーゴール</h4>
+                        <p class="art__p mb32">
+                          エスノグラフィックリサーチの結果、本プロダクトの最上位ゴールを<span class="marker">「食事や同行者との会話を妨げないこと」</span>と定義しました。
+                          ユーザーにとってアプリは主役ではなく、あくまで食事を円滑にするための補助的な存在であるからです。
+                          この最上位ゴールを達成するため、以下の3つのサブゴールを設定しました。
+                        </p>
+                        <section class="art__section--h5">
+                          <h5 class="art__hed5"> 1. 必要な操作を即座かつ確実に完了できる（エンドゴール）</h5>
+                          <p class="art__p">
+                            注文から会計まで、食事中に発生するあらゆる操作を迷わず短時間で終えられる状態を目指します。操作そのものを意識させない設計により、プロダクトに注意を奪われるストレスを排除します。
+                          </p>
+                        </section>
+                        <section class="art__section--h5">
+                          <h5 class="art__hed5">2. プロダクトを利用する明確なメリットを感じられる（エクスペリエンスゴール）</h5>
+                          <p class="art__p">
+                            待ち時間の削減や、自分のペースで情報を得られるといった利便性を直接享受できる状態を目指します。
+                            店側の効率化のために「使わされている」という不満を、ユーザー自身がメリットのために「自発的に選択している」という納得感へと転換させます。
+                            特に、個人のデバイスを使用するモバイルオーダーにおいては、この「自分にとっての利得」が明確に伝わることが、心理的ハードルを払拭し、体験をポジティブに捉え直すための鍵になると判断しました。
+                          </p>
+                        </section>
+                        <section class="art__section--h5">
+                          <h5 class="art__hed5">3. アプリを使いこなせていると感じられる（エクスペリエンスゴール）</h5>
+                          <p class="art__p">
+                            これは「操作が分からなくても分からないと言いづらい」というユーザーの声を反映したものです。
+                            人は基本的に、自分を無能だと思いたくありません。特に飲食店という場では、操作に迷うこと自体が小さなストレスになります。
+                            そのため、こうしたユーザーの心理を踏まえ、このゴールを設定しました。
+                          </p>
+                          <p class="art__p">
+                            多機能化や装飾に頼るのではなく、システムによる介入を最小化し、ユーザーが速やかに本来の目的である「食事」へと意識を戻せる設計をゴールに据えています。
+                          </p>
+                        </section>
+                      </section>
 
-                <h2 class="art__hed2">情報設計・要件定義</h2>
-                <h3 class="art__hed3">情報設計と機能要件</h3>
-                <p class="art__p">
-                  これまでのリサーチやCJ等を踏まえ、必要な機能や画面遷移、フローについて整理しました。
-                  なお、ここではOOUIの手法を用いて、想定タスクの洗い出し→名刺抽出→メインオブジェクトの抽出→オブジェクト間の参照関係を整理→ビュー・コレクションの遷移関係→レイアウト作成という手順で進めました。
-                </p>
-                <figure class="art__img"><img src="../images/SO_TaskExtract.png" alt="OOUIに基づくタスク抽出" width="1221" height="601" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/SO_ObjectExtract.png" alt="OOUIに基づくオブジェクト抽出" width="1221" height="601" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/SO_UserObjectRelations.png" alt="OOUIに基づく来店客側のメインオブジェクトの関係図" width="794" height="403" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/SO_AdminObjectRelations.png" alt="OOUIに基づく店舗運営社側のメインオブジェクトの関係図" width="1224" height="915" loading="lazy" decoding="async"></figure>
-                <figure class="art__img"><img src="../images/SO_UserViewNav.png" alt="来店客側のビューとナビゲーションの構成図" width="847" height="651" loading="lazy" decoding="async"></figure>
-                <p class="art__p anno">＊店舗運営者側のビューとナビゲーションは検証・改善フェーズで大きく変更することになりました</p>
-                <figure class="art__img"><img src="../images/SO_AdminViewNav.png" alt="店舗運営者側のビューとナビゲーションの構成図" width="1395" height="1475" loading="lazy" decoding="async"></figure>
-                
-                <h3 class="art__hed3">非機能要件</h3>
-                <p class="art__p">
-                  また、ここまでのリサーチから得られたペイン、ゲインから非機能要件を整理。
-                </p>
-                <ul class="art__list mb32">
-                  <li>操作性の向上のため、ボタンのタップエリアで44px×44px以上を確保</li>
-                  <li>誤タップ防止のため、タップエリア間は16px以上離す</li>
-                  <li>アイコンボタンには必ず日本語のラベルを付与</li>
-                  <li>視認性確保のため、最小フォントサイズは12px</li>
-                  <li>商品一覧の一覧性の向上</li>
-                  <li>商品を探すのに階層の深さは最小限に</li>
-                  <li>商品選択から注文までを最小ステップで実現</li>
-                  <li>重要な操作（削除、注文確定等）には、トーストによるインタラクションを入れる</li>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_UserInterview.webp" alt="ユーザーインタビュー結果要約" width="1920" height="1687" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                  </section>
+                  
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec05">2. ペルソナモデリング</h2>
+                    <p class="art__p mb32">
+                      ユーザーインタビューと行動観察で得られた行動・発言・感情のデータを整理し、共通して見られた振る舞いと課題を抽出しました。
+                      その結果をもとに、本プロジェクトの設計判断の基準となるプライマリーペルソナを構築しています。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_Persona.webp" alt="ペルソナ" width="1920" height="1211" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec06">3. 要件定義</h2>
+                    <p class="art__p mb32">
+                      本フェーズでは、これまでのリサーチで抽出したユーザー（来店客）とクライアント（導入店舗）双方の課題やニーズ、ゴールを整理し、それらを具体的な解決策へと昇華させるための定義を行いました。
+                      まず、現状の文脈における理想的な体験を模索するため「コンテクストシナリオ」を作成し、課題解決に最も適したソリューションを検討。導き出した解決策に基づき、ユーザーの具体的な行動フローを描いた「ユーザーシナリオ」へと落とし込みました。
+                      これら一連のシナリオから、プロダクトが備えるべき「データ要素」や「機能要素」を抽出・整理し、迷いのない設計を実現するためのデザイン要件を策定しています。
+                    </p>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec06-01">3-1. ソリューションの検討</h3>
+                      <p class="art__p">
+                        顧客リサーチ、ペルソナ、ユーザーゴール、コンテクストシナリオを踏まえ、制約条件と本質的課題の両方を満たすソリューションを模索しました。
+                      </p>
+                      <p class="art__p">
+                        検討の結果、ソリューションの方向性は大きく以下の３つに定まりました。
+                      </p>
+                      <ul class="art__list--blue mb32">
+                        <li>QRコードオーダーの採用</li>
+                        <li>機能の最小化と学習コストの削減</li>
+                        <li>メニュー探索と注文操作の完全分離</li>
+                      </ul>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">1. QRコードオーダーの採用について</h4>
+                        <p class="art__p">
+                          導入店舗側のニーズを整理した結果、共通して「端末の導入・管理コストの最小化」「固定費の抑制」、そして「複数回注文が発生する業態への適応」という3点が重要視されていることが明らかになりました。
+                        </p>
+                        <p class="art__p">
+                          これらのニーズに対し、専用タブレットの導入は、操作性や一覧性の面で一定の利点があるものの、端末代金やメンテナンス費用といった初期投資と維持コストが極めて高く、導入できるのは資金力のある一部の店舗に限られてしまうという課題があります。
+                        </p>
+                        <p class="art__p">
+                          そこで、コスト障壁を最小限に抑えつつ、あらゆる規模の店舗がデジタル化の恩恵を受けられる最も合理的な解決策として、<span class="marker">来店客自身のデバイスを活用する「QRコードオーダー方式」を採用</span>しました。
+                          この方式であれば、店舗側の設備負担を最小化しながら、追加注文の取りこぼし防止といった業態特有のニーズにも柔軟に応えることが可能になります。
+                        </p>
+                        <p class="art__p">
+                          一方で、<span class="marker">ユーザーからは「自分のデバイスを使わされること」への不満が存在する</span>ことも確認しています。しかし、本プロダクトの主な導入先は、小〜中規模で回転率を重視する大衆店です。このような業態では、迅速な注文や追加オーダーの利便性が重視される傾向があり、操作の合理性が担保されていれば、一定の負担は許容されうると判断しました。
+                        </p>
+                      </section>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">2. 機能の最小化と学習コストの削減</h4>
+                        <p class="art__p">
+                          リサーチから、既存プロダクトではビジネス都合による機能過多が体験を阻害していることが明らかになりました。
+                          具体的には、「付加機能の増加」、「情報優先度の曖昧化」、「断続的利用に不向きなリッチUI」、これらは学習コストを増加させ、短時間利用という文脈と矛盾します。
+                          そこで、本プロジェクトでは、「短時間・断続的利用」に最適化するため、必要最低限の機能に限定し、情報優先度を明確化する方針を採用しました。
+                        </p>
+                      </section>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">3. メニュー探索と注文操作の完全分離</h4>
+                        <p class="art__p">
+                          メニュー探索の困難さは、大きく次の３つの問題に起因しています。<br>
+                          ①スマホの小画面という物理的制約による一覧性の低さ<br>
+                          ②導入店舗任せのカテゴリー構造<br>
+                          ③検索導線の機能不全
+                        </p>
+                        <p class="art__p">
+                          まず、スマートフォン上で大量の商品を一覧性高く提示し、即座に目的商品へ到達させる設計は、既存プロダクトが例外なく失敗していることから、どれほどUIを工夫しようとも限界があると判断しました。
+                        </p>
+                        <p class="art__p">
+                          また、注文システムの多くは、メニュー登録やカテゴリー登録を導入店舗側が行うことになるため、<span class="marker">ユーザー体験の根幹をなすカテゴリーの構造設計を導入店舗側に一任してしまうという構造的な問題も、アプリ内のメニュ一覧から選ぶという方式では解決できない</span>と考えました。
+                        </p>
+                        <p class="art__p">
+                          ここで着目したのが、紙メニューとデジタル注文を分離する方式を採用しているサイゼリヤの注文システムです。
+                          この方式は賛否があるものの、紙のメニューから商品を選び、紙に書かれた注文番号を端末で入力するという方法は「注文したい商品が見つからない」という課題を構造的に解消しています。
+                          ただし、番号入力方式はユーザーのメンタルモデルに適合しづらく、誤入力やカスタマイズ性の制約といった課題があります。
+                        </p>
+                        <p class="art__p">
+                          そこで、本プロダクトではこのアプローチを発展させ、<br>
+                          <span class="marker">・メニュー探索は紙メニューに委ねる</span><br>
+                          <span class="marker">・アプリではメニュー一覧表示を廃止</span><br>
+                          <span class="marker">・検索バーからメニュー名で直接検索に注文操作の機能を限定</span><br>
+                          という設計を採用しました。これにより、番号記憶の負担を排除、誤入力の抑制、ユーザーの自然な思考プロセスとの整合を実現できるようにしました。
+                        </p>
+                      </section>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_Solution.webp" alt="ソリューション要約" width="1920" height="1080" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec06-02">3-2. デザイン要件の定義</h3>
+                      <p class="art__p">
+                        次に、ここまでに整理したペルソナ、ゴール、問題ステートメント、そしてソリューションの方向性を踏まえ、それらを具体的に実現するためのデザイン要件を定義しました。
+                      </p>
+                      <p class="art__p">
+                        まず、ユーザーが実際の利用環境の中でどのようにプロダクトを利用するのかを明確にするため、ユーザーシナリオを作成。
+                        次に、そのユーザーシナリオをもとに想定されるユースケースを洗い出し、それぞれのユースケースを実現するために必要となる要素を、データ要素と機能要素に分解して整理しました。
+                      </p>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_Requirements.webp" alt="デザイン要件" width="1920" height="1362" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec07">4. 情報設計（インタラクションデザイン）</h2>
+                    <p class="art__p mb32">
+                      本フェーズでは、要件をもとに、具体的な情報設計を行いました。いわゆるUX5段階モデルでいう構造、骨格の部分の設計。
+                    </p>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec07-01">4-1. 行動フローの整理</h3>
+                      <p class="art__p">
+                        ユーザーシナリオをベースに、よりユーザーの行動を具体化した行動フローを整理し、具体的な体験の流れや、ユーザーが目的を達成するまでの手順を整理しました。
+                      </p>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_UserFlow.webp" alt="行動フロー" width="3872" height="1226" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec07-02">4-2. オブジェクト構造の整理</h3>
+                      <p class="art__p">
+                        ここまでに整理したユーザーシナリオと行動フローをもとに、画面間の遷移関係、情報の階層構造、機能・データのグルーピングを整理しました。
+                      </p>
+                      <p class="art__p mb32">
+                        なお、この段階で情報構造を固定するのではなく、画面設計（UI）と往復しながら構造を調整する形で設計を進めています。
+                      </p>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_Object.webp" alt="オブジェクト構造" width="1269" height="902" loading="lazy" decoding="async">
+                      </figure>
+                    </section>
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec07-03">4-3. レイアウト設計</h3>
+                      <p class="art__p">
+                        次に、先ほどのオブジェクト構造をもとに、具体的なレイアウト設計に進みました。
+                        ここでも、これまでのペルソナやユーザーリサーチの結果を前提とし、ユーザーが目的の行動を迷わず最短で達成できることを重視して設計しました。
+                      </p>
+                      <p class="art__p">
+                        なお、この段階でプロトタイプを作成し、フローや操作性の検証改善を重ねました。
+                      </p>
+                      <figure class="art__img">
+                        <img src="../images/SmartOrdee/SmartOrdee_Wire.webp" alt="ワイヤーフレーム" width="3319" height="2131" loading="lazy" decoding="async">
+                      </figure>
+                      <p class="art__p mb32">
+                        具体的な設計のポイントとしては、注文のフローとナビゲーションの設計です。
+                      </p>
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">注文フロー</h4>
+                        <p class="art__p">
+                          本プロダクトでは、<span class="marker">商品発見にかかる時間を最小化するため、検索による注文操作に特化したUIを採用</span>しています。
+                          まずTOP画面では、迷いを生む余計な情報を極限まで削ぎ落とし、画面中央に検索バーを大きく配置しました。
+                          アプリを開いた瞬間に目的を提示することで、ユーザーを迷わせることなく次のアクションへと誘導します。
+                        </p>
+                        <p class="art__p">
+                          検索バーをタップした後の入力フェーズでは、ひらがな2〜3文字を入力するだけで候補が随時表示される予測機能を備え、<span class="marker">フリック入力やタップの手間といった身体的コストを徹底的に削減</span>しました。
+                          目的の商品を選択した後は、詳細画面で内容を確認し、最後に出る確認モーダルを通じて注文を確定します。
+                        </p>
+                        <p class="art__p">
+                          ここで、既存の多くのサービスに見られる<span class="marker">「カートに追加」というプロセスはあえて廃止</span>しました。
+                          これは、カートに入れただけで注文したと誤認するミスを防ぎ、一回一回の操作を確実に完了させるための判断です。
+                          個別に確定する形式をとっても、本設計では入力から確定までのスピードが極めて速いため、操作上の負担は増えません。
+                          最終的に、<span class="marker">注文確定後は即座にトーストによるフィードバックを表示</span>することで、ユーザーが「正しくオーダーが通った」という確信を持ち、速やかに食事や会話へと意識を戻せる設計としています。
+                        </p>
+                        <figure class="art__img">
+                          <img src="../images/SmartOrdee/SmartOrdee_OrderFlow.webp" alt="注文フロー" width="1920" height="899" loading="lazy" decoding="async">
+                        </figure>
+                      </section>
+
+                      <section class="art__section--h4">
+                        <h4 class="art__hed4">ナビゲーションの設計</h4>
+                        <p class="art__p">
+                          本プロダクトでは、飲食時のユースケースを徹底的に絞り込み、ユーザーを迷わせないシンプルなナビゲーション構造を追求しました。
+                          リサーチを通じて得られた「短時間かつ断続的に利用される」という特性を踏まえ、<span class="marker">主要機能を「注文・注文履歴・店員呼出・会計確認」の4つに厳選し、どの画面からでも即座にアクセスできるボトムナビゲーションに集約</span>しています。
+                          あえて機能を絞り込み、常に同じ位置に固定配置することで、初めて利用する際でも機能を探し回る必要がなく、学習コストを最小限に抑えられる設計としました。
+                        </p>
+                        <figure class="art__img">
+                          <img src="../images/SmartOrdee/SmartOrdee_Navigation.webp" alt="ナビゲーション" width="1920" height="1289" loading="lazy" decoding="async">
+                        </figure>
+                      </section>
+                    </section>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec08">ビジュアルデザイン</h2>
+                    <p class="art__p">
+                      次に、ここまでで整理した情報構造を基に、視認性と一貫性を重視したビジュアルデザインを構築しました。
+                    </p>
+                    <p class="art__p">
+                      飲食店での短時間かつ断続的な操作を想定し、タイポグラフィや余白、コントラストを厳密に調整することで情報の視覚的階層を明確化しています。
+                      特に主要なアクションボタンは視覚的に強調し、取るべき行動が伝わりやすくなるよう配慮しました。
+                      また、UI要素をコンポーネント化して形状やルールの統一を徹底することで、画面を跨いでも迷いのない一貫した操作体験を実現しています。
+                      配色は、温かみと活気を感じさせるオレンジをアクセントカラーに採用しつつ、ベースにはニュートラルカラーを用いることで、多様な業種に対応できる汎用性とモダンな清潔感を両立させました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_Visual.webp" alt="ビジュアルデザイン適用後のUI" width="3319" height="2131" loading="lazy" decoding="async">
+                    </figure>
+                    <figure class="art__img">
+                      <img src="../images/SmartOrdee/SmartOrdee_Color.webp" alt="カラーパレット" width="1440" height="860" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec09">検証・改善</h2>
+                    <p class="art__p">
+                      ビジュアルデザインを適用した高精度なプロトタイプを用い、設計の妥当性を最終確認するための検証と改善を実施しました。
+                    </p>
+                    <p class="art__p">
+                      まず、専門的な視点から簡易的なヒューリスティック評価とアクセシビリティテストをセルフで行い、視認性や操作の整合性における細かな不備を洗い出し、ブラッシュアップを重ねました。
+                    </p>
+                    <p class="art__p">
+                      また、実際のユーザーを対象としてプロトタイプを用いたテストを行い、操作性の確認とともに、本プロダクトが提供する「検索特化型」のソリューションがユーザーの課題解決につながっているか、ゴールを達成しているか等を検証しました。
+                      検証の結果、複数人での利用シーンでは紙のメニューとアプリを併用する実態や、画像一覧形式のメニューに慣れたユーザーが検索主体の操作に一瞬戸惑うといった反応も確認されました。
+                      しかし、<span class="marker">「必要な操作を即座に終えられる」「膨大なメニューから目的の商品を最短で探し出せる」といったプロダクトの核心的な価値には一定の支持が得られました。</span>
+                    </p>
+                    <p class="art__p">
+                      したがって、改善フェーズでは、検索特化型のソリューションという大枠の方向性は変えずに、ユーザーフィードバックに基づいたレイアウトの再構成やUIコンポーネントの微調整、タスクフローの最適化に注力しました。
+                    </p>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec10">終わりに</h2>
+                    <p class="art__p">
+                      今回のプロジェクトでは、ゴールダイレクテッドデザイン（GDD）のプロセスに基づき、ユーザーリサーチからペルソナ設計、問題定義、ソリューション設計、UI設計、検証までの一連のプロダクトデザインプロセスを実践しました。
+                      単にユーザー調査を行ってUIを作るという表面的なアプローチではなく、ユーザーの行動や心理を踏まえた問題構造の整理からソリューションの定義まで行い設計できたのは大きな収穫だったと感じています。
+                    </p>
+                    <p class="art__p">
+                      一方で、今回のプロジェクトにおける反省点として、ユーザーリサーチにおける客観性の担保が挙げられます。
+                      具体的には、リサーチの協力者が知人中心の構成となり、サンプルの抽出に偏りが生じてしまった点です。
+                      年齢や性別などの属性分散には配慮したものの、近しい関係性ゆえの無意識なバイアスを完全に排除しきれたとは言えません。
+                      実務においてより確かなインサイトを得るためには、ターゲット属性の定義からリクルーティングの手法に至るまで、より厳密な手順で調査を設計する必要があると感じました。
+                    </p>
+                  </section>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">どんなアプリか</a></li>
+                  <li><a href="#sec01-02" class="index__link">プロトタイプ/figmaファイル</a></li>
+                  <li><a href="#sec02" class="index__link">結論に至ったプロセス</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec02-01" class="index__sub-link">なぜこれをデザインしたか</a></li>
+                    <li><a href="#sec02-02" class="index__sub-link">課題の特定とインサイト</a></li>
+                    <li><a href="#sec02-03" class="index__sub-link">解決策とその根拠</a></li>
+                  </ul>
+                  <li><a href="#sec03" class="index__link">詳細なデザインプロセス</a></li>
+                  <li><a href="#sec04" class="index__link">1. リサーチ</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec04-01" class="index__sub-link">1-1. 文献調査</a></li>
+                    <li><a href="#sec04-02" class="index__sub-link">1-2. 競合リサーチ</a></li>
+                    <li><a href="#sec04-03" class="index__sub-link">1-3. 顧客リサーチ</a></li>
+                    <li><a href="#sec04-04" class="index__sub-link">1-4. ユーザーインタビューと観察</a></li>
+                  </ul>
+                  <li><a href="#sec05" class="index__link">2. ペルソナモデリング</a></li>
+                  <li><a href="#sec06" class="index__link">3. 要件定義</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec06-01" class="index__sub-link">3-1. ソリューションの検討</a></li>
+                    <li><a href="#sec06-02" class="index__sub-link">3-2. デザイン要件の定義</a></li>
+                  </ul>
+                  <li><a href="#sec07" class="index__link">4. 情報設計</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec07-01" class="index__sub-link">4-1. 行動フローの整理</a></li>
+                    <li><a href="#sec07-02" class="index__sub-link">4-2. オブジェクト構造の整理</a></li>
+                    <li><a href="#sec07-03" class="index__sub-link">4-3. レイアウト設計</a></li>
+                  </ul>
+                  <li><a href="#sec08" class="index__link">5. ビジュアルデザイン</a></li>
+                  <li><a href="#sec09" class="index__link">6. 検証・改善</a></li>
+                  <li><a href="#sec10" class="index__link">終わりに</a></li>
                 </ul>
+              </nav>
+            </aside>
 
-                <h2 class="art__hed2">ワイヤフレーム・プロトタイプ作成</h2>
-                <p class="art__p">
-                  情報設計や要件定義をもとに、各画面のレイアウトや要素配置、導線、構造を視覚化。
-                  ワイヤフレーム・プロトタイプ作成後は、タスク達成性、情報構造の妥当性、導線・フローの明確さを検証し、ブラッシュアップを行いました。
-                </p>
-                <figure class="art__img"><img src="../images/SO_UserWireflame.png" alt="来店客側UIワイヤフレーム" width="3900" height="2070" loading="lazy" decoding="async"></figure>
-
-                <h2 class="art__hed2">UI設計</h2>
-                <h3 class="art__hed3">配色</h3>
-                <p class="art__p">
-                  全体の配色は、プライマリーカラー（#A52A2A）とニュートラルカラーを基軸に設計しました。
-                  プライマリーカラーにワインレッドを選定した理由は、<span class="marker">飲食店での利用シーンを考慮し、食欲を損なわず、かつアプリケーションとしてモダンで洗練された印象を与える色として、赤系の中でも深みのある色味を選んだため。</span>
-                  その他の色は、プライマリーカラーに調和するようにプライマリーカラーの階調から選定し、背景やステートカラー（ホバー・無効など）に使用。
-                  また、サクセス（成功）系にはグリーン系、警告にはイエロー系、危険を示す際にはレッド系を用い、各パーツでWCAG基準のコントラスト比を満たすよう配慮した設計をしました。
-                </p>
-                <figure class="art__img mb32"><img src="../images/SO_Color.png" alt="SmartOrdeeカラーパレット" width="3984" height="1307" loading="lazy" decoding="async"></figure>
-                
-                <h3 class="art__hed3">タイポグラフィー</h3>
-                <p class="art__p">
-                  飲食店向けに幅広いシーン（居酒屋・カフェ・レストランなど）での利用を想定し、<span class="marker">過度なブランドイメージを押し出さず、視認性と可読性に優れた標準的な書体であるNoto Sans JP</span>を採用しました。
-                  フォントサイズは16pxを基準とし、原則4の倍数単位でスケールを構成（例外的に14pxは使用を認める）。最小フォントサイズは視認性確保のため12pxとする。
-                  行間（line-height）は可読性を重視し、1.5〜1.75の範囲で設定。さらに、各フォントサイズに対して、line-height適用後のテキストの高さが4の倍数になるよう個別に調整。
-                  文字間隔（letter-spacing）は、可読性向上のため0.02em程度を基本とする。
-                  また、ディスクレシアへの配慮として、両端揃えは使用せず、左揃え、または、中央揃えを基本としました。
-                </p>
-
-                <h3 class="art__hed3">レイアウト等</h3>
-                <p class="art__p">
-                  来店客用のUIでは、情報の優先順位を明確にし、視線の流れを妨げないように、縦スクロール前提の単一カラムレイアウトを採用。商品情報は、商品名・価格・操作ボタンを一つのブロック内にまとめ、視線が自然に「見る→選ぶ→操作する」流れになるよう配置しました。
-                </p>
-                <p class="art__p">
-                  また、操作ミスを防ぐため、タップエリアは44px×44px以上、ボタンの間隔は16px以上離すことで、タップしやすさと誤操作防止を両立しました。
-                </p>
-                <p class="art__p">
-                  加えて、グローバルナビゲーションは画面下部に固定表示し、ユーザーがどの画面にいてもカート・メニュー・注文履歴にアクセスできるようにしている。
-                  さらに、ページ上部にはカテゴリ名や戻るボタンを配置し、現在の位置や戻る経路を直感的に理解できる設計に。
-                </p>
-                <p class="art__p mb32">
-                  そして、重要なアクションである「注文確定」や「メニューに戻る」などのボタンは、画面下部に目立つ色と十分なスペースで配置し、ユーザーが次に進むべき行動を迷わず選択できるようにしています。
-                </p>
-                
-
-                <h2 class="art__hed2">検証・改善</h2>
-                <p class="art__p">
-                  ハイファイのUIが完成したら、プロトタイプを作成し、それをもとに検証型のリサーチを行ないました。
-                  具体的には、何人かの人に、プロトタイプを利用してもらい、その感想や課題等を聞き取りしました。
-                </p>
-                <div class="column2">
-                  <div class="box">
-                    <h3 class="box-hed">来店客側：</h3>
-                    <ul class="box-list">
-                      <li>「一覧性は高いが、情報が詰まりすぎていてちょっと窮屈な印象があった」</li>
-                      <li>「表示切替ボタンがなんの表示を切り替えるのかよくわからなくて困惑した」</li>
-                      <li>「直感的で使い方はわかりやすいけど、ちょっと事務的な印象。軽やかで洗練された印象だともっといいかも」</li>
-                      <li>「影やボーダーが多くてやや重たい印象がある」</li>
-                      <li>「商品を選択してから注文確定までの流れが悪い。誤操作はしにくいけど、テンポよく注文できない」</li>
-                    </ul>
-                  </div>
-                  <div class="box">
-                    <h3 class="box-hed">店舗運営者側：</h3>
-                    <ul class="box-list">
-                      <li>「注文管理ページ（キッチンモニター）の状態管理（調理前、調理後、提供済み）がページ遷移が多くて少し手間。各状態へのページ遷移をワンクリックでできた方が便利」</li>
-                      <li>「テーブルが多くなると、スクロール時のヘッダー固定やフィルターUIの再考が必要」</li>
-                      <li>「呼び出し通知は通知だけだと見落とすので、対応済みと未対応のステータスで分けて一覧で見れるページが欲しい」</li>
-                      <li>「スマホ操作が苦手な人やトラブル時のため、スタッフの端末から各テーブルの注文ができるようにしたい」</li>
-                    </ul>
-                  </div>
-                </div>
-                <p class="art__p">
-                  また、自身でも全体を俯瞰しながら新たな課題や改善点を洗い出しました。
-                  その結果、大きな課題や改善点としては、以下のものが挙がりました。
-                </p>
-                <ul class="art__orderlist">
-                  <li class="bold">商品選択から注文確定までの操作フローのテンポが悪い</li>
-                  <li class="bold">タスク指向のUIになっている部分があり、よりモードレスなUIに改善する余地がある</li>
-                  <li class="bold">コンポーネントのバリアントとバリアブル（特に色の変数）の肥大化</li>
-                  <li class="bold">ビジュアル面で業務的かつクラシックなUIという印象が強いこと</li>
-                </ul>
-
-                <h3 class="art__hed3">1. 注文確定までのフローの最適化に関して</h3>
-                <p class="art__p">
-                  現状のUIでは「商品選択」→「個数選択」→「カートに追加」→「注文の確定」または「カートに追加して注文を続行」というフローを採用していましたが、
-                  特に<span class="marker">「カートに追加」以降の操作が、注文のテンポを悪くする原因となっていることがユーザーリサーチや検証を通じて判明</span>しました。
-                </p>
-                <p class="art__p">
-                  当初このフローを採用した背景には、誤操作による注文確定を防ぐ目的がありました。
-                  ターゲットユーザーの中にはデジタル操作に不慣れな方もいるため、カート機能や確認画面を挟むことで、一度立ち止まって内容を確認できるようにしていました。
-                  しかしその一方で、実際の飲食店利用では、ECサイトのように商品をまとめ買いするケースは少なく、注文操作を分割することでかえってスムーズさを損ねている課題がありました。
-                </p>
-                <p class="art__p">
-                  そこで、<span class="marker">誤操作防止と操作のスムーズさを両立させるため、画面遷移を極力減らす方針とし、カート機能を廃止。</span>
-                  商品ごとに直接注文を確定できるフローへと変更しました。さらに誤操作対策として、商品選択時には注文確定ボタンを非活性（Disable）に設定し、商品個数が1つ以上に設定されたタイミングでボタンを活性化する仕様に変更。
-                  デフォルトでは個数を0にすることで、ユーザーが意図的に操作を行わない限り誤って注文が確定しないよう配慮しました。
-                  <span class="marker">この改善により、誤操作のリスクを抑えつつ、注文操作のテンポを向上させることができました。</span>
-                </p>
-                <figure class="art__img mb32"><img src="../images/SO_OrderFlow.png" alt="注文フロー改善後のUI（カート廃止・商品ごとに直接確定、数量1以上でボタン活性）" width="3271" height="1210" loading="lazy" decoding="async"></figure>
-
-                <h3 class="art__hed3">2. タスク指向UIの改善</h3>
-                <p class="art__p">
-                  <span class="marker">全体的にタスク指向で設計されていた箇所が散見されたため、情報設計を見直しました。</span>
-                  具体的には、OOUIの手法を用いてメインオブジェクトを定義し直し、オブジェクト間の参照関係を再整理しました。
-                </p>
-                <p class="art__p">
-                  さらに、カスタマージャーニーからユーザーの操作フローやタッチポイントを深堀りし、関連性の高い情報や機能は同一ページ内でタブ切り替えができるようにするなど、階層構造を整理。
-                  これにより、不要なページ遷移を削減し、ユーザーがスムーズに目的を達成できる情報構造へと再設計しました。
-                </p>
-                <p class="art__p anno">
-                  以下は改善したページの一部
-                </p>
-                <figure class="art__img mb32"><img src="../images/SO_TOFix.png" alt="タスク指向UIの改善例" width="3200" height="1272" loading="lazy" decoding="async"></figure>
-
-                <h3 class="art__hed3">3. コンポーネント・バリアブルの肥大化の改善</h3>
-                <p class="art__p">
-                  コンポーネントおよびバリアブルの肥大化が課題となっていたため、それぞれ改善を行いました。
-                  まずコンポーネントについては、<span class="marker">サイズバリエーションを細かく作り過ぎたことで、管理が煩雑になり、一貫性や再利用性が低下</span>していました。
-                  そこで、<span class="marker">サイズ展開を基本的に sm / md / lg の三種類に統一し、横幅については実装面と同様に最大幅を定義した上で、
-                  画面幅に応じて柔軟に可変するよう調整</span>しました。これによりコンポーネント管理の負荷を軽減し、運用性を高めました。
-                </p>
-                <p class="art__p">
-                  また、バリアブル（特にカラー）については、<span class="marker">各要素ごとに細かく役割ベースでバリアブルを定義し過ぎたことで、
-                  同じ色を使用しているにも関わらず別名で複数のバリアブルが存在し、全体が肥大化してしまっていました。</span>
-                  例えば、Primary/Btn/Text, Primary/Btn/Background, Primary/Btn/Background/Hoverといったように、同色でも役割ごとにバリアブルを分けていました。
-                  この課題に対して、<span class="marker">命名を汎用的かつ再利用しやすい形に見直しました。</span>
-                  例えば、Text/Default, Text/Subtle, Text/Inverseなどのように、抽象度の高いバリアブルに統合する方針に変更しました。
-                  これによって、バリアブルの数を抑えながらも役割に応じた使い分けが可能となり、運用の効率化とメンテナンス性の向上を実現しました。
-                </p>
-                <p class="art__p anno">セマンティックカラーの一覧</p>
-                <figure class="art__img mb32"><img src="../images/SO_SemanticColor.png" alt="セマンティックカラーのバリアブル一覧" width="2532" height="1935" loading="lazy" decoding="async"></figure>
-
-                <h3 class="art__hed3">4. モダンなUIへの改善</h3>
-                <p class="art__p">
-                  改善前のUIは業務的でクラシックな印象が強く、機能や情報設計には注力していたものの、ビジュアル面の検討が不十分でした。
-                  機能的には問題がなくても、ユーザーは視覚的に美しいUIの方が使いやすいと感じることが多く、美的ユーザビリティの観点からも改善の必要性を感じていました。
-                  そこで、モダンなUIへの刷新を目指し、同業他社のUIだけでなく、他業種の優れたUIも参考に分析を行いました。
-                  その上で、色使いや余白、フォント選定、各パーツのデザインやレイアウトなどを見直し、<span class="marker">現代的で洗練されたデザインへと改善しました。</span>
-                </p>
-                <figure class="art__img"><img src="../images/SO_ModernUI1.png" alt="モダンなUIへの改善例1 注文フロー" width="2838" height="1210"></figure>
-                <figure class="art__img mb32"><img src="../images/SO_ModernUI2.png" alt="モダンなUIへの改善例2 売上レポートページ" width="3200" height="2948" loading="lazy" decoding="async"></figure>
-                
-                <h2 class="art__hed2">工夫した点と反省点</h2>
-                <p class="art__p">
-                  以上のような流れで設計を進めましたが、実際の制作を通して特に意識した工夫や、振り返って見えた課題もありました。
-                  ここでは、制作における工夫した点と今後の課題についてまとめています。
-                </p>
-                <h3 class="art__hed3">工夫した点</h3>
-                <p class="art__p">
-                  第一に、本制作では、デザインの一貫性を保つため、カラーやタイポグラフィー、スペーシングなどを変数管理し、コンポーネント単位で整理する<span class="marker">簡易的なデザインシステムを構築</span>しました。
-                  また、UI設計においてもデザイン原則を意識し、再利用性や保守性を高める工夫を行っています。
-                  ただし、今回はポートフォリオ制作という前提もあり、Reactなどフロントエンド実装との連携までは想定していません。
-                </p>
-                <p class="art__p mb32">
-                  第二に、実際の業界構造や利用シーンを深く理解するため、事前に業界分析・競合分析・ユーザーインタビューなどの探索型リサーチを実施。
-                  <span class="marker">ユーザーの顕在的な課題だけでなく、日常的な業務に埋もれた潜在的なニーズまで洗い出し、それらを踏まえてUIに落とし込む設計</span>を行いました。
-                  制作後もプロトタイプを用いた検証型のユーザーテストを実施し、実際の操作感や理解のしやすさを確認。
-                  仮説と検証を往復させながら、実際の現場でも使えるレベルのプロダクトを目指しました。デザインは見た目だけでなく、ユーザーの業務効率・認知負荷の軽減といった実用性を重視し、課題解決に直結する形で構築しています。
-                </p>
-
-                <h3 class="art__hed3">反省点</h3>
-                <p class="art__p">
-                  今回の制作を振り返る中で、特に二つの課題を感じています。
-                </p>
-                <p class="art__p">
-                  一つ目は、<span class="marker">実装制約の考慮が不十分だった点</span>です。
-                  実務でのプロダクト開発であれば、エンジニアとコミュニケーションを取りながら、技術的な実装制約やデータベース設計との兼ね合いを考慮した上で設計を行う必要がありますが、今回の制作では、その部分まで踏み込んだ検討がやや不足していたと感じています。
-                </p>
-                <p class="art__p mb32">
-                  二つ目は、<span class="marker">UXリサーチの進め方における課題</span>です。
-                  今回は主に定性的なリサーチに留まり、ユーザーインタビューの母数も限られていました。
-                  実務開発であれば、定量的なデータを活用した検証や、より多くのユーザーを対象にした調査、バイアスを避けるためのサンプル設計、さらには定性調査の手法の多様化など、より精度の高いリサーチを行う必要があると考えています。
-                  こうした点を次の課題として捉え、今後はより実践的で精度の高いUX設計を目指したいと思います。
-                </p>
-
-                <a class="art__cv" href="https://www.figma.com/design/8cbbDTzGT5EszZkhRUCzjf/SmartOrdee-APP-%E3%80%90%E5%A4%96%E9%83%A8%E5%85%AC%E9%96%8B%E7%94%A8%E3%80%91?node-id=25-95&t=qa4iwpWvNQuJIqwv-1"  target="_blank" rel="noopener noreferrer">
-                  <div class="art__cv-img"><img src="../images/SmartOrdee_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></div>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">SmartOrdeeのFigmaファイルはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="20" height="20"></p>
-                    <p class="art__cv-desc">飲食店向けSass型オーダー管理システム「SmartOrdee」</p>
-                  </div>
-                </a>
-              </article>
-            </div>
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                    <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
-         
-      </div>
-    </div>
-    <!--wrapper end-->
+          </div><!-- l-article end -->
+        </div><!-- container end -->
+      </div><!-- main-contents -->
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
+    </div><!--wrapper end-->
 
     <!-- script js-->
     <script src="../js/script.js"></script>

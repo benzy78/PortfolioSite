@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Boulangerie Amande | デザインプロセス</title>
+    <title>本格ベーカリー店舗サイト | Portfolio</title>
     <meta name="description" content="This portfolio showcases landing pages, websites, and app designs I’ve created in the past.">
     <meta name="keywords" content="UIUX, Portfolio">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!--jquery-->
@@ -25,220 +27,229 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
-            </div>
-            <div class="header__nav">
+
+      <header class="header fadein">
+        <div class="header__cont">
+          <div class="header__back-link">
+              <a href="../index.html#works" class="back-link">
+                <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="17" y1="10" x2="3" y2="10"/>
+                    <polyline points="10 3 3 10 10 17"/>
+                </svg>
+                <span class="back-link__text">Homeに戻る</span>
+              </a>
+          </div>
+          <div class="header__nav">
               <button class="menu-toggle" aria-label="Toggle navigation">
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <span class="menu-icon"></span>
                   <!-- <span class="menu-label">Menu</span> -->
               </button>
-
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
+              <ul class="header__nav-list">
+                  <li><a href="../index.html#works">作品一覧</a></li>
+                  <li><a href="./about.html">自己紹介</a></li>
                   <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-            </div>
+              </ul>
           </div>
-        </header>
+        </div>
+      </header>
 
-         <main class="maincontents">
-            <div class="article__cont">
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
-                <h1 class="art__hed1">Boulangerie Amande店舗サイト</h1>
-                <p class="art__p">
-                  「Boulangerie Amande（ブーランジェリーアマンド）」は、高級志向の海外風ベーカリーを想定して制作した、架空の店舗サイトです。
-                  本サイトはポートフォリオ用に制作したもので、Webデザインのスキルやブランド表現力を伝えることを目的としています。
-                </p>
-                <ul class="art__cate">
-                  <li class="cate-item-01">Webデザイン</li>
-                  <li class="cate-item-01">コーディング</li>
-                  <li class="cate-item-01">店舗サイト</li>
-                </ul>
-                <figure class="art__eyecatch">
-                  <a href="https://benzy78.github.io/boulangerie-amande/index.html" target="_blank" rel="noopener noreferrer">
-                    <img src="../images/BA_UI.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="3000" height="1800" fetchpriority="high">
-                    <p class="art__eyecatch-label"><span>店舗サイトへ</span><img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="24" height="24"></p>
-                  </a>
-                </figure>
-                <h2 class="art__hed2">プロジェクト概要</h2>
-                <ul class="art__list">
-                  <li>カテゴリー：店舗サイト</li>
-                  <li>制作種別：自主制作</li>
-                  <li>担当領域：構成企画、ロゴデザイン、サイト設計、ビジュアルデザイン、コーディング</li>
-                  <li>使用ツール：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
-                  <li>制作期間：1ヶ月</li>
-                  <li>リンク：<a href="https://benzy78.github.io/boulangerie-amande/index.html" class="art__link" target="_blank" rel="noopener noreferrer">店舗サイトはこちら<img src="../images/icon_open_bl.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                </ul>
+                <h1 class="art__hed1">本格ベーカリーの店舗サイト</h1>
+                  <ul class="art__cate">
+                    <li class="cate-item-01">Webサイト</li>
+                    <li class="cate-item-01">自主制作</li>
+                  </ul>
+                  <div class="art__eyecatch">
+                    <img src="../images/BA/BA_eyecatch.webp" alt="" aria-hidden="true" class="art__eyecatch-img" width="2800" height="1680" fetchpriority="high">
+                  </div>
 
-                <h2 class="art__hed2">設計方針</h2>
-                <div class="art__memo">
-                  <div class="art__memo-container">
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">店舗概要</h3>
-                      <p class="art__memo-p">
-                        「Boulangerie Amande（ブーランジェリー・アマンド）」は、東京都渋谷区に店舗を構える高級志向のフレンチベーカリーです。
+                  <p class="art__p">
+                    本プロジェクトは、Web制作におけるデザイン表現と実装スキルの証明を目的として制作した、架空の高級ベーカリー「Boulangerie Amande（ブーランジェリー・アマンド）」の店舗サイトです。
+                  </p>
+                  <ul class="art__list--blue mb40">
+                    <li>カテゴリー：店舗サイト</li>
+                    <li>制作種別：自主制作</li>
+                    <li>担当領域：企画、デザイン、コーディング</li>
+                    <li>使用ツール等：Figma, HTML, CSS(Sass), JavaScript, git, Github</li>
+                    <li>制作期間：3週間</li>
+                  </ul>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec01">プロジェクト概要</h2>
+                    <p class="art__p mb32">
+                      本プロジェクトは、新規開業する架空の高級志向のパン屋から依頼を受けた想定で制作した、ブランドの「顔」となる店舗サイトです。
+                      お店のブランドイメージをWeb上で体現し、認知拡大と来店意欲の向上を図ることを目的に制作しました。
+                      ターゲットは、おしゃれなカフェやパンを好み、食材の質やオーガニックにこだわる20〜40代の女性に設定。近年のデザイン動向を分析した上で、ブランドの独自性を損なわないようトーン＆マナーや素材選びを徹底し、サイト全体で洗練された世界観と品質の高さが伝わる構成を追求しました。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/BA/BA_Summary.webp" alt="プロジェクト概要" width="1920" height="644" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec02">最終成果物</h2>
+                    <figure class="art__img mb32"><img src="../images/BA/BA_capture.webp" alt="Boulangerie Amande UIキャプチャー" width="2366" height="2088" loading="lazy" decoding="async"></figure>
+                    <a class="art__cv" href="https://benzy78.github.io/boulangerie-amande/index.html"  target="_blank" rel="noopener noreferrer">
+                      <figure class="art__cv-img"><img src="../images/BA/BA_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Boulangerie Amandeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="24" height="24"></p>
+                        <p class="art__cv-desc">フランスのパン作りの芸術を提供する高級志向の本格ベーカリー「Boulangerie Amande」</p>
+                      </div>
+                    </a>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec03">デザインプロセス</h2>
+                    <p class="art__p">
+                      デザインプロセスは以下の手順で進めました。以下の章で詳細なプロセスを紹介します。
+                    </p>
+                    <figure class="art__img">
+                      <img src="../images/BA/BA_DesignProcess.webp" alt="デザインプロセス" width="1920" height="995" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec04">1. 要件整理</h2>
+                    <p class="art__p mb32">
+                      新規開業する架空の高級志向のパン屋から依頼を受けた想定で制作した、ブランドの「顔」となる店舗サイトです。実務における要件を想定し、以下の設定を構築して制作を開始しました。
+                    </p>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-01">クライアント情報</h3>
+                      <p class="art__p">
+                        Boulangerie Amande（ブーランジェリー・アマンド）」は、東京都渋谷区に店舗を構える高級志向のフレンチベーカリーです。 
                         厳選された素材とフランスの伝統的な製法にこだわり、職人の手によって一つひとつ丁寧に焼き上げられたパンを提供しています。
-                        店舗はJR渋谷駅から徒歩5分の場所にあり、朝7時半から夜8時まで営業（火曜定休）しています。
                       </p>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">サイト制作の目的</h3>
-                      <ul class="art__memo-list">
-                        <li>新規開業にあたって、店舗のブランドイメージを伝えるためのWebサイトが欲しい。</li>
-                        <li>集客の主軸はSNSで行うので、Webサイトでは店舗の顔として、信頼感/店舗の雰囲気/世界観/お店の基本的な情報を伝えることを重視したい。</li>
-                      </ul>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">ターゲット層</h3>
-                      <ul class="art__memo-list">
-                        <li>30〜50代女性</li>
-                        <li>オシャレなパンやカフェが好き</li>
-                        <li>普段からグルメ情報を頻繁にチェックする層</li>
-                        <li>食材の質や無添加、オーガニックを好む</li>
-                      </ul>
-                    </div>
-                    <div class="art__memo-item">
-                      <h3 class="art__memo-head3"><img src="../images/icon_check.svg" alt="" aria-hidden="true" width="24" height="24">デザインコンセプト</h3>
-                      <p class="art__memo-p">
-                        このサイトでは、「職人の技と素材のこだわりによって生まれる上質なベーカリー体験」を、静かに訴えるビジュアルと洗練されたUIで表現しました。温かみのある写真とニュートラルトーンの配色により高級感を演出し、余白や整ったタイポグラフィによって情報の読みやすさにも配慮しています。
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-02">サイト制作の目的</h3>
+                      <p class="art__p">
+                        新規開業に伴う店舗の「顔」として、ブランドイメージを正確に伝え、認知拡大と来店意欲の向上を促したい。
                       </p>
-                    </div>
-                  </div>
-                </div>
+                    </section>
+
+                    <section class="art__section--h3">
+                      <h3 class="art__hed3" id="sec04-03">ターゲット層</h3>
+                      <p class="art__p">
+                        おしゃれなカフェやパンを好み、食材の質やオーガニックへの関心が高い20〜40代の女性
+                      </p>
+                    </section>
+
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec05">2. リサーチ</h2>
+                    <p class="art__p">
+                      次に、リサーチとして、競合サイトの分析および、デザイントレンドの分析、参考となるサイトの収集を行いました。
+                    </p>
+                    <ul class="art__list--blue">
+                      <li><span class="bold">競合サイトの分析：</span> ターゲット層から支持される人気店や、同様のブランドコンセプトを持つ高級ベーカリーのサイトを複数調査。パンの魅力を引き立てる見せ方や、来店へ繋げる動線設計の共通項を分析しました。</li>
+                      <li><span class="bold">デザイントレンドの分析：</span> 近年のWebデザインにおける最新トレンドを把握し、高級感と親しみやすさを両立させる視覚表現を模索。ミニマルなレイアウトや、洗練されたタイポグラフィの活用方法を精査しました。</li>
+                      <li><span class="bold">ビジュアルリファレンスの収集：</span> 分析結果に基づき、ブランドの世界観を具体化するためのビジュアル素材を収集。色調、フォント、写真の構図など、目指すべきトーン＆マナーの指針となるリファレンスを整理し、デザインの基盤を構築しました。</li>
+                    </ul>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec06">3. 情報設計</h2>
+                    <p class="art__p">
+                      これまでのリサーチで得られた知見を基に、ターゲットの関心を高めるために必要なコンテンツを厳選し、ブランドのこだわりが最も伝わる情報の優先順位と掲載順序を検討しました。
+                      この構成案をサイトマップとして整理した上で、各要素の具体的なレイアウトを定義するワイヤーフレームを作成し、デザインの土台となる論理的なサイト構造を構築しました。
+                    </p>
+                    <figure class="art__img">
+                      <img style="border: 1px solid #e3e4e6;" src="../images/BA/BA_Sitemap.png" alt="サイトマップ" width="907" height="563" loading="lazy" decoding="async">
+                    </figure>
+                  </section>
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec07">4. ビジュアルデザイン</h2>
+                    <p class="art__p">
+                      これまでの競合分析やトレンド調査の結果を反映させ、本店舗のブランドイメージを最大限に引き出すトーン＆マナーを策定しました。
+                    </p>
+                    <p class="art__p">
+                      全体を貫く高級感と洗練された印象を演出するため、メインカラーには重厚感のあるブラック（#1a1a1a）を採用。
+                      一方で、飲食店としての温かみやパンの美味しさを損なわないよう、深みのあるワインレッドと柔らかなイエローをアクセントに加え、視覚的なリズムと情緒的な魅力を両立させています。
+                      また、本文フォントには優雅な明朝系のNoto Serif JPを選定し、ブランドの落ち着いた品格を表現しました。
+                      さらに、これら全ての視覚設計においてWCAG基準に準拠したコントラスト比を確保し、高いデザイン性とアクセシビリティを両立したビジュアル構築を行っています。
+                    </p>
+                    
+                    <figure class="art__img mb32"><img src="../images/BA/BA_Color.png" alt="カラーパレット" width="2013" height="648" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                    ロゴは「上質で伝統あるフレンチベーカリー」というブランドコンセプトを視覚化することを目的に設計しました。
+                    安定感のあるサンセリフ体を中心に、補助的な細身のフォントを組み合わせることで、視認性と上品さのバランスを意識しています。
+                    左右のローレルは職人技や伝統の象徴として配置し、構図はシンメトリーにすることで信頼感と洗練された印象を与えるようにしました。
+                  </p>
+                    <figure class="art__img mb32"><img src="../images/BA/BA_LogoDescription.svg" alt="ロゴ" loading="lazy" decoding="async"></figure>
+
+                    <p class="art__p">
+                      最終的に出来上がったデザインカンプは以下
+                    </p>
+                    <figure class="art__img mb32"><img src="../images/BA/BA_capture.webp" alt="Boulangerie Amande UIキャプチャー" width="2366" height="2088" loading="lazy" decoding="async"></figure>
+                  </section>
+
+
+                  <section class="art__section">
+                    <h2 class="art__hed2" id="sec08">5. 実装・公開・検証改善</h2>
+                    <p class="art__p mb32">
+                      デザインカンプを忠実に再現するため、HTML/CSS（Sass）およびJavaScriptを用いて実装を行いました。あらゆるデバイスで最適な体験を提供できるよう、モバイルファーストのレスポンシブ設計を徹底し、単なるレイアウト調整に留まらず、画面幅に応じた余白やフォントサイズの最適化により、一貫して快適なユーザー体験を担保しています。
+                    </p>
+                    <p class="art__p">
+                      アニメーションに関しては、ブランドの落ち着いた雰囲気を損なわないよう、フェードインを中心とした自然な動きに限定しました。これにより、表示速度や可読性を維持しながら、スムーズな視線誘導を実現しています。また、ボタンなどのインタラクティブな要素には微細なホバーアクションを加え、クリック可能性を直感的に伝える視覚的なフィードバックを実装しました。
+                    </p>
+                    <p class="art__p">
+                      さらに、公開に際してはアクセシビリティや表示負荷の検証を多角的に実施。デバイス固有のレイアウト崩れや読み込み速度の課題を細部まで改善し、実用性と品質を兼ね備えたサイトとして仕上げています。
+                    </p>
+                    <a class="art__cv" href="https://benzy78.github.io/boulangerie-amande/index.html"  target="_blank" rel="noopener noreferrer">
+                      <figure class="art__cv-img"><img src="../images/BA/BA_eyecatch.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
+                      <div class="art__cv-text">
+                        <p class="art__cv-ttl">Boulangerie Amandeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="24" height="24"></p>
+                        <p class="art__cv-desc">フランスのパン作りの芸術を提供する高級志向の本格ベーカリー「Boulangerie Amande」</p>
+                      </div>
+                    </a>
+                    
+                  </section>
                 
-                <h2 class="art__hed2">情報設計</h2>
-                <p class="art__p">
-                  競合サイトの分析結果を参考にしながら、今回のサイト制作の目的を考慮して、ユーザーが店舗や商品の魅力を段階的に理解できるように、Topページの構成は以下のようにしました。
-                </p>
-                <ul class="art__list">
-                  <li>ファーストビュー：印象的な店内ビジュアル写真を押し出し、お店のブランドイメージや雰囲気を印象強く伝える</li>
-                  <li>こだわり：ブランドコンセプトやこだわりを紹介し、共感を喚起</li>
-                  <li>メニュー：主力商品を視覚的に魅力的に見せ、購買意欲を促進</li>
-                  <li>店舗情報：住所、営業時間、アクセス情報を記載し、来店へのハードルを下げる</li>
-                  <li>お知らせ：新商品や臨時休業日を載せ、関心を持ってもらう</li>
-                  <li>お問い合わせ</li>
-                </ul>
-                
-
-                <h2 class="art__hed2">ビジュアル設計</h2>
-                <h3 class="art__hed3">配色</h3>
-                <p class="art__p">
-                  全体の配色は、高級感と洗練された印象を与えることを意識し、メインカラーにブラック（#1a1a1a）を採用しています。
-                  <span class="marker">ただし、モノトーンのみでは飲食店としての温かみや美味しさが伝わりにくいため、アクセントとして深みのあるワインレッドと柔らかさを加えるイエローを使用</span>し、視覚的なリズムとブランドの印象づけを両立させました。
-                  また、全体を通してWCAG基準に準拠したコントラスト比を保ち、視認性やアクセシビリティにも配慮した設計としています。
-                </p>
-                <figure class="art__img"><img src="../images/BA_color.png" alt="Boulangerie Amandeカラーパレット" width="2013" height="648" loading="lazy" decoding="async"></figure>
-                <h3 class="art__hed3">タイポグラフィー</h3>
-                <p class="art__p mb32">
-                  <span class="marker">高級感と洗練された印象を演出するために、本文には明朝系のNoto Serif JPを採用</span>しました。
-                  視認性を保ちつつ、ブランドイメージに合った落ち着いたトーンを表現しています。
-                  フォントサイズは16pxを基準に、基本的には4の倍数単位で階層的に設計しています。
-                  また、読みやすさを考慮し、行間（line-height）は1.5〜1.75の範囲で調整し、文字間隔（letter-spacing）は0.02emで細かく最適化しています。
-                </p>
-
-                <h2 class="art__hed2">実装・インタラクション等に関して</h2>
-                <p class="art__p">
-                  実装にあたっては、PCのみならずスマートフォンやタブレットでの閲覧も想定し、各デバイスでの表示崩れが起こらないように設計・調整を行っています。
-                  <span class="marker">単にレイアウトが収まるだけでなく、画面幅に応じて余白やコンテンツの幅、フォントサイズといった要素を適切に変化させることで、どの環境で見ても快適に閲覧できるユーザー体験を担保</span>しています。
-                </p>
-                <p class="art__p">
-                  アニメーションに関しては、ユーザーが読み進めるのを妨げないよう、必要最低限の表現にとどめ、主にフェードインを中心とした自然な動きのみを採用しました。
-                  これによって、ページの表示速度や情報の可視性を損なうことなく、落ち着いた雰囲気の中でスムーズな体験を実現しています。
-                </p>
-                <p class="art__p mb32">
-                  また、リンクやボタンなどのインタラクティブな要素については、ホバー時に微細なアニメーションを加えることで、ユーザーがその要素がクリック可能であることを直感的に理解できるよう工夫しています。
-                  <span class="marker">視覚的なフィードバックを通じて操作性を高めるとともに、UIのアクセシビリティ向上にも寄与</span>しています。
-                </p>
-
-                <h2 class="art__hed2">アウトプット</h2>
-                <h3 class="art__hed3">ロゴ</h3>
-                <figure class="art__img"><img src="../images/BA_LogoDescription.svg" alt="ロゴデザイン" loading="lazy" decoding="async" width="880" height="176"></figure>
-                <p class="art__p mb32">
-                  本ロゴは「上質で伝統あるフレンチベーカリー」というブランドコンセプトを視覚化することを目的に設計しました。
-                  安定感のあるサンセリフ体を中心に、補助的な細身のフォントを組み合わせることで、視認性と上品さのバランスを意識しています。
-                  左右のローレルは職人技や伝統の象徴として配置し、構図はシンメトリーにすることで信頼感と洗練された印象を与えるようにしました。
-                </p>
-
-                <h3 class="art__hed3">Webデザイン</h3>
-                <figure class="art__img"><img src="../images/BA_capture.webp" alt="Boulangerie Amande UIキャプチャー" width="2366" height="2088" loading="lazy" decoding="async"></figure>
-
-                <a class="art__cv" href="https://benzy78.github.io/boulangerie-amande/index.html"  target="_blank" rel="noopener noreferrer">
-                  <figure class="art__cv-img"><img src="../images/BA_UI.webp" alt="" aria-hidden="true" width="3000" height="1800" loading="lazy" decoding="async"></figure>
-                  <div class="art__cv-text">
-                    <p class="art__cv-ttl">Boulangerie Amandeの店舗サイトはこちら<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" class="open-icon" width="24" height="24"></p>
-                    <p class="art__cv-desc">フランスのパン作りの芸術を提供する本格ベーカリー「Boulangerie Amande」</p>
-                  </div>
-                </a>
               </article>
-            </div>
-            
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">プロジェクト概要</a></li>
+                  <li><a href="#sec02" class="index__link">最終成果物</a></li>
+                  <li><a href="#sec03" class="index__link">詳細なデザインプロセス</a></li>
+                  <li><a href="#sec04" class="index__link">1. 要件整理</a></li>
+                  <ul class="index__sub-list">
+                    <li><a href="#sec04-01" class="index__sub-link">1-1. クライアント情報</a></li>
+                    <li><a href="#sec04-02" class="index__sub-link">1-2. サイト制作の目的</a></li>
+                    <li><a href="#sec04-03" class="index__sub-link">1-3. ターゲット層</a></li>
+                  </ul>
+                  <li><a href="#sec05" class="index__link">2. リサーチ</a></li>
+                  <li><a href="#sec06" class="index__link">3. 情報設計</a></li>
+                  <li><a href="#sec07" class="index__link">4. ビジュアルデザイン</a></li>
+                  <li><a href="#sec08" class="index__link">5. 実装・公開・検証改善</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </div>
+        </div>
       </div>
+
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
+
     </div>
     <!--wrapper end-->
 

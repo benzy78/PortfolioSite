@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>バナーデザイン</title>
+    <title>バナーデザイン | Portfolio</title>
     <meta name="description" content="This portfolio showcases landing pages, websites, and app designs I’ve created in the past.">
     <meta name="keywords" content="UIUX, Portfolio">
     <!--style css-->
     <link rel="stylesheet" href="../sass/style.css" media="all">
+    <!-- favicon -->
+    <link rel="icon" href="../images/PortfolioFavicon.svg" type="image/png">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!--jquery-->
@@ -25,55 +27,36 @@
 
 <body>
     <div class="wrapper">
-      <div class="layout">
-        <header class="header">
-          <div class="header__cont">
-            <div class="header__logo">
-              <a href="../index.html"><img src="../images/Portfolio_Logo.svg" alt="Portfolio" width="176" height="49"></a>
+      <header class="header fadein">
+        <div class="header__cont">
+            <div class="header__back-link">
+                <a href="../index.html#works" class="back-link">
+                  <svg class="back-link__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="17" y1="10" x2="3" y2="10"/>
+                      <polyline points="10 3 3 10 10 17"/>
+                  </svg>
+                  <span class="back-link__text">Homeに戻る</span>
+                </a>
             </div>
             <div class="header__nav">
-              <button class="menu-toggle" aria-label="Toggle navigation">
-                  <span class="menu-icon"></span>
-                  <span class="menu-icon"></span>
-                  <span class="menu-icon"></span>
-                  <!-- <span class="menu-label">Menu</span> -->
-              </button>
-
-              <div class="header__group">
-                <h3 class="header__head3">プロフィール</h3>
-                <ul class="header__list">
-                  <li><a href="../index.html#skill">私にできること</a></li>
-                  <li><a href="../index.html#about">自己紹介</a></li>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <!-- <span class="menu-label">Menu</span> -->
+                </button>
+                <ul class="header__nav-list">
+                    <li><a href="../index.html#works">作品一覧</a></li>
+                    <li><a href="./about.html">自己紹介</a></li>
+                    <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
                 </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">作品一覧</h3>
-                <ul class="header__list">
-                  <li><a href="./soapp.html">SmartOrdee App</a></li>
-                  <li><a href="./triplite.html">Triplite</a></li>
-                  <li><a href="./voislet.html">Voislet</a></li>
-                  <li><a href="./eh.html">EcoHybe</a></li>
-                  <li><a href="./solp.html">SmartOrdee 紹介LP</a></li>
-                  <li><a href="./ba.html">Boulangerie Amande</a></li>
-                  <li><a href="./hd.html">Hikora Design</a></li>
-                  <li><a href="https://benzy78.github.io/DesignNotes/index.html"  target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="https://benzy78.github.io/DeploymentChecklist/"  target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                  <li><a href="./bnr.html">Banner一覧</a></li>
-                </ul>
-              </div>
-              <div class="header__group">
-                <h3 class="header__head3">その他</h3>
-                <ul class="header__list">
-                  <li><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_b.svg" alt="" aria-hidden="true" width="16" height="16"></a></li>
-                </ul>
-              </div>
-
             </div>
-          </div>
-        </header>
-
-         <main class="maincontents">
-            <div class="article__cont">
+        </div>
+      </header>
+      <div class="main-contents">
+        <div class="container">
+          <div class="l-article">
+            <main class="main-article">
               <article class="article">
                 <h1 class="art__hed1">バナー一覧 詳細</h1>
                 <p class="art__p">
@@ -88,8 +71,8 @@
 
 
 
-                <section class="mb32">
-                  <h2 class="art__hed2">①リゾートキャンペーン広告</h2>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec01">①リゾートキャンペーン広告</h2>
                   <div class="art__bnr-img">
                     <img src="../images/bnr_resort.png" alt="リゾートキャンペーン広告バナー" width="1600" height="720" loading="lazy" decoding="async">
                   </div>
@@ -132,8 +115,8 @@
                   </div>
                 </section>
 
-                <section class="mb32">
-                  <h2 class="art__hed2">②プログラミングスクールキャンペーン広告</h2>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec02">②プログラミングスクールキャンペーン広告</h2>
                   <div class="art__bnr-img">
                     <img src="../images/bnr_school.webp" alt="プログラミングスクール広告バナー" width="1600" height="720" loading="lazy" decoding="async">
                   </div>
@@ -175,8 +158,8 @@
                   </div>
                 </section>
 
-                <section class="mb32">
-                  <h2 class="art__hed2">③通信キャリアキャンペーン広告</h2>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec03">③通信キャリアキャンペーン広告</h2>
                   <div class="art__bnr-img">
                     <img src="../images/bnr_phone.webp" alt="通信キャリア広告バナー" width="1600" height="720" loading="lazy" decoding="async">
                   </div>
@@ -219,8 +202,8 @@
                   </div>
                 </section>
 
-                <section class="mb32">
-                  <h2 class="art__hed2">④ピザの新商品キャンペーン広告</h2>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec04">④ピザの新商品キャンペーン広告</h2>
                   <div class="art__bnr-img">
                     <img src="../images/bnr_pizza.webp" alt="ピザの新商品広告バナー" width="1600" height="720" loading="lazy" decoding="async">
                   </div>
@@ -262,8 +245,8 @@
                   </div>
                 </section>
 
-                <section class="">
-                  <h2 class="art__hed2">⑤小顔矯正キャンペーン広告</h2>
+                <section class="art__section">
+                  <h2 class="art__hed2" id="sec05">⑤小顔矯正キャンペーン広告</h2>
                   <div class="art__bnr-img">
                     <img src="../images/bnr_beauty.webp" alt="小顔矯正広告バナー" width="1600" height="720" loading="lazy" decoding="async">
                   </div>
@@ -303,49 +286,29 @@
                       </div>
                     </div>
                   </div>
-                </section>
               </article>
-            </div>
-            
-            <footer class="footer">
-              <div class="container">
-                  <nav class="footer__nav">
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">プロフィール</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="../index.html#skill">私にできること</a></li>
-                              <li class="footer__list-item"><a href="../index.html#about">自己紹介</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">作品一覧</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="./soapp.html">SmartOrdee App</a></li>
-                              <li class="footer__list-item"><a href="./soapp.html">Triplite App</a></li>
-                              <li class="footer__list-item"><a href="./voislet.html">Voislet</a></li>
-                              <li class="footer__list-item"><a href="./eh.html">Eco Hybe</a></li>
-                              <li class="footer__list-item"><a href="./solp.html">SmartOrdee LP</a></li>
-                              <li class="footer__list-item"><a href="./ba.html">Boulangerie Amande</a></li>
-                              <li class="footer__list-item"><a href="./hd.html">Hikora Design</a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DesignNotes/" target="_blank" rel="noopener noreferrer">Design Notes<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="https://benzy78.github.io/DeploymentChecklist/" target="_blank" rel="noopener noreferrer">Deployment Checklist<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                              <li class="footer__list-item"><a href="./bnr.html">Banner一覧</a></li>
-                          </ul>
-                      </div>
-                      <div class="footer__nav-group">
-                          <h2 class="footer__nav-ttl">その他</h2>
-                          <ul class="footer__nav-list">
-                              <li class="footer__list-item"><a href="https://note.com/aganir_seshisa" target="_blank" rel="noopener noreferrer">note<img src="../images/icon_open_w.svg" alt="" aria-hidden="true" width="20" height="20"></a></li>
-                          </ul>
-                      </div>
-                  </nav>
-                  <p class="footer__copyright">©2025 Yuki Nishimura. All ritghs reserved.</p>
-              </div>
-          </footer>
-         </main>
-      </div>
-    </div>
-    <!--wrapper end-->
+            </main>
+
+            <aside class="sidebar">
+              <nav class="index">
+                <h2 class="index__label">目次</h2>
+                <ul class="index__list">
+                  <li><a href="#sec01" class="index__link">①リゾートキャンペーン広告</a></li>
+                  <li><a href="#sec02" class="index__link">②プログラミングスクールキャンペーン広告</a></li>
+                  <li><a href="#sec03" class="index__link">③通信キャリアキャンペーン広告</a></li>
+                  <li><a href="#sec04" class="index__link">④ピザの新商品キャンペーン広告</a></li>
+                  <li><a href="#sec05" class="index__link">⑤小顔矯正キャンペーン広告</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </div><!-- l-article -->
+        </div><!-- container -->
+      </div><!-- maincontents -->
+      <footer class="footer">
+        <p class="footer__copyright">©2026 Yuki Nishimura. All ritghs reserved.</p>
+      </footer>
+    </div><!--wrapper end-->
 
     <!-- script js-->
     <script src="../js/script.js"></script>
@@ -353,5 +316,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 </body>
-
 </html>
