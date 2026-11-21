@@ -2377,6 +2377,14 @@ mb8 .index__link:hover {
   margin-left: 32px;
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
 .mb32 {
   margin-bottom: 32px;
 }
